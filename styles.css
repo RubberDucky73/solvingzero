@@ -7,7 +7,7 @@
 }
 
 .header {
-
+  background: rgba(7, 99, 7, 0.582); 
   grid-area: 1 / 1 / 2 / 10;
   height: 100%;
 }
