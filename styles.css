@@ -1,6 +1,6 @@
 .main-head {
     grid-area: header;
-    background: $green;
+    background: rgba(7, 148, 49, 0.555);
 }
 
 .wrapper {
