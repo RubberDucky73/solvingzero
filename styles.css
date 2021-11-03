@@ -1,5 +1,6 @@
 .main-head {
     grid-area: header;
+    background: $green;
 }
 
 .wrapper {
