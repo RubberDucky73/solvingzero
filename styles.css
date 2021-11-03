@@ -12,7 +12,10 @@
   height: 100%;
 }
 
-.hero { grid-area: 2 / 1 / 8 / 6; }
+.hero { 
+  grid-area: 2 / 1 / 8 / 6;
+  background: rgba(7, 99, 7, 0.582); 
+}
 
 .hero2 { grid-area: 2 / 6 / 5 / 10; }
 
