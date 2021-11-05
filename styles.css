@@ -1,40 +1,155 @@
-.container {
+body {
+  margin: 0;
+  font-size: 15px;
+}
+
+button {
+  background: #2d8f1093;
+  border: 0;
+  padding: 10px 20px;
+}
+
+.main-container {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
+  /* grid-template-columns: repeat(auto-fit, 12fr); */
+  grid-gap: 1em;
+  border: 2px solid red;
 }
 
-.header {
-  background: rgba(7, 99, 7, 0.582); 
-  grid-area: 1 / 1 / 2 / 10;
-  height: 100%;
+/* Header & Nav */
+
+.header-container {
+  display: grid;
+  height: 8vmax;
+  max-height: 9vh;
+  grid-column: 1 / -1;
+  background: lavender;
 }
 
-.hero { 
-  grid-area: 2 / 1 / 8 / 6;
-  background: rgba(7, 99, 7, 0.582); 
+.menu ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-.hero2 { grid-area: 2 / 6 / 5 / 10; }
+.menu a {
+  background: greenyellow;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+}
 
-.hero3 { grid-area: 5 / 6 / 8 / 10; }
+[aria-controls="nav-list"] {
+  display: none;
+}
 
-.icons { grid-area: 8 / 1 / 10 / 10; }
+/* Hero Articles */
 
-.Footer { grid-area: 14 / 1 / 17 / 10; }
+hero-container {
+  display: grid;
+  grid-gap: 20px;
+}
 
-.Recent { grid-area: 10 / 1 / 14 / 10; }
+.top{
+  display: grid;
+  grid-gap: 10px;
+  border: 2px solid green;
+  grid-template-areas:
+    "hero hero side-hero1"
+    "hero hero side-hero2"
+}
 
-.header-nav { grid-area: 1 / 7 / 2 / 8; }
+.hero {
+  grid-area: hero;
+  min-height: 300px;
+  background: blanchedalmond;
+}
 
-.header-nav2 { grid-area: 1 / 8 / 2 / 9; }
+.hero > * {
+  background: rgba(0, 0, 255, 0.315)
+  padding: 5px;
+}
 
-.header-nav3 { grid-area: 1 / 9 / 2 / 10; }
+.side-hero {
+  background: rgba(255, 255, 0, 0.377);
+  display: grid;
+  min-height: 175px;
+}
 
-.hero-text { grid-area: 6 / 1 / 8 / 6; }
+.side-hero1 {
+  grid-area: side-hero1;
+}
 
-.hero2-text { grid-area: 4 / 6 / 5 / 10; }
+.side-hero2 {
+  grid-area: side-hero2;
+}
 
-.hero3-text { grid-area: 7 / 6 / 8 / 10; }
+.side-hero-upper, .side-hero-lower {
+  background: lavender;
+}
+
+footer {
+  grid-column: 1 / -1;
+  height: 12vh;
+  background: rgba(64, 224, 208, 0.322);
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    order: -1;
+    perspective: 800px;
+  }
+  [aria-controls="nav-list"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu ul {
+    max-height: 0;
+    overflow: hidden;
+    transform: rotateX(90deg);
+    transition: all 0.5s;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    max-height: 500px;
+    transform: rotateX(0);
+  }
+
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+
+  [aria-expanded="true"] .close {
+    display: inline-block;
+  }
+
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .top {
+    grid-template-areas:
+      "hero hero"
+      "side-hero1 side-hero2"
+  }
+}
+
+@media (max-width: 500px) {
+  .top {
+    grid-template-areas:
+      "hero"
+      "side-hero1"
+      "side-hero2"
+  }
+}
