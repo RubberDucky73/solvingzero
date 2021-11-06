@@ -11,7 +11,6 @@ button {
 
 .main-container {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, 12fr); */
   grid-gap: 1em;
   border: 2px solid red;
 }
@@ -20,13 +19,15 @@ button {
 
 .header-container {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 2fr;
   height: 8vmax;
   max-height: 9vh;
   grid-column: 1 / -1;
   background: lavender;
 }
 
-.menu ul {
+.nav-bar ul {
   display: grid;
   grid-gap: 10px;
   padding: 0;
@@ -34,15 +35,15 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-.menu a {
-  background: greenyellow;
+.nav-bar a {
+  background: black;
   display: block;
   text-decoration: none;
-  padding: 10px;
+  padding: 4px;
   text-align: center;
-  color: black;
+  color: whitesmoke;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 [aria-controls="nav-list"] {
@@ -101,25 +102,31 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  .menu {
+  .nav-bar {
     order: -1;
     perspective: 800px;
   }
   [aria-controls="nav-list"] {
-    display: block;
-    margin-bottom: 10px;
+    display: grid;
+    grid-column: 1fr;
+    margin-bottom: 2px;
   }
 
-  .menu ul {
+  .nav-bar ul {
     max-height: 0;
     overflow: hidden;
     transform: rotateX(90deg);
-    transition: all 0.5s;
+    transition: all 0.7s;
+  }
+
+  .nav-bar li {
+    border: solid 2px white;
   }
 
   [aria-expanded="true"] ~ ul {
     display: grid;
-    max-height: 500px;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    max-height: 300px;
     transform: rotateX(0);
   }
 
@@ -128,7 +135,8 @@ footer {
   }
 
   [aria-expanded="true"] .close {
-    display: inline-block;
+    display: grid;
+    grid-column: 1fr;
   }
 
   [aria-expanded="true"] .open {
