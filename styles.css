@@ -4,14 +4,15 @@ body {
 }
 
 button {
-  background: #2d8f1093;
+  background: #347FC4;
+  color: white;
   border: 0;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 .main-container {
   display: grid;
-  grid-gap: 1em;
+  /* grid-gap: 1em; */
   border: 2px solid red;
 }
 
@@ -20,26 +21,42 @@ button {
 .header-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: 2fr;
   height: 8vmax;
   max-height: 9vh;
   grid-column: 1 / -1;
-  background: lavender;
+  background: white;
+  justify-content: end;
+}
+
+.logo {
+  background:white url(images/solvingzero-logo.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin-left:10px;
+  max-height: 60%;
+  max-width: 50%;
+  max-width: 150px;
+  /* height: 4vmax;
+  max-height: 7vh; */
 }
 
 .nav-bar ul {
   display: grid;
-  grid-gap: 10px;
-  padding: 0;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0px;
+  padding: 0px;
+  /* max-width: 200px; */
   list-style: none;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: space-around;
 }
 
 .nav-bar a {
   background: black;
   display: block;
   text-decoration: none;
-  padding: 4px;
+  padding: 10px;
+  max-width: 100px;
   text-align: center;
   color: whitesmoke;
   text-transform: uppercase;
@@ -60,7 +77,8 @@ hero-container {
 .top{
   display: grid;
   grid-gap: 10px;
-  border: 2px solid green;
+  padding: 15px;
+  border: 2px solid rgb(0, 0, 0);
   grid-template-areas:
     "hero hero side-hero1"
     "hero hero side-hero2"
@@ -69,7 +87,10 @@ hero-container {
 .hero {
   grid-area: hero;
   min-height: 300px;
-  background: blanchedalmond;
+  background: blanchedalmond url(images/solar-farm.jpeg);
+  background-size: cover;
+  background-position: middle;
+  padding: 10px;
 }
 
 .hero > * {
@@ -80,15 +101,21 @@ hero-container {
 .side-hero {
   background: rgba(255, 255, 0, 0.377);
   display: grid;
-  min-height: 175px;
+  min-height: 200px;
 }
 
 .side-hero1 {
   grid-area: side-hero1;
+  background: blanchedalmond url(images/carbon.jpeg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .side-hero2 {
   grid-area: side-hero2;
+  background: blanchedalmond url();
+  background-size: auto;
+  background-position: bottom;
 }
 
 .side-hero-upper, .side-hero-lower {
@@ -101,22 +128,42 @@ footer {
   background: rgba(64, 224, 208, 0.322);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
+  .top {
+    grid-template-areas:
+      "hero hero"
+      "side-hero1 side-hero2"
+  }
+
+  .logo {
+    display: grid;
+    align-self: last baseline;
+    padding: 10px;
+    margin-left:10px;
+    max-height: 60%;
+    max-width: 50%;
+    max-width: 150px;
+    /* height: 4vmax;
+    max-height: 7vh; */
+  }
+
   .nav-bar {
     order: -1;
+    max-width: 140px;
     perspective: 800px;
   }
   [aria-controls="nav-list"] {
     display: grid;
-    grid-column: 1fr;
-    margin-bottom: 2px;
+    /* grid-column: 3fr; */
+    margin-bottom: 20px;
   }
 
   .nav-bar ul {
     max-height: 0;
     overflow: hidden;
+    max-width: 140px;
     transform: rotateX(90deg);
-    transition: all 0.7s;
+    transition: all 0.3s;
   }
 
   .nav-bar li {
@@ -125,7 +172,7 @@ footer {
 
   [aria-expanded="true"] ~ ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    /* grid-template-columns: 3fr; */
     max-height: 300px;
     transform: rotateX(0);
   }
@@ -136,21 +183,13 @@ footer {
 
   [aria-expanded="true"] .close {
     display: grid;
-    grid-column: 1fr;
+    /* grid-template-columns: 3fr; */
   }
 
   [aria-expanded="true"] .open {
     display: none;
   }
 
-}
-
-@media (max-width: 700px) {
-  .top {
-    grid-template-areas:
-      "hero hero"
-      "side-hero1 side-hero2"
-  }
 }
 
 @media (max-width: 500px) {
