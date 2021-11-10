@@ -1,0 +1,89 @@
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solving Zero</title>
+  <link rel="stylesheet" type="text/css" href="../styles.css" />
+</head>
+<body>
+  <div class="main-container">
+    <header class = "header-container">
+      <div class ="logo">
+      </div> 
+      <nav class = "nav-bar">
+        <button aria-expanded="false" aria-controls="nav-list">
+          <span class="open">☰ Menu</span>
+          <span class="close">X</span>
+        </button>
+        <ul id="nav-list">
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class = "articles">
+      <div class ="article">
+        <img class = "article_pic" src="../images/solar-farm.jpeg">
+        <div class ="article_information">
+          <h2>How does Solar Work?</h2>
+          <p class="article_description">A solar panel consists of solar cells that convert the energy of photons sent by the sun into excited electrons via a semiconductor material, commonly doped silicon. These excited electrons create an electrical current that can be harnessed and converted for use as electricity.</p>
+        </div>
+      </div>
+      <div class ="article">
+        <img class = "article_pic" src="../images/carbon.jpeg">
+        <div class ="article_information">
+          <h2>What is carbon capture?</h2>
+          <p class="article_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, rerum quibusdam quaerat voluptate alias distinctio culpa ea inventore sequi recusandae et tempore commodi, doloribus ad amet nam aperiam exercitationem sit.</p>
+        </div>
+      </div>
+
+    </main>
+      <footer>
+        Footer
+      </footer>
+  </div>
+  <style>
+    .articles {
+      display : grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    
+    .article{
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 150px, 1fr;
+      grid-gap: 10px;
+      align-items: center;
+    }
+
+    .article_pic {
+      width: 100%;
+    }
+
+  </style>
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+  </script>
+</body>
+
+</html>
