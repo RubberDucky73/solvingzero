@@ -16,7 +16,7 @@ button {
   grid-template-rows: auto 1fr auto;
   grid-gap: 1em;
   height: 100vh;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /* Header & Nav */
@@ -27,7 +27,7 @@ button {
    /* height: 8vmax;
   max-height: 9vh; */
   background: white;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 
 .logo {
