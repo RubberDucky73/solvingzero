@@ -74,61 +74,6 @@ button {
   display: none;
 }
 
-/* Hero Articles */
-
-hero-container {
-  display: grid;
-  grid-gap: 20px;
-}
-
-.top{
-  display: grid;
-  grid-gap: 10px;
-  padding: 15px;
-  border: 2px solid rgb(0, 0, 0);
-  grid-template-areas:
-    "hero hero side-hero1"
-    "hero hero side-hero2"
-}
-
-.hero {
-  grid-area: hero;
-  min-height: 300px;
-  background: blanchedalmond url(images/solar-farm.jpeg);
-  background-size: cover;
-  background-position: middle;
-  padding: 10px;
-}
-
-.hero > * {
-  background: rgba(0, 0, 255, 0.315);
-  padding: 5px;
-}
-
-.side-hero {
-  background: rgba(255, 255, 0, 0.377);
-  display: grid;
-  min-height: 200px;
-}
-
-.side-hero1 {
-  grid-area: side-hero1;
-  background: blanchedalmond url(images/carbon.jpeg);
-  background-size: cover;
-  background-position: bottom;
-}
-
-.side-hero2 {
-  grid-area: side-hero2;
-  background: blanchedalmond url();
-  background-size: auto;
-  background-position: bottom;
-}
-
-.side-hero-upper, .side-hero-lower {
-  background: lavender;
-}
-
 footer {
   grid-column: 1 / -1;
   height: 12vh;
@@ -136,11 +81,6 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .top {
-    grid-template-areas:
-      "hero hero"
-      "side-hero1 side-hero2"
-  }
 
   .logo {
     padding: 5px;
