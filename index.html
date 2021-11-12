@@ -94,7 +94,7 @@
     flex-shrink: 0;
     text-overflow: ellipsis;
     white-space: normal;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: rgba(48, 48, 48, 0.863);
     color: white;
     margin-bottom: 7.5px;
@@ -166,11 +166,6 @@
     }
 
     navButton.addEventListener('click', toggleNav);
-
-    $(".hero").click(function() {
-    window.location = $(this).find("a").attr("href"); 
-    return false;
-    });
 
   </script>
 </body>

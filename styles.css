@@ -35,13 +35,14 @@ button {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 10px;
-  margin-left:10px;
-  margin-top: 5px;
-  max-height: 60%;
+  margin-left:19px;
+  margin-top: 10px;
   max-width: 50%;
   max-width: 150px;
-  height: 4vmax;
-  max-height: 7vh;
+  min-height: 5vh;
+  height: 3vmax;
+  max-height: 60%;
+  max-height: 6vh;
 }
 
 .nav.nav-bar {
@@ -83,13 +84,16 @@ footer {
 @media (max-width: 700px) {
 
   .logo {
+    display: flex;
+    /* align-self: end; */
+    
     padding: 5px;
     margin-left: 44px;
     margin-top: 10px;
-    min-height: 80%;
+    min-height: 7vh;
     max-width: 100px;
-    height: 2vmax;
-    max-height: 0vh;
+    height: 5vmax;
+    max-height: 6vh;
   }
 
   .nav-bar {
