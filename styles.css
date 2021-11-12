@@ -14,7 +14,7 @@ button {
 .main-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-gap: 1em;
+  grid-gap: 5px;
   height: 100vh;
   /* border: 2px solid red; */
 }
@@ -137,13 +137,4 @@ footer {
     display: none;
   }
 
-}
-
-@media (max-width: 500px) {
-  .top {
-    grid-template-areas:
-      "hero"
-      "side-hero1"
-      "side-hero2"
-  }
 }

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solving Zero</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
   <div class="main-container">
@@ -32,17 +33,14 @@
       </nav>
     </header>
     <main class = "hero-container"> 
-      <div class = "top">    
-        <div class ="hero" src="blog/how-does-solar-work/index.html">
-          <h2 class ="hero-h2">How does a solar panel work?</h2>
-          <p>A solar panel consists of solar cells that convert the energy of photons sent by the sun into excited electrons
-            <br> via a semiconductor material, commonly doped silicon. 
-            <br> These excited electrons create an electrical current that can be harnessed and converted for use as electricity.</p>
+      <div class = "top">   
+        <div class ="hero">
+            <h2 class ="hero-h2">How does a solar panel work?</h2>
+            <p class = "hero-p">A solar panel consists of solar cells that convert the energy of photons sent by the sun into excited electrons via a semiconductor material, commonly doped silicon. These excited electrons create an electrical current that can be harnessed and converted for use as electricity.</p>
+            <a href="blog/how-does-solar-work/index.html"></a>
         </div>
-        <div class =" side-hero side-hero1">
-        </div>
-        <div class= "side-hero side-hero2">
-        </div>
+        <div class =" side-hero side-hero1"></div>
+        <div class= "side-hero side-hero2">Article 3</div>
       </div>
     </main>
 
@@ -62,8 +60,9 @@
   .top{
     display: grid;
     grid-gap: 10px;
-    padding: 15px;
-    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
     grid-template-areas:
       "hero hero side-hero1"
       "hero hero side-hero2"
@@ -71,39 +70,55 @@
 
   .hero {
     display: grid;
-    grid-template-columns: 6fr;
-    grid-template-rows: 8fr;
     place-content: end;
     grid-area: hero;
     min-height: 300px;
+    max-width: 900px;
     background: white url(images/solar-farm.jpeg);
     background-size: cover;
-    padding: 10px;
   }
 
   .hero-h2 {
     display: flex;
     align-self: end;
     position: relative;
-    max-height: 30px;
-    max-width: 30%;
-    font-size: 2.5vh;
-    /* z-index: 1; */
-    background: black;
+    margin-bottom: 0;
+    clear: left;
+    float: left;
+    background: rgba(48, 48, 48, 0.863);
     color: white;
-    text-align: center;
-    overflow-wrap: normal;
+  }
+
+  .hero-p {
+    display: flex;
+    flex-shrink: 0;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    background: rgba(48, 48, 48, 0.863);
+    color: white;
+    margin-bottom: 7.5px;
+    margin-top: 0px;
+  }
+
+  .link-spanner{
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
   }
 
   .hero > * {
-    padding: 5px;
+    padding-left: 9.5px;
   }
 
   .side-hero {
     background: rgba(255, 255, 0, 0.377);
     display: grid;
-    min-height: 200px;
-    min-width: 150px;
+    min-height: 30vh;
+    min-width: 30vw;
   }
 
   .side-hero1 {
@@ -124,13 +139,23 @@
     background: lavender;
   }
 
-    @media (max-width: 700px) {
+  @media (max-width: 1000px) {
   .top {
     grid-template-areas:
       "hero hero"
       "side-hero1 side-hero2"
     }
   }
+
+  @media (max-width: 700px) {
+    .top {
+      grid-template-areas:
+      "hero"
+      "side-hero1"
+      "side-hero2"
+  }
+}
+
   </style>
   <script>
     const navButton = document.querySelector('button[aria-expanded]');
@@ -141,6 +166,11 @@
     }
 
     navButton.addEventListener('click', toggleNav);
+
+    $(".hero").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+    });
 
   </script>
 </body>
