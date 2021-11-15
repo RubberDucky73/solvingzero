@@ -12,10 +12,12 @@
 <body>
   <div class="main-container">
     <header class = "header-container">
-      <a href="index.html" class ="logo"></a>  
+      <!-- <a href="index.h tml" class ="logo"></a>   -->
       <nav class = "nav-bar">
         <button aria-expanded="false" aria-controls="nav-list">
-          <span class="open">☰ Menu</span>
+          <span class="open">
+            <h1>&#9776;</h1>
+          </span>
           <span class="close">X</span>
         </button>
         <ul id="nav-list">
@@ -92,8 +94,8 @@
   .hero-p {
     display: flex;
     flex-shrink: 0;
+    white-space: wrap;
     text-overflow: ellipsis;
-    white-space: normal;
     background: rgba(48, 48, 48, 0.863);
     color: white;
     margin-bottom: 7.5px;
@@ -152,6 +154,31 @@
       "hero"
       "side-hero1"
       "side-hero2"
+  }
+
+  .hero-h2 {
+    font-size: medium;
+  }
+
+  .hero-p {
+    font-size: smaller;
+  }
+}
+
+  @media (max-width: 600px) {
+    .top {
+      grid-template-areas:
+      "hero"
+      "side-hero1"
+      "side-hero2"
+  }
+
+  .hero-h2 {
+    font-size: small;
+  }
+
+  .hero-p {
+    font-size: x-small;
   }
 }
 

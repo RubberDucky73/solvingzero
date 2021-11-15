@@ -46,17 +46,20 @@ button {
 }
 
 .nav.nav-bar {
-  display: inline;
+  display: flex;
+  flex-flow: flex-end;
+  /* display: inline; */
 }
 
 .nav-bar ul {
   display: flex;
   justify-content: flex-end;
   flex-flow: center;
-  padding-right: 50px;
+  /* padding-right: 50px; */
   padding-top: 4px;
   column-gap: 30px;
   list-style: none;
+  padding-inline-start: 10px;
 }
 
 .nav-bar a {
@@ -73,6 +76,7 @@ button {
 
 [aria-controls="nav-list"] {
   display: none;
+  margin: 0;
 }
 
 footer {
@@ -86,7 +90,6 @@ footer {
   .logo {
     display: flex;
     /* align-self: end; */
-    
     padding: 5px;
     margin-left: 44px;
     margin-top: 10px;
@@ -97,15 +100,16 @@ footer {
   }
 
   .nav-bar {
-    order: -1;
+    /* order: -1; */
     max-width: 180px;
     perspective: 800px;
+    display: grid;
+    justify-self: end;
   }
 
   [aria-controls="nav-list"] {
-    display: grid;
-    /* grid-column: 3fr; */
-    margin-bottom: 20px;
+    display: block;
+    /* margin-bottom: 20px; */
   }
 
   .nav-bar ul {
@@ -113,18 +117,35 @@ footer {
     overflow: hidden;
     max-width: 140px;
     transform: rotateX(90deg);
-    transition: all 0.3s;
+    transition: all 0.1s;
+    margin-top: 5px;
+    margin-bottom: 0;
   }
 
   .nav-bar li {
     overflow: hidden;
-    border: solid 2px white;
+    /* border: solid 2px white; */
+  }
+
+  .nav-bar h1 {
+    margin: 0px;
+    
+    padding: 0px;
+    font-size: xx-large;
+    max-width: 200px;
+  }
+
+  .nav-bar button {
+    display: flex;
+    justify-self: flex-end;
+    max-width: 200px;
+    margin: 10px;
   }
 
   [aria-expanded="true"] ~ ul {
     display: grid;
     grid-template-columns: 3fr;
-    max-height: 300px;
+    max-height: 200px;
     transform: rotateX(0);
   }
 
