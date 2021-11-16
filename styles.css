@@ -5,10 +5,12 @@ body {
 }
 
 button {
-  background: #347FC4;
-  color: white;
+  background: white;
+  color: black;
   border: 0;
-  padding: 10px 10px;
+  padding-right: 15px;
+  padding-top: 5px;
+  margin-bottom: 15px;
 }
 
 .main-container {
@@ -24,8 +26,8 @@ button {
 .header-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-   /* height: 8vmax;
-  max-height: 9vh; */
+  /* height: 9vmax; */
+  /* max-height: 9vh; */
   background: white;
   /* border: 2px solid orange; */
 }
@@ -59,7 +61,7 @@ button {
   padding-top: 4px;
   column-gap: 30px;
   list-style: none;
-  padding-inline-start: 10px;
+  padding-inline-start: 0px;
 }
 
 .nav-bar a {
@@ -108,8 +110,7 @@ footer {
   }
 
   [aria-controls="nav-list"] {
-    display: block;
-    /* margin-bottom: 20px; */
+    display: grid;
   }
 
   .nav-bar ul {
@@ -119,6 +120,7 @@ footer {
     transform: rotateX(90deg);
     transition: all 0.1s;
     margin-top: 5px;
+    margin-right: 10px;
     margin-bottom: 0;
   }
 
@@ -127,19 +129,28 @@ footer {
     /* border: solid 2px white; */
   }
 
-  .nav-bar h1 {
+  .open h1 {
     margin: 0px;
-    
     padding: 0px;
-    font-size: xx-large;
+    font-size: 300%;
     max-width: 200px;
+  }
+
+  .close h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 200%;
+    max-width: 180px;
   }
 
   .nav-bar button {
     display: flex;
     justify-self: flex-end;
     max-width: 200px;
-    margin: 10px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 
   [aria-expanded="true"] ~ ul {
@@ -151,6 +162,7 @@ footer {
 
   [aria-expanded="false"] .close {
     display: none;
+    max-height: 200px;
   }
 
   [aria-expanded="true"] .close {
