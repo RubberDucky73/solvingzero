@@ -16,7 +16,7 @@ button {
 .main-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-gap: 5px;
+  /* grid-gap: 5px; */
   height: 100vh;
   /* border: 2px solid red; */
 }
@@ -88,17 +88,8 @@ footer {
 }
 
 @media (max-width: 700px) {
-
   .logo {
-    display: flex;
-    /* align-self: end; */
-    padding: 5px;
-    margin-left: 44px;
-    margin-top: 10px;
-    min-height: 7vh;
-    max-width: 100px;
-    height: 5vmax;
-    max-height: 6vh;
+    margin-top: 15px;
   }
 
   .nav-bar {
@@ -110,15 +101,16 @@ footer {
   }
 
   [aria-controls="nav-list"] {
-    display: grid;
+    display: block;
+    margin-bottom: 0;
   }
 
   .nav-bar ul {
     max-height: 0;
     overflow: hidden;
     max-width: 140px;
-    transform: rotateX(90deg);
-    transition: all 0.1s;
+    /* transform: rotateX(90deg); */
+    /* transition: all 0.1s; */
     margin-top: 5px;
     margin-right: 10px;
     margin-bottom: 0;
@@ -129,15 +121,26 @@ footer {
     /* border: solid 2px white; */
   }
 
-  .open h1 {
+  button {
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    padding-right: 30px;
+    margin: 0;
+    border: 0;
+  }
+
+  button > .open {
     margin: 0px;
     padding: 0px;
     font-size: 300%;
     max-width: 200px;
   }
 
-  .close h1 {
+  button > .close {
     margin: 0px;
+    margin-right: 20px;
+    /* padding-right: 20px; */
     padding: 0px;
     font-size: 200%;
     max-width: 180px;
@@ -147,31 +150,34 @@ footer {
     display: flex;
     justify-self: flex-end;
     max-width: 200px;
-    margin-bottom: 0px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 0px;
   }
 
   [aria-expanded="true"] ~ ul {
     display: grid;
-    grid-template-columns: 3fr;
-    max-height: 200px;
+    /* grid-template-columns: 3fr; */
+    max-height: 150px;
     transform: rotateX(0);
   }
 
   [aria-expanded="false"] .close {
     display: none;
-    max-height: 200px;
+    /* max-height: 200px; */
   }
 
   [aria-expanded="true"] .close {
-    display: grid;
-    grid-template-columns: 3fr;
+    display: inline-block;
+    /* grid-template-columns: 3fr; */
   }
 
   [aria-expanded="true"] .open {
     display: none;
   }
 
+}
+
+@media (max-width: 320px) {
+  .logo {
+    margin-top: 20px;
+  }
 }
