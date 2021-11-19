@@ -15,13 +15,16 @@ navButton.addEventListener('click', toggleNav);
 // Truncate the paragrah descriptions for the hero articles
 // Get the HTML element and set the trim length + make sure its not trimming in the middle of a word
 
-var mobileDevice = window.matchMedia('(max-width: 700px)')
+// var mobileDevice = window.matchMedia('(max-width: 700px)')
 
-mobileDevice.addEventListener("change", handleDeviceChange);
+// mobileDevice.addEventListener("load", handleDeviceChange);
 
-function handleDeviceChange(size) {
+// function handleDeviceChange(size) {
 
-if (size.matches) {
+// if (size.matches) {
+
+
+if (window.matchMedia("(max-width: 700px)").matches) {
     var ReadOn = 'Read More...'
     var ReadLink = ReadOn.link("blog/how-does-solar-work/index.html")
     var descrip = document.getElementById('test').innerHTML
@@ -34,13 +37,13 @@ if (size.matches) {
         if (para.length <= 60) {
             return para;
         }
-        // console.log(typeof ReadLink)
         return trimmedPara + ' ' + ReadLink
     }
 
     var truncated = truncate(descrip)
 
     document.getElementById("test").innerHTML = truncated;
-    }
+    } else {
+     document.getElementById("test").innerHTML
 }
 
