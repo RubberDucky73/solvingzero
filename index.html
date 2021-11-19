@@ -1,191 +1,195 @@
 <html>
-<head>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-  </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solving Zero</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script src="jquery-3.5.1.min.js"></script>
-</head>
-<body>
-  <div class="main-container">
-    <header class = "header-container">
-      <a href="index.html" class ="logo"></a>  
-      <nav class = "nav-bar">
-        <button aria-expanded="false" aria-controls="nav-list">
-          <a href="index.html" class="close">
-            &#88;
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solving Zero</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class = "header-container">
+        <a href="index.html" class ="logo"></a>  
+        <nav class = "nav-bar">
+          <button aria-expanded="false" aria-controls="nav-list">
+            <a href="index.html" class="close">
+              &#88;
+            </a>
+            <span class="open">
+              &#9776;
+            </span>
+          </button>
+          <ul id="nav-list">
+            <li>
+              <a href="blog/index.html">Blog</a>
+            </li>
+            <li>
+              <a href="about/index.html">About</a>
+            </li>
+            <li>
+              <a href="contact/index.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class = "hero-container"> 
+        <div class = "top">   
+          <a href ="blog/how-does-solar-work/index.html" class ="hero">
+              <h2 class ="hero-h2">How does a solar panel work?</h2>
+              <p class= "hero-p" id="test">A solar panel consists of solar cells that convert the energy of photons sent by the sun into excited electrons via a semiconductor material, commonly doped silicon. These excited electrons create an electrical current that can be harnessed and converted for use as electricity.</p>
+              <a href="blog/how-does-solar-work/index.html"></a>
           </a>
-          <span class="open">
-            &#9776;
-          </span>
-        </button>
-        <ul id="nav-list">
-          <li>
-            <a href="blog/index.html">Blog</a>
-          </li>
-          <li>
-            <a href="about/index.html">About</a>
-          </li>
-          <li>
-            <a href="contact/index.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class = "hero-container"> 
-      <div class = "top">   
-        <a href ="blog/how-does-solar-work/index.html" class ="hero">
-            <h2 class ="hero-h2">How does a solar panel work?</h2>
-            <p class = "hero-p">A solar panel consists of solar cells that convert the energy of photons sent by the sun into excited electrons via a semiconductor material, commonly doped silicon. These excited electrons create an electrical current that can be harnessed and converted for use as electricity.</p>
-            <a href="blog/how-does-solar-work/index.html"></a>
-        </a>
-        <div class =" side-hero side-hero1"></div>
-        <div class= "side-hero side-hero2">Article 3</div>
-      </div>
-    </main>
+          <div class =" side-hero side-hero1"></div>
+          <div class= "side-hero side-hero2">Article 3</div>
+        </div>
+      </main>
 
-      <footer>
-        Footer
-      </footer>
-  </div>
-  <style>
-  
-  /* Hero Articles */
+        <footer>
+          Footer
+        </footer>
+    </div>
+    <style>
+    
+    /* Hero Articles */
 
-  hero-container {
-    display: grid;
-    grid-gap: 20px;
+    hero-container {
+      display: grid;
+      grid-gap: 20px;
+      }
+
+    .top{
+      display: grid;
+      grid-gap: 10px;
+      padding: 10px;
+      padding-left: 5%;
+      padding-right: 5%;
+      grid-template-areas:
+        "hero hero side-hero1"
+        "hero hero side-hero2"
     }
 
-  .top{
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-    grid-template-areas:
-      "hero hero side-hero1"
-      "hero hero side-hero2"
-  }
+    .hero {
+      display: grid;
+      place-content: end;
+      grid-area: hero;
+      min-height: 300px;
+      max-width: 100%;
+      background: white url(images/solar-farm.jpeg);
+      background-size: cover;
+      text-decoration: none;
+    }
 
-  .hero {
-    display: grid;
-    place-content: end;
-    grid-area: hero;
-    min-height: 300px;
-    max-width: 100%;
-    background: white url(images/solar-farm.jpeg);
-    background-size: cover;
-    text-decoration: none;
-  }
+    .hero-h2 {
+      display: flex;
+      align-self: end;
+      position: relative;
+      margin-bottom: 0;
+      clear: left;
+      float: left;
+      background: rgba(48, 48, 48, 0.863);
+      color: white;
+    }
 
-  .hero-h2 {
-    display: flex;
-    align-self: end;
-    position: relative;
-    margin-bottom: 0;
-    clear: left;
-    float: left;
-    background: rgba(48, 48, 48, 0.863);
-    color: white;
-  }
+    .hero-p {
+      display: inline-block;
+      flex-shrink: 0;
+      white-space: wrap;
+      text-overflow: ellipsis;
+      background: rgba(48, 48, 48, 0.863);
+      color: white;
+      margin-bottom: 7.5px;
+      padding-right: 10px;
+      margin-top: 0px;
+    }
 
-  .hero-p {
-    display: flex;
-    flex-shrink: 0;
-    white-space: wrap;
-    text-overflow: ellipsis;
-    background: rgba(48, 48, 48, 0.863);
-    color: white;
-    margin-bottom: 7.5px;
-    margin-top: 0px;
-  }
+    .hero-p > a {
+      color: greenyellow;
+    }
 
-  .link-spanner{
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-    z-index: 1;
-  }
+    .link-spanner{
+      position:absolute; 
+      width:100%;
+      height:100%;
+      top:0;
+      left: 0;
+      z-index: 1;
+    }
 
-  .hero > * {
-    padding-left: 9.5px;
-  }
+    .hero > * {
+      padding-left: 9.5px;
+    }
 
-  .side-hero {
-    background: rgba(255, 255, 0, 0.377);
-    display: grid;
-    min-height: 30vh;
-    min-width: 30vw;
-  }
+    .side-hero {
+      background: rgba(255, 255, 0, 0.377);
+      display: grid;
+      min-height: 30vh;
+      min-width: 30vw;
+    }
 
-  .side-hero1 {
-    grid-area: side-hero1;
-    background: blanchedalmond url(images/carbon.jpeg);
-    background-size: cover;
-    background-position: bottom;
-  }
+    .side-hero1 {
+      grid-area: side-hero1;
+      background: blanchedalmond url(images/carbon.jpeg);
+      background-size: cover;
+      background-position: bottom;
+    }
 
-  .side-hero2 {
-    grid-area: side-hero2;
-    background: blanchedalmond url();
-    background-size: auto;
-    background-position: bottom;
-  }
+    .side-hero2 {
+      grid-area: side-hero2;
+      background: blanchedalmond url();
+      background-size: auto;
+      background-position: bottom;
+    }
 
-  .side-hero-upper, .side-hero-lower {
-    background: lavender;
-  }
+    .side-hero-upper, .side-hero-lower {
+      background: lavender;
+    }
 
-  @media (max-width: 1100px) {
-  .top {
-    grid-template-areas:
-      "hero hero"
-      "side-hero1 side-hero2"
+    @media (max-width: 1100px) {
+    .top {
+      grid-template-areas:
+        "hero hero"
+        "side-hero1 side-hero2"
+      }
+    }
+
+    @media (max-width: 700px) {
+      .top {
+        grid-template-areas:
+        "hero"
+        "side-hero1"
+        "side-hero2"
+    }
+
+    .hero-h2 {
+      font-size: medium;
+    }
+
+    .hero-p {
+      font-size: smaller;
     }
   }
 
-  @media (max-width: 700px) {
-    .top {
-      grid-template-areas:
-      "hero"
-      "side-hero1"
-      "side-hero2"
+    @media (max-width: 600px) {
+      .top {
+        grid-template-areas:
+        "hero"
+        "side-hero1"
+        "side-hero2"
+    }
+
+    .hero-h2 {
+      font-size: medium;
+    }
+
+    .hero-p {
+      font-size: smaller;
+    }
   }
 
-  .hero-h2 {
-    font-size: medium;
-  }
-
-  .hero-p {
-    font-size: smaller;
-  }
-}
-
-  @media (max-width: 600px) {
-    .top {
-      grid-template-areas:
-      "hero"
-      "side-hero1"
-      "side-hero2"
-  }
-
-  .hero-h2 {
-    font-size: medium;
-  }
-
-  .hero-p {
-    font-size: smaller;
-  }
-}
-
-  </style>
-<script type="text/javascript" src="script.js"></script>
-</body>
-
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

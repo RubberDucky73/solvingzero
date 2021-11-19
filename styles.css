@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -18,7 +18,6 @@ button {
   grid-template-rows: auto 1fr auto;
   /* grid-gap: 5px; */
   height: 100vh;
-  /* border: 2px solid red; */
 }
 
 /* Header & Nav */
@@ -29,7 +28,6 @@ button {
   /* height: 9vmax; */
   /* max-height: 9vh; */
   background: white;
-  /* border: 2px solid orange; */
 }
 
 .logo {
@@ -48,14 +46,12 @@ button {
 .nav.nav-bar {
   display: flex;
   flex-flow: flex-end;
-  /* display: inline; */
 }
 
 .nav-bar ul {
   display: flex;
   justify-content: flex-end;
   flex-flow: center;
-  /* padding-right: 50px; */
   padding-top: 4px;
   column-gap: 30px;
   list-style: none;
@@ -92,7 +88,6 @@ footer {
   }
 
   .nav-bar {
-    /* order: -1; */
     max-width: 180px;
     perspective: 800px;
     display: grid;
