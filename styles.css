@@ -28,6 +28,7 @@ button {
   /* height: 9vmax; */
   /* max-height: 9vh; */
   background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -57,6 +58,7 @@ button {
   list-style: none;
   padding-inline-start: 0px;
   margin-right: 20px;
+  margin-bottom: 5px;
 }
 
 .nav-bar a {

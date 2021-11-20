@@ -6,11 +6,13 @@ footerTemplate.innerHTML = `
       height: 60px;
       padding: 0 10px;
       list-style: none;
-      display: flex;
-      flex-shrink: 0;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #dfdfe2;
+      display: grid;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    //   flex-shrink: 0;
+    //   justify-content: space-between;
+    //   align-items: center;
+    //   background-color: #dfdfe2;
     }
 
     ul {
