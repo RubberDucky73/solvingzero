@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solving Zero</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class = "header-container">
+        <a href="../index.html" class ="logo"></a>  
+        <nav class = "nav-bar">
+          <button aria-expanded="false" aria-controls="nav-list">
+            <a href="index.html" class="close">
+              &#88;
+            </a>
+            <span class="open">
+              &#9776;
+            </span>
+          </button>
+          <ul id="nav-list">
+            <li>
+              <a href="../blog/index.html">Blog</a>
+            </li>
+            <li>
+              <a href="../about/index.html">About</a>
+            </li>
+            <li>
+              <a href="../contact/index.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class = "post">
+        <h3>Thanks for checking us out!</h3>
+        <p>If you would like to reach and chat about working together feel free to fill out the form below.</p>
+        <iframe class="form" src="https://www.cognitoforms.com/f/IqKoYUkV2EiKwtNVeeGJDA/1" style="border:0;width:90%;" height="507"></iframe>
+        <script src="https://www.cognitoforms.com/f/iframe.js"></script> 
+        <br>
+        <br></br>
+    </main>
+    <footer-component></footer-component>
+    <style>
+        .post {
+            display: grid;
+            max-width: 1000px;
+            margin: 400px auto;
+            margin-top: 20px;
+            grid-gap: 5px 50px;
+            grid-template-columns: 1fr 32fr 1fr;
+        }
+  
+        .post > * {
+            grid-column: 2 / -2;
+        }
+    </style>
+    <script type="text/javascript" src="../script.js"></script>
+  </body>
+<html>
