@@ -80,6 +80,7 @@ button {
 
 footer {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  position: end;
   /* height: 12vh;
   background: rgba(64, 224, 208, 0.322); */
 }
