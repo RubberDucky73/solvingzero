@@ -4,8 +4,6 @@ const navButton = document.querySelector('button[aria-expanded]');
 function toggleNav({ target }) {
   const expanded = target.getAttribute('aria-expanded') === 'true' || false;
   navButton.setAttribute('aria-expanded', !expanded);
-
-  console.log("Hello")
 }
 
 navButton.addEventListener('click', toggleNav);
@@ -28,7 +26,7 @@ var KeepLink = KeepOn.link("blog/how-does-solar-work/index.html")
 if (window.matchMedia("(max-width: 700px)").matches) {
     var ReadOn = 'Read More...'
     var ReadLink = ReadOn.link("blog/how-does-solar-work/index.html")
-    var descrip = document.getElementById('test').innerHTML
+    var descrip = document.getElementById('description').innerHTML
     var maxLength = 160
     var trimmedPara= descrip.substr(0, maxLength);
     trimmedPara = trimmedPara.substr(0, Math.min(trimmedPara.length, trimmedPara.lastIndexOf(" ")))
@@ -43,8 +41,10 @@ if (window.matchMedia("(max-width: 700px)").matches) {
 
     var truncated = truncate(descrip)
 
-    document.getElementById("test").innerHTML = truncated;
+    document.getElementById("description").innerHTML = truncated;
     } else {
-     document.getElementById("test").innerHTML = document.getElementById("test").innerHTML + '... ' + KeepLink;
-}
+     document.getElementById("description").innerHTML = document.getElementById("description").innerHTML + '... ' + KeepLink;
+};
+
+
 

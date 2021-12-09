@@ -8,6 +8,27 @@
     <title>Solving Zero</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function() {    
+        $('#accordion .hide').hide();
+        $('#accordion .retailer').click(function(){
+                $(this).next().slideToggle()
+                        .siblings('.hide').slideUp();
+                return false;
+        });
+      });
+
+      $(document).ready(function() {    
+        $('.card-accordion .hide').hide();
+        $('.card-accordion .card').click(function(){
+                $(this).find('.hide').slideToggle()
+                        .siblings('.hide').slideDown();
+                return false;
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="main-container">
@@ -36,10 +57,138 @@
         </nav>
       </header>
       <main class = "hero-container"> 
-        <div class = "top">   
+        <div class = "background">
+          <div class="banner-text">
+            <h1>Save money and the planet</h1>
+            <p>Switching energy providers can save the average Victorian 15% on their energy bill and a massive amount of green house gases</p>
+          </div>
+        </div>
+        <div class="card-accordion">
+          <div class = "cards">
+            <div class= "card">
+              <img src= "images/star.png">
+              <h3>Green Rating</h3>
+              <div class = "hide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis recusandae in repellendus laboriosam cumque sequi repudiandae, officiis necessitatibus voluptas, nobis error excepturi labore ipsa magni consequatur, ratione quidem atque eius.</p>
+              </div>
+            </div>
+            <div class = "card">
+              <img src= "images/coin.png">
+              <h3>Price Rating</h3>
+              <div class = "hide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis recusandae in repellendus laboriosam cumque sequi repudiandae, officiis necessitatibus voluptas, nobis error excepturi labore ipsa magni consequatur, ratione quidem atque eius.</p>
+              </div>
+            </div>
+            <div class= "card">
+              <img src= "images/shield.png">
+              <h3>Trust Rating</h3>
+              <div class = "hide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis recusandae in repellendus laboriosam cumque sequi repudiandae, officiis necessitatibus voluptas, nobis error excepturi labore ipsa magni consequatur, ratione quidem atque eius.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "main-list">
+          <div id="accordion">
+            <div class = "retailer">
+              <h3 class= "company">Diamond Energy</h3>
+              <h4 class = "green">Green Rating</h4>
+              <div class = "green-stars">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+              </div>
+              <h4 class = "price">Price</h4>
+              <div class = "price-coins">
+                <img src= "images/coin.png">
+                <img src= "images/coin.png">
+                <img src= "images/coin.png">
+                <img src= "images/coin.png">
+                <img src= "images/empty-coin.png">
+              </div>
+              <h4 class = "trust">Trustworthiness</h4>
+              <div class = "trust-shield">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/half-shield.png">
+              </div>
+            </div>
+            <div class = "hide">
+              <p>Diamond Energy is by far the greenest energy retailer in Victoria with large investments into renewbales.
+                Diamond Energy reports that when a customer uses one megawatt of energy they are able to sell 187% more renewable enegy into the grid, making them the only carbon negitive retailer in Victoria. 
+              </p>
+            </div>
+            
+            <div class = "retailer">
+              <h3 class= "company">Energy Locals</h3>
+              <h4 class = "green">Green Rating</h4>
+              <div class = "green-stars">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/empty-star.png">
+              </div>
+              <h4 class = "price">Price</h4>
+              <div class = "price-coins">
+                <img src= "images/coin.png">
+                <img src= "images/coin.png">
+                <img src= "images/coin.png">
+                <img src= "images/coin.png">
+                <img src= "images/empty-coin.png">
+              </div>
+              <h4 class = "trust">Trustworthiness</h4>
+              <div class = "trust-shield">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/empty-shield.png">
+              </div>
+            </div>
+            <div class = "hide">
+              <p>hidden content</p>
+            </div>
+            <div class = "retailer">
+              <h3 class= "company">Discover Energy</h3>
+              <h4 class = "green">Green Rating</h4>
+              <div class = "green-stars">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/empty-star.png">
+              </div>
+              <h4 class = "price">Price</h4>
+              <div class = "price-coins">
+                <img src= "images/coin.png">
+                <img src= "images/coin.png">
+                <img src= "images/half-coin.png">
+                <img src= "images/empty-coin.png">
+                <img src= "images/empty-coin.png">
+              </div>
+              <h4 class = "trust">Trustworthiness</h4>
+              <div class = "trust-shield">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+              </div>
+            </div>
+            <div class="hide">
+               <p>hidden content</p>
+            </div>            
+          </div>
+        </div>
+        <div class = "blog">   
           <a href ="blog/how-does-solar-work/index.html" class ="hero">
               <h2 class ="hero-h2">How does a solar panel work?</h2>
-              <p class= "hero-p" id="test">A solar panel consists of solar cells that convert the energy of photons sent by the sun into excited electrons via a semiconductor material, commonly doped silicon. These excited electrons create an electrical current that can be harnessed and converted for use as electricity.</p>
+              <p class= "hero-p" id="description">A solar panel consists of solar cells that convert the energy of photons sent by the sun into excited electrons via a semiconductor material, commonly doped silicon. These excited electrons create an electrical current that can be harnessed and converted for use as electricity.</p>
               <a href="blog/how-does-solar-work/index.html"></a>
           </a>
           <div class =" side-hero side-hero1"></div>
@@ -49,15 +198,199 @@
       <footer-component></footer-component>
     </div>
     <style>
-    
-    /* Hero Articles */
 
-    hero-container {
+    .header-container {
+      box-shadow: 0px 13px 19px -2px rgba(0,0,0,0.22);
+      z-index: 1;
+    }
+
+    .hero-container {
       display: grid;
-      grid-gap: 20px;
-      }
+      grid-gap: 5px;
+    }
 
-    .top{
+    .background {
+      display: grid;
+      background-image: url("images/background.png");
+      height: 30em;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .banner-text {
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      min-width: 75%;
+    }
+
+    .banner-text h1 {
+      margin-top: 2px;
+      min-width: 75%;
+      font-size: 50px;
+    }
+
+    .cards {
+      display : grid;
+      grid-template-columns: auto auto auto;
+      align-items: start;
+    }
+    
+    .card{
+      display: grid;
+      justify-self: center;
+      align-self: start;
+      background: rgba(221, 221, 221, 0.342);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      padding: 5px;
+      border-radius: 20px;
+      min-width: 200px;
+      max-width: 200px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card h3 {
+      place-self: center start;
+      grid-row: 1 / 1;
+      min-width: 6em;
+      display: flex;
+      text-align: center;
+    }
+
+    .card img {
+      place-self: center;
+      grid-row: 1 / 1;
+      display: flex;
+      max-height: 40px;
+    }
+    
+    .card .hide {
+      grid-area: 2 / 1 / 2 / 3;
+    }
+
+    .card-accordion .hide {
+      /* display: none; */
+      padding : 5px;
+      margin-bottom: 2px;
+    }
+
+    /* Hero List */
+
+    .main-list {
+    display: grid;
+    justify-items: center;
+    margin-top: 20px;
+    }
+
+    #accordion {
+      width: 80%;
+    }
+
+    #accordion div {
+        width:100%;
+        
+    }
+
+    #accordion .retailer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        background-color: white;
+        border: solid 1px gray;
+        padding: 2px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .hide p {
+      margin-top: 0px;
+      font-size: 14;
+    }
+
+    #accordion .hide {
+        display: none;
+        padding : 5px;
+        margin-bottom: 2px;
+    }
+
+    .company {
+      grid-row: 1 / span 2;
+      place-self: center;
+    }
+
+    .company, .green, .price, .trust {
+      margin-bottom: 0px;
+      margin-top: 5px;
+    }
+
+    .green-stars, .price-coins, .trust-shield {
+      margin-bottom: 5px;
+    }
+
+    .retailer.green {
+      grid-area: 1 / 2 / 2 / 2;
+    }
+
+    .green-stars {
+      display: flex;
+      justify-content: flex-start;
+      grid-area: 2 / 2 / 2 / 2;
+      justify-items: center;
+    }
+
+    .green-stars img {
+      display: flex;
+      justify-content: flex-end;
+      max-height: 30px;
+      max-width: 30px;
+    }
+
+    .retailer.price {
+      grid-area: 1 / 3 / 2 / 3;
+    }
+
+    .price-coins {
+      display: flex;
+      justify-content: flex-start;
+      grid-area: 2 / 3 / 2 / 3;
+      justify-items: center;
+    }
+
+    .price-coins img {
+      display: flex;
+      justify-content: flex-end;
+      max-height: 30px;
+      max-width: 30px;
+    }
+
+    .retailer.trust {
+      grid-area: 1 / 4 / 2 / 4;
+    }
+
+    .trust-shield {
+      display: flex;
+      justify-content: flex-start;
+      grid-area: 2 / 4 / 2 / 4;
+      justify-items: center;
+    }
+
+    .trust-shield img {
+      display: flex;
+      justify-content: flex-end;
+      max-height: 30px;
+      max-width: 30px;
+    }
+    
+    /* Blog Articles */
+
+
+    .blog{
       display: grid;
       grid-gap: 10px;
       padding: 10px;
@@ -145,7 +478,7 @@
     }
 
     @media (max-width: 1100px) {
-    .top {
+    .blog {
       grid-template-areas:
         "hero hero"
         "side-hero1 side-hero2"
@@ -170,21 +503,21 @@
   }
 
     @media (max-width: 600px) {
-      .top {
+      .blog{
         grid-template-areas:
         "hero"
         "side-hero1"
         "side-hero2"
-    }
+      }
 
-    .hero-h2 {
-      font-size: medium;
-    }
+      .hero-h2 {
+        font-size: medium;
+      }
 
-    .hero-p {
-      font-size: smaller;
+      .hero-p {
+        font-size: smaller;
+      }
     }
-  }
 
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
