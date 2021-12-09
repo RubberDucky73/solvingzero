@@ -45,7 +45,7 @@ footerTemplate.innerHTML = `
   </style>
   <footer>
     <ul>
-      <li><a href="careers/index.html">Careers</a></li>
+    <!-- <li><a href="careers/index.html">Careers</a></li>  -->
       <li><a href="legal/index.html">Legal</a></li>
       <li><a href="contact/index.html">Contact</a></li>
     </ul>
