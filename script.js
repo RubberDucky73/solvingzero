@@ -1,4 +1,4 @@
-// Create the clickable hamburger menu for mobile
+// Clickable hamburger menu for mobile
 const navButton = document.querySelector('button[aria-expanded]');
 
 function toggleNav({ target }) {
@@ -8,16 +8,8 @@ function toggleNav({ target }) {
 
 navButton.addEventListener('click', toggleNav);
 
-// Truncate the paragrah descriptions for the hero articles
+// Truncate the paragrah descriptions for the blog articles
 // Get the HTML element and set the trim length + make sure its not trimming in the middle of a word
-
-// var mobileDevice = window.matchMedia('(max-width: 700px)')
-
-// mobileDevice.addEventListener("load", handleDeviceChange);
-
-// function handleDeviceChange(size) {
-
-// if (size.matches) {
 
 var KeepOn = 'Keep Reading'
 var KeepLink = KeepOn.link("blog/how-does-solar-work/index.html")
