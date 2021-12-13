@@ -8,7 +8,7 @@ function toggleNav({ target }) {
 
 navButton.addEventListener('click', toggleNav);
 
-// Truncate the paragrah descriptions for the blog articles
+// Truncate the paragraph descriptions for the blog articles
 // Get the HTML element and set the trim length + make sure its not trimming in the middle of a word
 
 var KeepOn = 'Keep Reading'
