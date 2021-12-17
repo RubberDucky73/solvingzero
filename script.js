@@ -38,3 +38,9 @@ if (window.matchMedia("(max-width: 700px)").matches) {
      document.getElementById("description").innerHTML = document.getElementById("description").innerHTML + '... ' + KeepLink;
 };
 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S37YM3H52P');
+
