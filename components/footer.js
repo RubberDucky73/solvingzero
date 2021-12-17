@@ -50,6 +50,14 @@ footerTemplate.innerHTML = `
       <li><a href="contact/index.html">Contact</a></li>
     </ul>
   </footer>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S37YM3H52P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S37YM3H52P');
+  </script>
 `;
 
 class Footer extends HTMLElement {

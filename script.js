@@ -38,5 +38,3 @@ if (window.matchMedia("(max-width: 700px)").matches) {
      document.getElementById("description").innerHTML = document.getElementById("description").innerHTML + '... ' + KeepLink;
 };
 
-
-
