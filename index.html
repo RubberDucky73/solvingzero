@@ -6,18 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solving Zero</title>
-    <!--  Essential META Tags -->
     <meta property="og:title" content="Solving Zero">
     <meta property="og:type" content="png" />
     <meta property="og:image" content="images/solving_zero_social.png">
     <meta property="og:url" content="https://solvingzero.com">
-    <!--  Non-Essential, But Recommended -->
     <meta property="og:description" content="Save money and the planet by making one smart choice at a time.">
     <meta property="og:site_name" content="Solving Zero">
     <meta name="twitter:image:alt" content="Solving Zero Logo">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="stylesheet" type="text/css" href="styles/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/css/style.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S37YM3H52P"></script>
+    <script src="https://kit.fontawesome.com/ae5f17d194.js" crossorigin="anonymous"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -25,7 +24,12 @@
 
       gtag('config', 'G-S37YM3H52P');
   </script>
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+</head>
   <body>
     <div class="main-container">
       <header class = "header-container">
@@ -57,60 +61,218 @@
           <div class="banner-text">
             <h1 style = "text-shadow: 1px 1px 2px rgb(175, 175, 175);">Save money and the planet</h1>
             <p>Switching energy providers can save the average Melbournian at least <strong>$100</strong> on their energy bill&#42; and a massive amount of green house gas</p>
-          </div>
-        </div>
-        <h2>Retailer Rating Criteria</h2>
-        <p>Each retailer is given a final rank determined by a combination of their green rating, affordability, and trustworthiness</p>
-        <div class="card-accordion">
-          <div class = "cards">
-            <div class= "card green-card">
-              <img src= "images/star.png">
-              <h3>Green Rating</h3>
-              <div class = "hide">
-                <p>A synthesis of all green programs and offers that the retailer provides while also considering their policy towards fossil fuels. A few key criteria considered are:</p>
-                <ul>
-                  <li>Offers GreenPower to customers
-                  <li>The retailer is carbon neutral or provides a carbon-neutral option
-                  <li>Invests in renewable energy
-                  <li>Does not support fossil fuels (including parent or sister companies)
-                  <li>Offers incentives or programs to promote electric vehicles, solar, demand response or community energy</li>
-                </li>
-                </ul>
-              </div>
-            </div>
-            <div class = "card price-card">
-              <img src= "images/coin.png">
-              <h3>Affordability</h3>
-              <div class = "hide">
-                <p>A mostly quantitative analysis of the pricing offered by retailers for both single rate and time of use plans. Five coins indicates best pricing (cheapest), one coin means worse pricing (expensive). A few key criteria considered are:</p>
-                <ul>             
-                  <li>Pricing of plans offered from the retailers Energy Facts Sheets               
-                  <li>The price ranking of retailers completed by the Victorian Essential Services Commission            
-                  <li>The discount percentage in relation to the Victorian Default Offer               
-                  <li>Additional costs and fees</li>
-                </ul>
-              </div>
-            </div>
-            <div class= "card trust-card">
-              <img src= "images/shield.png">
-              <h3>Trustworthiness</h3>
-              <div class = "hide">
-                <p>An averaging of each companies current customer satisfaction, complied through online reviews. Also any compliance action made by the Victorian Essential Services Commission in the last few years. A few key criteria include:               </p>
-                  <ul>                  
-                    <li>Aggregation of online reviews by customers about the retailer                 
-                    <li>Fines or compliance action taken against the retailer                   
-                    <li>Percentage of customers that complain about the service (where available)
-                  </ul>
-              </div>
+            <button class="trigger">Get Started!</button>
             </div>
           </div>
-        </div>
+          <div class="modal">
+            <div class ="modal-content">
+                <span class="close-button">x</span>
+                <h3 class = "modal-title">Choose your current provider and preferences below</h3>
+                  <label class="provider" for="provider-list">1. Who is your current provider?</label>
+                  <select id="select-provider" placeholder="Choose your provider...">
+                    <option value="">Select a company...</option>
+                    <!-- <option value="NA">I don't have one</option> -->
+                    <option value="1stEnergy">1st Energy</option>
+                    <option value="agl">AGL</option>
+                    <option value="alinta">Alinta Energy</option>
+                    <option value="amber">Amber Electric</option>
+                    <option value="covaU">CovaU Energy</option>
+                    <option value="diamond">Diamond Energy</option>
+                    <option value="discover">Discover Energy</option>
+                    <option value="dodo">Dodo</option>
+                    <option value="box">Electricty in a Box</option>
+                    <option value="elysian">Elysian Energy</option>
+                    <option value="energyAus">Energy Australia</option>
+                    <option value="energyLocal">Energy Locals</option>
+                    <option value="gloBird">GloBird Energy</option>
+                    <option value="kogan">Kogan Energy</option>
+                    <option value="lumo">Lumo Energy</option>
+                    <option value="momentum">Momentum Energy</option>
+                    <option value="origin">Origin Energy</option>
+                    <option value="ovo">Ovo Energy</option>
+                    <option value="people">People Energy</option>
+                    <option value="powerClub">Powerclub</option>
+                    <option value="powerDirect">Power Direct</option>
+                    <option value="powerShop">Powershop</option>
+                    <option value="qEnergy">QEnergy</option>
+                    <option value="reAmped">ReAmped</option>
+                    <option value="red">Red Energy</option>
+                    <option value="simply">Simply Energy</option>
+                    <option value="sumo">Sumo</option>
+                    <option value="tango">Tango Energy</option>
+                  </select>
+                  <div id="green-form-wrapper">
+                    <form class="green-form" action="/p/quote.php" method="GET">
+                      <h4 id="form-title">2. How Green do you want your energy? 
+                        <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the greener the energy</span>
+                        </div>
+                      </h4>
+                      <div id="green-rating-slider">
+                        <input class="green-input" type="radio" name="green-amount" id="1" value="1" required>
+                        <label class="green-label" for="1" data-green-amount="No preference"></label>
+                        <input class="green-input" type="radio" name="green-amount" id="2" value="3" required>
+                        <label class="green-label" for="2" data-green-amount="3+"></label>
+                        <input class="green-input" type="radio" name="green-amount" id="3" value="3.5" required>
+                        <label class="green-label" for="3" data-green-amount="3.5+"></label>
+                        <input class="green-input" type="radio" name="green-amount" id="4" value="4" required>
+                        <label class="green-label" for="4" data-green-amount="4+"></label>
+                        <input class="green-input" type="radio" name="green-amount" id="5" value="4.5" required>
+                        <label class="green-label" for="5" data-green-amount="4.5+"></label>
+                        <div class="green-rating-pos"></div>
+                      </div> 
+                      <div id="green-rating-slider-700">
+                        <input class="green-input" type="radio" name="green-amount" id="6" value="1" required>
+                        <label class="green-label" for="6" data-green-amount="Show all"></label>
+                        <input class="green-input" type="radio" name="green-amount" id="7" value="2" required>
+                        <label class="green-label" for="7" data-green-amount="3+"></label>
+                        <input class="green-input" type="radio" name="green-amount" id="8" value="3" required>
+                        <label class="green-label" for="8" data-green-amount="3.5+"></label>
+                        <input class="green-input" type="radio" name="green-amount" id="9" value="4" required>
+                        <label class="green-label" for="9" data-green-amount="4+"></label>
+                        <input class="green-input" type="radio" name="green-amount" id="10" value="5" required>
+                        <label class="green-label" for="10" data-green-amount="4.5+"></label>
+                        <div class="green-rating-pos"></div>
+                      </div>
+                    </form>
+                  </div>
+                  <div id="price-form-wrapper">
+                    <form class="price-form" action="/p/quote.php" method="GET">
+                      <h4 id="form-title">3. How affordable do you want your energy?
+                        <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the more affordable the energy</span>
+                        </div>
+                      </h4>
+                      <div id="price-rating-slider">
+                        <input class="price-input" type="radio" name="price-amount" id="11" value="1" required>
+                        <label class="price-label" for="11" data-price-amount="No preference"></label>
+                        <input class="price-input" type="radio" name="price-amount" id="12" value="3" required>
+                        <label class="price-label" for="12" data-price-amount="3+"></label>
+                        <input class="price-input" type="radio" name="price-amount" id="13" value="3.5" required>
+                        <label class="price-label" for="13" data-price-amount="3.5+"></label>
+                        <input class="price-input" type="radio" name="price-amount" id="14" value="4" required>
+                        <label class="price-label" for="14" data-price-amount="4+"></label>
+                        <input class="price-input" type="radio" name="price-amount" id="15" value="4.5" required>
+                        <label class="price-label" for="15" data-price-amount="4.5+"></label>
+                        <div id="price-rating-pos"></div>
+                      </div>
+                      <div id="price-rating-slider-700">
+                        <input class="price-input" type="radio" name="price-amount" id="16" value="1" required>
+                        <label class="price-label" for="16" data-price-amount="Show all"></label>
+                        <input class="price-input" type="radio" name="price-amount" id="17" value="2" required>
+                        <label class="price-label" for="17" data-price-amount="3+"></label>
+                        <input class="price-input" type="radio" name="price-amount" id="18" value="3" required>
+                        <label class="price-label" for="18" data-price-amount="3.5+"></label>
+                        <input class="price-input" type="radio" name="price-amount" id="19" value="4" required>
+                        <label class="price-label" for="19" data-price-amount="4+"></label>
+                        <input class="price-input" type="radio" name="price-amount" id="20" value="5" required>
+                        <label class="price-label" for="20" data-price-amount="4.5+"></label>
+                        <div id="price-rating-pos"></div>
+                      </div>
+                    </form>
+                  </div>
+                  <div id="trust-form-wrapper">
+                    <form class="trust-form" action="/p/quote.php" method="GET">
+                      <h4 id="form-title">4. How trustworthy do you expect a provider to be?
+                        <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the more trustworthy the company</span>
+                        </div>
+                      </h4>
+                      <div id="trust-rating-slider">
+                        <input class="trust-input" type="radio" name="trust-amount" id="21" value="1" required>
+                        <label class="trust-label" for="21" data-trust-amount="No preference"></label>
+                        <input class="trust-input" type="radio" name="trust-amount" id="22" value="3" required>
+                        <label class="trust-label" for="22" data-trust-amount="3+"></label>
+                        <input class="trust-input" type="radio" name="trust-amount" id="23" value="3.5" required>
+                        <label class="trust-label" for="23" data-trust-amount="3.5+"></label>
+                        <input class="trust-input" type="radio" name="trust-amount" id="24" value="4" required>
+                        <label class="trust-label" for="24" data-trust-amount="4+"></label>
+                        <input class="trust-input" type="radio" name="trust-amount" id="25" value="4.5" required>
+                        <label class="trust-label" for="25" data-trust-amount="4.5+"></label>
+                        <div id="trust-rating-pos"></div>
+                      </div>
+                      <div id="trust-rating-slider-700">
+                        <input class="trust-input" type="radio" name="trust-amount" id="26" value="1" required>
+                        <label class="trust-label" for="26" data-trust-amount="Show all"></label>
+                        <input class="trust-input" type="radio" name="trust-amount" id="27" value="2" required>
+                        <label class="trust-label" for="27" data-trust-amount="3+"></label>
+                        <input class="trust-input" type="radio" name="trust-amount" id="28" value="3" required>
+                        <label class="trust-label" for="28" data-trust-amount="3.5+"></label>
+                        <input class="trust-input" type="radio" name="trust-amount" id="29" value="4" required>
+                        <label class="trust-label" for="29" data-trust-amount="4+"></label>
+                        <input class="trust-input" type="radio" name="trust-amount" id="30" value="5" required>
+                        <label class="trust-label" for="30" data-trust-amount="4.5+"></label>
+                        <div id="trust-rating-pos"></div>
+                      </div>
+                    </form>
+                  </div>
+                  <button class="submit-modal" id="submit">Submit</button>
+                </div>
+            </div>
         <div class = "main-list">
           <div id="accordion">
-            <h2>Top three greenest and affordable energy retailers in Melbourne</h2>
-            <div class = "retailer first">
-              <h3 class= "company">Diamond Energy</h3>
-              <!-- <h4 class = "green">Green Rating</h4> -->
+            <h2 class="listHeaders" id="list1">Top three greenest and affordable energy retailers in Melbourne
+              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+            </h2>
+            <div id="myModal" class="popUp">
+              <div class="popUp-content">
+                <div class="modal-header">
+                  <span class="closer">&times;</span>
+                  <h2 class= "popTitle">What do these ratings mean?</h2>
+                </div>
+                <div class="modal-body">
+                  <div class="card-accordion">
+                    <div class = "cards">
+                      <div class= "card green-card">
+                        <img src= "images/star.png">
+                        <h3>Green Rating</h3>
+                        <div class = "hide">
+                          <p>A synthesis of all green programs and offers that the retailer provides while also considering their policy towards fossil fuels. A few key criteria considered are:</p>
+                          <ul>
+                            <li>Offers GreenPower to customers
+                            <li>The retailer is carbon neutral or provides a carbon-neutral option
+                            <li>Invests in renewable energy
+                            <li>Does not support fossil fuels (including parent or sister companies)
+                            <li>Offers incentives or programs to promote electric vehicles, solar, demand response or community energy</li>
+                          </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class = "card price-card">
+                        <img src= "images/coin.png">
+                        <h3>Affordability</h3>
+                        <div class = "hide">
+                          <p>A mostly quantitative analysis of the pricing offered by retailers for both single rate and time of use plans. Five coins indicates best pricing (cheapest), one coin means worse pricing (expensive). A few key criteria considered are:</p>
+                          <ul>             
+                            <li>Pricing of plans offered from the retailers Energy Facts Sheets               
+                            <li>The price ranking of retailers completed by the Victorian Essential Services Commission            
+                            <li>The discount percentage in relation to the Victorian Default Offer               
+                            <li>Additional costs and fees</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class= "card trust-card">
+                        <img src= "images/shield.png">
+                        <h3>Trustworthiness</h3>
+                        <div class = "hide">
+                          <p>An averaging of each companies current customer satisfaction, complied through online reviews. Also any compliance action made by the Victorian Essential Services Commission in the last few years. A few key criteria include:               </p>
+                            <ul>                  
+                              <li>Aggregation of online reviews by customers about the retailer                 
+                              <li>Fines or compliance action taken against the retailer                   
+                              <li>Percentage of customers that complain about the service (where available)
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class ="auLogo">
+                    <img src= "images/auOwned.png">
+                    <p style="display:inline"> = Australian owned company </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <h2 class="listHeaders" id="list1.1" style= "display: none">The best options that you should consider based on your criteria</h2>
+            <div class = "retailer" id="diamond" name="company" data-rank="4" data-green="5" data-price="3.5" data-trust="4.5">
+              <h3 class ="company">Diamond Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
                 <img src= "images/star.png">
@@ -118,7 +280,6 @@
                 <img src= "images/star.png">
                 <img src= "images/star.png">
               </div>
-              <!-- <h4 class = "price">Price</h4> -->
               <div class = "price-coins">
                 <img src= "images/coin.png">
                 <img src= "images/coin.png">
@@ -126,7 +287,6 @@
                 <img src= "images/half-coin.png">
                 <img src= "images/empty-coin.png">
               </div>
-              <!-- <h4 class = "trust">Trustworthiness</h4> -->
               <div class = "trust-shield">
                 <img src= "images/shield.png">
                 <img src= "images/shield.png">
@@ -135,6 +295,10 @@
                 <img src= "images/half-shield.png">
               </div>
               <p>Best for: Supporting green energy in Australia</p>
+              <div class ="auOwned">
+                <img src= "images/auOwned.png">
+                <!-- <span class="auToolTip">Aussie Owned</span> -->
+              </div>
             </div>
             <div class = "hide">
               <p>Based in Melbourne Diamond Energy is by far the greenest energy retailer in Victoria with large investments into renewable energy. They actively invest in renewable energy projects all across Australia.
@@ -165,7 +329,7 @@
               </a>
               <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <div class = "retailer second">
+            <div class = "retailer" id="energyLocal" name="company" data-rank="4" data-green="4" data-price="3.5" data-trust="4">
               <h3 class= "company">Energy Locals</h3>
               <!-- <h4 class = "green">Green Rating</h4> -->
               <div class = "green-stars">
@@ -192,6 +356,9 @@
                 <img src= "images/empty-shield.png">
               </div>
               <p>Best for: You want to buy cheap GreenPower</p>
+              <div class ="auOwned">
+                <img src= "images/auOwned.png">
+              </div>
             </div>
             <div class = "hide">
               <p> Energy Locals is a carbon neutral retailer with affordable pricing. If you are renting or don't have solar then their plans are a great option, particularly if you want to buy GreenPower to further offset your carbon emissions.
@@ -222,7 +389,7 @@
               </a>
               <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <div class = "retailer third">
+            <div class = "retailer" id="discover" name="company" data-rank="4" data-green="4" data-price="2.5" data-trust="5">
               <h3 class= "company">Discover Energy</h3>
               <!-- <h4 class = "green">Green Rating</h4> -->
               <div class = "green-stars">
@@ -248,7 +415,11 @@
                 <img src= "images/shield.png">
                 <img src= "images/shield.png">
               </div>
-              <p>Best for: Wanting a low stress trustworthy brand</p>
+              <p>Best for: Wanting a trustworthy brand</p>
+              <div class ="auOwned">
+                <img src= "images/auOwned.png">
+                <!-- <span class="auToolTip">Aussie Owned</span> -->
+              </div>
             </div>
             <div class="hide">
               <p>
@@ -282,9 +453,11 @@
                 </a>
                 <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <h2>Three runner-up retailers that are still great choices</h2>
-            <div class = "retailer">
-              <h3 class= "company">ReAmped Energy</h3>
+            <h2 class="listHeaders" id="list2">Three runner-up retailers that are still great choices
+              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+            </h2>
+            <div class = "retailer" id="reAmped" name="company" data-rank="4" data-green="3.5" data-price="4.5" data-trust="3.5">
+              <h3 class= "company">ReAmped</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
                 <img src= "images/star.png">
@@ -307,6 +480,10 @@
                 <img src= "images/empty-shield.png">
               </div>
               <p>Best for: On a budget but want to be green</p>
+              <div class ="auOwned">
+                <img src= "images/auOwned.png">
+                <!-- <span class="auToolTip">Aussie Owned</span> -->
+              </div>
             </div>
             <div class="hide">
               <p>
@@ -337,7 +514,7 @@
                 </a>
                 <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="amber" name="company" data-rank="4" data-green="4" data-price="1.5" data-trust="4">
               <h3 class= "company">Amber Electric</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -361,6 +538,10 @@
                 <img src= "images/empty-shield.png">
               </div>
               <p>Best for: Want a tech approach to your energy</p>
+              <div class ="auOwned">
+                <img src= "images/auOwned.png">
+                <!-- <span class="auToolTip">Aussie Owned</span> -->
+              </div>
             </div>
             <div class="hide">
               <p>
@@ -392,7 +573,7 @@
                 </a>
                 <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="ovo" name="company" data-rank="4" data-green="4" data-price="4" data-trust="">
               <h3 class= "company">Ovo Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -449,9 +630,12 @@
                 </a>
                 <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <h2>Six retailers that have carbon neutral plans but are associated with massive amounts of green house gas emissions</h2>             
-            <div class = "retailer">
-              <h3 class= "company">PowerShop</h3>
+            <h2 class="listHeaders" id="list3">Six retailers that have carbon neutral plans but are associated with massive amounts of green house gas emissions
+              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+            </h2>             
+            <h2 class="listHeaders" id="list3.1" style= "display: none">Other options you could consider based on your criteria</h2>
+            <div class = "retailer" id="powerShop" name="company" data-rank="3" data-green="3" data-price="4" data-trust="3">
+              <h3 class= "company">Powershop</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
                 <img src= "images/star.png">
@@ -504,7 +688,7 @@
                 </a>
                 <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="simply" name="company" data-rank="3" data-green="2.5" data-price="3.5" data-trust="1">
               <h3 class= "company">Simply Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -530,7 +714,7 @@
             </div>
             <div class="hide">
               <p>
-                Owned by parent company ENGIE, Simply Energy began offering carbon neutral plans as of 2021. Historically ENGIE was a large investor into coal around the world but has since divested, they are however still heavily investing into natural gas as a fossil fuel. If you choose this retailer we would recommend opting into the carbon neutral plan at the very least.
+                Owned by French parent company ENGIE, Simply Energy began offering carbon neutral plans as of 2021. Historically ENGIE was a large investor into coal around the world but has since divested, they are however still heavily investing into natural gas as a fossil fuel. If you choose this retailer we would recommend opting into the carbon neutral plan at the very least.
                 </p>
                 <h4>Green Rating 2.5/5</h4>
                 <ul>
@@ -557,7 +741,7 @@
                 </a>
                 <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="origin" name="company" data-rank="3" data-green="2.5" data-price="2.5" data-trust="2">
               <h3 class= "company">Origin Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -583,7 +767,7 @@
             </div>
             <div class="hide">
               <p>
-                Origin is one of the largest retailers in Victoria and has historically been one of the largest polluters of all the retailers. They are the largest user of natural gas as a fossil fuel for energy production in Australia. They also use coal fired plants for energy production. If you choose this retailer we would recommend opting into the carbon neutral plan at the very least.
+                Origin is the largest retailer in Australia and has historically been one of the largest polluters in the whole country. They are the largest user of natural gas as a fossil fuel for energy production in Australia. They also use coal fired plants for energy production. If you choose this retailer we would recommend opting into the carbon neutral plan at the very least.
               </p>
               <h4>Green Rating 2.5/5</h4>
               <ul>
@@ -608,12 +792,15 @@
                 <li>Was fined $5 million dollars for charging small businesses unnecessary exit fees, this is the largest fine every issued to a retailer </li>
               </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
               <a href ="https://bit.ly/324500w">
                 <button>Sign Up with Origin!</button>
               </a>
               <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="energyAus" name="company" data-rank="3"  data-green="2.5" data-price="3.5" data-trust="1.5">
               <h3 class= "company">Energy Australia</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -639,7 +826,7 @@
             </div>
             <div class="hide">
               <p>
-              Another one of the large energy retailers in the country with large investments into coal fired power and natural gas. You can read about all of Energy Australia's coal fired power plants right <a href="https://www.energyaustralia.com.au/about-us/energy-generation/mt-piper-power-station">on their website</a>. If you choose this retailer we would recommend opting into the carbon neutral plan at the very least.
+              The thrid largest energy retailer in the country with large investments into coal fired power and natural gas. A subsidiary of the Hong Kong CLP Group. You can read about all of Energy Australia's coal fired power plants right <a href="https://www.energyaustralia.com.au/about-us/energy-generation/mt-piper-power-station">on their website</a>. If you choose this retailer we would recommend opting into the carbon neutral plan at the very least.
               </p>
               <h4>Green Rating 2.5/5</h4>
               <ul>
@@ -668,7 +855,7 @@
               </a>
               <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="agl" name="company" data-rank="3" data-green="2" data-price="3.5" data-trust="1">
               <h3 class= "company">AGL Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -721,12 +908,15 @@
                 <li>Customer complaints are quite high for this retailer</li>
               </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
               <a href ="https://bit.ly/3e36nyY">
                 <button>Sign Up with AGL!</button>
               </a>
               <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="powerDirect" name="company" data-rank="3" data-green="1.5" data-price="2.5" data-trust="1">
               <h3 class= "company">PowerDirect</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -776,13 +966,18 @@
                 <li>You have to call them directly to sign up</li>
               </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
               <a href ="https://bit.ly/3E5k6zY">
                 <button>Sign Up with PowerDirect!</button>
               </a>
               <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <h2>Not carbon neutral but offer a variation of green programs or incentives</h2>
-            <div class = "retailer">
+            <h2 class="listHeaders" id="list4">Not carbon neutral but offer a variation of green programs or incentives
+              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+            </h2>
+            <div class = "retailer" id="covaU" name="company" data-rank="2" data-green="3" data-price="3" data-trust="4.5">
               <h3 class= "company">CovaU Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -828,8 +1023,12 @@
                 <ul>
                   <li>On average customers have given CovaU a rating of 4.3 stars
                   <li>Complaint from customers are few and far between
+                </ul>
+                <div class ="auLogo">
+                  <img src= "images/auOwned.png">
+                </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="momentum" name="company" data-rank="2" data-green="3.5" data-price="3" data-trust="2">
               <h3 class= "company">Momentum Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -879,8 +1078,11 @@
                   <li>Was part of a $52,000 repayment compliance action for not offering the best pricing messaging to some customers
                   </li>
                 </ul>
+                <div class ="auLogo">
+                  <img src= "images/auOwned.png">
+                </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="red" name="company" data-rank="2" data-green="3" data-price="2" data-trust="2">
               <h3 class= "company">Red Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -926,10 +1128,13 @@
                 <ul>
                   <li>Has an average rating of around 2 stars from customers
                   <li>A somewhat sizeable amount of complaints from customers
-                </li>
+                  </li>
                 </ul>
+                <div class ="auLogo">
+                  <img src= "images/auOwned.png">
+                </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="dodo" name="company" data-rank="2" data-green="3" data-price="2.5" data-trust="3">
               <h3 class= "company">Dodo</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -975,10 +1180,13 @@
               <h4>Trustworthiness: 3/5</h4>
               <ul>
                 <li>Has an average rating of around 2.7 stars from customers
-              </li>
+                </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="lumo" name="company" data-rank="2" data-green="2.5" data-price="4" data-trust="1">
               <h3 class= "company">Lumo Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -1023,10 +1231,13 @@
               <ul>
                 <li>Has an average rating of around 1.4 stars from customers
                 <li>A sizeable amount of complaints from customers, more than sister company Red Energy
-              </li>
+                </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="tango" name="company" data-rank="2" data-green="1.5" data-price="2" data-trust="3.5">
               <h3 class= "company">Tango Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -1078,9 +1289,12 @@
               </li>
               </ul>
             </div>
-            <h2>Retailers we currently would not recommend using</h2>
-            <div class = "retailer">
-              <h3 class= "company">PowerClub</h3>
+            <h2 class="listHeaders" id="list5">Retailers we currently would not recommend using
+              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+            </h2>
+            <h2 class="listHeaders" id="list5.1" style= "display: none">Retailers we currently would not recommend using but fit your criteria</h2>
+            <div class = "retailer" id="powerClub" name="company" data-rank="1" data-tag="low" data-green="2" data-price="3.5" data-trust="3.5">
+              <h3 class= "company">Powerclub</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
                 <img src= "images/star.png">
@@ -1124,10 +1338,13 @@
               <h4>Trustworthiness: 3.5/5</h4>
               <ul>
                 <li>Has an average rating of around 3.2 stars from customers
-              </li>
+                </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="gloBird" name="company" data-rank="1" data-green="1.5" data-price="5" data-trust="4">
               <h3 class= "company">GloBird Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -1175,10 +1392,13 @@
               <ul>
                 <li>Has an average rating of around 3.7 stars from customers
                 <li>A low amount of complaints from customers
-              </li>
+                </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="1stEnergy" name="company" data-rank="1" data-green="1.5" data-price="3.5" data-trust="3">
               <h3 class= "company">1st Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -1223,10 +1443,13 @@
               <ul>
                 <li>Has an average rating of around 3.3 stars from customers
                 <li>A somewhat sizeable amount of complaints from customers
-              </li>
+                </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="elysian" name="company" data-rank="1" data-green="2" data-price="2" data-trust="2">
               <h3 class= "company">Elysian Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -1273,9 +1496,12 @@
                   <li>On average customer reviews are around 2.0 stars for this retailer
                   </li>
                 </ul>
+                <div class ="auLogo">
+                  <img src= "images/auOwned.png">
+                </div>
             </div>
-            <div class = "retailer">
-              <h3 class= "company">Sumo Power</h3>
+            <div class = "retailer" id="sumo" name="company" data-rank="1" data-green="1.5" data-price="3.5" data-trust="1">
+              <h3 class= "company">Sumo</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
                 <img src= "images/half-star.png">
@@ -1323,10 +1549,13 @@
                 <li>In 2021 Sumo Power admitted to misleading Victorians about its prices and must pay $1.2 million in penalties and $800,000 back to its customers
                 <li>Compliance action was taken to make best offering messaging more prominent, no fine</li>
                 <li>Has a very high level of customer complaints, could be related to the above mentioned fines</li>
-              </li>
+                </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="kogan" name="company" data-rank="1" data-green="1.5" data-price="3.5" data-trust="">
               <h3 class= "company">Kogan Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -1374,9 +1603,12 @@
               <ul>
               </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
             </div>
-            <div class = "retailer">
-              <h3 class= "company">QEnergy Limited</h3>
+            <div class = "retailer" id="qEnergy" name="company" data-rank="1" data-green="1.5" data-price="4" data-trust="3">
+              <h3 class= "company">QEnergy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
                 <img src= "images/half-star.png">
@@ -1404,29 +1636,30 @@
                 A Brisbane based retailer that has no green programs or incentives beyond what is legally required for the solar feed-in tariff. Pricing is on the more affordable end of the market.
               </p>
               <h4>Green Rating 1.5/5</h4>
-              <ul>
                 <ul>
                   <li>Has virtually no green programs and incentives to speak of
                   <li>Does not offer carbon neutral plans or even GreenPower
                   <li>Does not offer battery tariffs, community energy sharing or demand response programs
                   <li>The solar feed-in tariff is the legally required minimum
                   <li>At least they are not actively supporting coal or natural gas energy production</li>
-                </li>
-              </li>
-              </ul>
+                  </li>
+                </ul>
               <h4>Affordability: 4/5</h4>
               <ul>
                 <li>Overall pricing for time of use, single rate and energy consumption at varying levels is all pretty reasonable 
                 <li>Ranked by the ESC as one of the cheaper energy retailers available when looking at median pricing
-              </li>
+                </li>
               </ul>
               <h4>Trustworthiness: 3/5</h4>
               <ul>
                 <li>Has an average customer rating of 3 stars, but also a large amount of both very low and high reviews on either side
-              </li>
+                </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="alinta" name="company" data-rank="1" data-green="2" data-price="4" data-trust="1">
               <h3 class= "company">Alinta Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -1477,7 +1710,7 @@
               </li>
               </ul>
             </div>
-            <div class = "retailer">
+            <div class = "retailer" id="people" name="company" data-rank="1" data-green="1.5" data-price="1" data-trust="1.5">
               <h3 class= "company">People Energy</h3>
               <div class = "green-stars">
                 <img src= "images/star.png">
@@ -1525,6 +1758,9 @@
                 <li>Has an average rating of around 1.2 stars from customers
               </li>
               </ul>
+              <div class ="auLogo">
+                <img src= "images/auOwned.png">
+              </div>
             </div>              
           </div>
         </div>
@@ -1556,10 +1792,6 @@
       display: grid;
       grid-gap: 5px;
     }
-    
-    h2 {
-      margin: 0px 5px 10px 15px;
-    }
 
     p {
       margin: 0 5px 10px 15px;
@@ -1569,6 +1801,7 @@
 
     .background {
       display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
       background-image: url("images/background.png");
       height: 30em;
       background-position: center;
@@ -1590,31 +1823,201 @@
     }
 
     .banner-text h1 {
-      margin-top: 60px;
+      display: grid;
+      margin-top: 100px;
       margin-bottom: 10px;
       min-width: 75%;
       font-size: 340%;
     }
 
+    /* MODAL */
+
+    .trigger {
+      background-color: white;
+      color: black;
+      width: 200px;
+      height: 60px;
+      font-weight: bolder;
+      font-size: 18px;
+      padding: 12px 28px;
+      border-radius: 8px;
+      margin: 50px 0 0 0;
+      border: 0px solid black;
+      letter-spacing: 0.6px;
+      box-shadow: 2px 3px 3px #888888;
+    }
+
+    .trigger:hover {
+      background-color: black; /* Green */
+      color: white;
+    }
+
+    .trigger:active {
+      transform: translateY(4px);
+    }
+
+    .modal {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.1);
+      transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+    .show-modal {
+      display: grid;
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1.0);
+      transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+    .close-button {
+      grid-area: 1 / 4 / 1 / 4;
+      justify-self: end;
+      align-items: center;
+      float: right;
+      width: 2rem;
+      line-height: 1.75rem;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 0.25rem;
+      background-color: lightgray;
+    }
+
+    .close-button:hover {
+      background-color: darkgray;
+    }
+
+    .modal-title {
+      margin: 0;
+      margin: 0px 0 10px 0;
+      color: green;
+      font-weight: bolder;
+      border-start-start-radius: 0.5rem;
+    }
+
+    .option {
+      overflow:auto;
+      margin: 0;
+    }
+
+    .search-providers {
+      overflow:auto;
+      grid-row: 2;
+      margin-top: .6rem;
+    }
+
+    #provider-choice {
+      grid-row: 3;
+      max-width: 250px;
+      font-size: large;
+      padding: 3px 1px 0px 5px;
+      margin: 5px 0px 5px 0px;
+    }
+
+    .submit-modal {
+      grid-row: 7;
+      display: flex;
+      justify-self: center;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      margin: 30px 0 0 0;
+    }
+
+    .submit-modal:hover {
+      background-color: white; /* Green */
+      color: black;
+    }
+
+    .submit-modal:active {
+      transform: translateY(4px);
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      font-size: 18px;
+    }
+
+    .fa-circle-info {
+      color: gray;
+      opacity: 50%;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 260px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 5px;
+      position: absolute;
+      z-index: 1;
+      top: -15px;
+      left: 110%;
+      font-size: 13px;
+    }
+
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent black transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+
     /* Info Cards */
+
+    #list1 {
+        margin-top: 0px;
+      }
+
+    .myBtn {
+      cursor: pointer;
+      color: Green;
+      border-bottom: 1px dotted black;
+      font-size: 13px;
+    }
+
+    .ratingInfo img {
+      max-height: 40px;
+      max-width: 40px;
+      position: relative;
+      top: 8px;
+      z-index: -1
+    }
 
     .cards {
       display : grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      place-items: start stretch;
-      margin: 0 5px 0 5px;
+      grid-template-columns: 1fr;
       max-width: 100%;
+      margin-bottom: 30px;
     }
     
     .card{
       display: grid;
-      align-self: start;
-      margin: 0 15px 0 15px;
+      justify-items: center;
+      margin: 10px 15px 10px 15px;
       background: rgba(221, 221, 221, 0.342);
-      padding: 5px;
+      /* padding: 5px; */
       border-radius: 20px;
-      min-width: 200px;
-      max-width: 500px;
       cursor: pointer;
       font-weight: bold;
     }
@@ -1647,6 +2050,23 @@
       padding : 5px;
       margin-bottom: 2px;
     }
+/* 
+    .auLogo {
+      display: grid;
+      margin: 10px;
+      place-self: center start;
+    }
+
+    .auLogo img {
+      grid-area: 1 / 1 / 1 / 1;
+      place-self: center;
+    }
+
+    .auLogo p {
+      place-self: center;
+      grid-area: 1 / 2 / 1 / 2;
+      margin: 0 0 0 4px;
+    } */
 
     /* Retailers List */
 
@@ -1656,15 +2076,111 @@
       margin-top: 20px;
     }
 
-    #accordion {
+    /* PopUp modal */
+
+/* The Modal (background) */
+    .popUp {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+ /* Enable scroll if needed */
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Modal Content */
+    .popUp-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
       width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s;
+      border-radius: 0.5rem;
+      max-height: 80%;
+      overflow: auto;
+      top: 10%;
     }
 
-    #accordion div {
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:10%; opacity:1}
+    }
+
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:10%; opacity:1}
+    }
+
+    /* The Close Button */
+    .closer {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .closer:hover,
+    .closer:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-header {
+      padding: 2px 16px;
+      margin: 0px 0 10px 0;
+      background-color: #5cb85c;
+      color: white;
+      border-start-start-radius: 0.5rem;
+    }
+
+    .modal-body {
+      display: grid;
+    }
+
+    .modal-body img {
+      place-self: center;
+      grid-column: 1;
+      max-height: 40px;
+      max-width: 40px;
+    }
+
+    .gtitlePop{
+      grid-row: 1;
+      grid-column: 2;
+      place-self: center start;
+      display: inline;
+      bottom: 10px;
+    }
+
+    .greenPop {
+      grid-row: 2;
+      grid-column: 1 / span 2;
+    }
+
+    /* Accordion company list */
+
+    #accordion {
+      width: 90%;
+    }
+
+    /* #accordion div {
         width:100%;   
-    }
+    } */
 
-    #accordion h2 {
+    .listHeaders {
       margin: 40px 5px 10px 0px;
     }
 
@@ -1681,6 +2197,7 @@
       grid-column: 1 / span 3;
       place-self: start;
       font-size: medium;
+      margin-top: 15px;
     }
 
     .retailer:hover {
@@ -1691,14 +2208,14 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         padding: 2px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         cursor: pointer;
         font-weight: bold;
     }
 
     .hide p {
       margin-top: 0px;
-      font-size: 1rem;
+      font-size: 14px;
     }
 
     .hide li {
@@ -1732,7 +2249,7 @@
     }
 
     .company, .green, .price, .trust {
-      margin: 1em 0 1em 0;
+      margin: 1.5em 0 1em 0;
     }
 
     .green-stars, .price-coins, .trust-shield {
@@ -1749,8 +2266,9 @@
     .green-stars img {
       display: flex;
       justify-content: flex-end;
-      max-height: 30px;
-      max-width: 30px;
+      max-height: 35px;
+      max-width: 35px;
+      margin-right: 2px;
     }
 
     .price-coins {
@@ -1763,9 +2281,9 @@
     .price-coins img {
       display: flex;
       justify-content: flex-end;
-      max-height: 30px;
-      max-width: 30px;
-      padding-right: 0.7px;
+      max-height: 35px;
+      max-width: 35px;
+      margin-right: 2px;
     }
 
     .trust-shield {
@@ -1778,14 +2296,88 @@
     .trust-shield img {
       display: flex;
       justify-content: flex-end;
-      max-height: 30px;
-      max-width: 30px;
+      max-height: 35px;
+      max-width: 35px;
+      margin-right: 2px;
     }
 
     .trust-shield p {
       place-self: center;
       margin: 5px 0px 0 0;
     }
+
+    .auOwned {
+      display: flex;
+      justify-content: end;
+      /* place-self: center start; */
+      grid-area: 2 / 4 / 2 / 4;
+      position: relative;
+    }
+
+    .auOwned img {
+      max-height: 30px;
+      max-width: 30px;
+      margin: 10px 30px 0 20px;
+      /* grid-row: 1; */
+      /* grid-column: 1; */
+      display: flex;
+      align-self: center;
+      z-index: -1;
+    }
+
+    .auOwned p {
+      display: flex;
+      align-self: center;
+      /* grid-column: 2; */
+    }
+
+    .auLogo {
+      display: flex;
+      justify-content: start;
+    }
+
+    .auLogo p {
+      display: flex;
+      align-self: center;
+      font-size: 16px;
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+
+    .auLogo img {
+      margin: 0 10px 10px 10px;
+      max-height: 30px;
+      max-width: 30px;
+    }
+
+    /* .auToolTip {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      right: 38%;
+    }
+
+    .auToolTip::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent transparent black;
+    }
+
+    .auOwned:hover .auToolTip {
+      visibility: visible;
+    } */
 
     .hide button {
       appearance: button;
@@ -1904,217 +2496,344 @@
       background: lavender;
     }
 
+    cite {
+      font-size: 13px;
+    }
+
     @media (max-width: 1100px) {
     .blog {
       grid-template-areas:
         "hero hero"
         "side-hero1 side-hero2"
       }
+
     }
 
-    @media (max-width: 860px) {
+@media (max-width: 860px) {
 
-      h2 {
-      font-size: large;
+  .listHeaders {
+    font-size: large;
+  }
+
+  p {
+    font-size: medium;
+  }
+
+/* Hero image and text*/
+
+  .background {
+    height: 23em;
+    padding-bottom: 0px;
+  }
+
+  .banner-text h1 {
+    margin-top: 150px;
+    min-width: 75%;
+    font-size: xx-large;
+  }
+
+  .banner-text p {
+    font-size: medium;
+    margin-top: 20px;
+  }
+
+  /* Info Cards */
+
+  .popUp-content {
+    width: 90%;
+    top: 5%;
+  }
+
+  .popTitle {
+    font-size: 20px;
+    color: white;
+  }
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:2%; opacity:1}
     }
 
-      p {
-      font-size: medium;
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:2%; opacity:1}
     }
 
-    /* Hero image and text*/
+  .cards {
+    display : grid;
+    grid-template-columns: 1fr;
+    margin: 0 0 20px 0;
+  }
 
-    .background {
-      height: 20em;
-      padding-bottom: 0px;
-    }
+  .card{
+    margin: 5px 5px 5px 5px;
+    max-width: 100%;
+    padding: 5px 0 5px 0;
+  }
 
-    .banner-text h1 {
-      margin-top: 70px;
-      min-width: 75%;
-      font-size: xx-large;
-    }
+  .card:hover {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  }
 
-    .banner-text p {
-      font-size: medium;
+  .card h3 {
+    margin: 5px;
+    font-size: 1.1rem;
+  }
+
+  .card img {
+    max-height: 35px;
+  }
+
+  .card .hide {
+    grid-row: 2 / span 2;
+    font-size: small;
+  }
+
+  /* Retailers List */
+  .main-list {
+    margin-top: 0;
+  }
+
+  #list1 {
       margin-top: 20px;
     }
 
-    /* Info Cards */
-
-    .cards {
-      display : grid;
-      grid-template-columns: 1fr;
-      margin: 0 0 0 0;
-    }
-    
-    .card{
-      margin: 5px 5px 5px 5px;
-      max-width: 100%;
-    }
-
-    .card:hover {
-      box-shadow: 0 0 0px rgba(0, 0, 0, 0);
-    }
-
-    .card h3 {
-      margin: 5px;
-      font-size: 1.1rem;
-    }
-
-    .card img {
-      max-height: 35px;
-    }
-    
-    .card .hide {
-      grid-row: 2 / span 2;
-      font-size: small;
-    }
-
-    /* Retailers List */
-    .main-list {
-      margin-top: 0;
-    }
-
-    #accordion h2 {
-      margin: 45px 5px 10px 0px;
-    }
-
-    #accordion div {
-        width:100%;   
-    }
-
-    #accordion .retailer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 2px;
-        margin-bottom: 10px;
-        cursor: pointer;
-        font-weight: bold;
-    }
-
-    #accordion {
-      width: 95%;
-    }
-
-    .retailer p {
-      grid-row: 3;
-      grid-column: 1 / span 3;
-      place-self: start;
-      font-size: small;
-    }
-
-    .company {
-      grid-row: 1 / span 1;
-      grid-column: 1 / span 3;
-      margin: 5px 0 5px 0;
-    }
-
-    .green-stars {
-      grid-area: 2 / 1 / 2 / 1;
-    }
-
-    .accordion img {
-      max-height: 30px;
-      max-width: 30px;
-    }
-
-    .price-coins {
-      grid-area: 2 / 2 / 2 / 2;
-    }
-
-    .price-coins img {
-      max-height: 30px;
-      max-width: 30px;
-      padding-right: 0.3px;
-    }
-
-    .trust-shield {
-      grid-area: 2 / 3 / 2 / 3;
-    }
-
-    .trust-shield img {
-      max-height: 30px;
-      max-width: 30px;
-    }
-
-    .hide button {
-      width: 80%;
-    }
-
-    .hide p {
-      margin-top: 10px;
-    }
-
-    /* Blog and Articles */
-
-    .top {
-        grid-template-areas:
-        "hero"
-        "side-hero1"
-        "side-hero2"
-    }
-
-    .hero-h2 {
-      font-size: medium;
-    }
-
-    .hero-p {
-      font-size: smaller;
-    }
+  #listHeaders {
+    margin: 45px 5px 10px 0px;
   }
 
-    @media (max-width: 600px) {
-      
-      .blog{
-        grid-template-areas:
-        "hero"
-        "side-hero1"
-        "side-hero2"
-      }
-
-      .hero-h2 {
-        font-size: medium;
-      }
-
-      .hero-p {
-        font-size: smaller;
-      }
-
-      .green-stars img {
-      max-height: 20px;
-      max-width: 20px;
-    }
-
-    .price-coins img {
-      max-height: 20px;
-      max-width: 20px;
-    }
-
-    .trust-shield img {
-      max-height: 20px;
-      max-width: 20px;
-    }
-    }
-
-    @media (max-width: 320px) {
-
-    .logo {
-      margin-top: 20px;
-    }
-
-    .banner-text p {
-      font-size: small;
-    }
-
+  #accordion .retailer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 2px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      font-weight: bold;
   }
+
+  #accordion {
+    width: 95%;
+  }
+
+  .retailer p {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    place-self: start;
+    font-size: small;
+  }
+
+  .company {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+    margin: 5px 0 5px 0;
+  }
+
+  .green-stars {
+    grid-area: 2 / 1 / 2 / 1;
+  }
+
+  .accordion img {
+    max-height: 30px;
+    max-width: 30px;
+  }
+
+  .price-coins {
+    grid-area: 2 / 2 / 2 / 2;
+  }
+
+  .price-coins img {
+    max-height: 30px;
+    max-width: 30px;
+    padding-right: 0.3px;
+  }
+
+  .trust-shield {
+    grid-area: 2 / 3 / 2 / 3;
+  }
+
+  .trust-shield img {
+    max-height: 30px;
+    max-width: 30px;
+  }
+
+  .auOwned {
+    grid-area: 3 / 3 / 3 / 3;
+  }
+
+  .auOwned img {
+    max-height: 30px;
+    max-width: 30px;
+    margin: 10px 30px 0 20px;
+  }
+
+  .hide button {
+    width: 80%;
+  }
+
+  .hide p {
+    margin-top: 10px;
+  }
+
+  /* Blog and Articles */
+
+  .top {
+      grid-template-areas:
+      "hero"
+      "side-hero1"
+      "side-hero2"
+  }
+
+  .hero-h2 {
+    font-size: medium;
+  }
+
+  .hero-p {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .trigger {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    }
+
+  #list1 {
+    margin-top: 10px;
+  }
+
+  .popUp-content {
+    top: .1%;
+  }
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:.1%; opacity:1}
+    }
+
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:.1%; opacity:1}
+    }
+  
+  .blog{
+    grid-template-areas:
+    "hero"
+    "side-hero1"
+    "side-hero2"
+  }
+
+  .hero-h2 {
+    font-size: medium;
+  }
+
+  .hero-p {
+    font-size: smaller;
+  }
+
+  .green-stars img {
+    max-height: 20px;
+    max-width: 20px;
+    margin-right: .5px;
+  }
+
+  .price-coins img {
+    max-height: 20px;
+    max-width: 20px;
+    margin-right: .5px;
+  }
+
+  .trust-shield img {
+    max-height: 20px;
+    max-width: 20px;
+    margin-right: .5px;
+  }
+}
+
+@media (max-width: 414px) {
+  .auOwned {
+    align-self: end;
+  }
+
+  .auOwned img {
+    max-height: 30px;
+    max-width: 30px;
+    margin: 10px 3px 0 5px;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 225px;
+    height: 38px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    top: -45px;
+    margin-left: -60px;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 120%;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .logo {
+    margin-top: 20px;
+  }
+
+  .banner-text p {
+    font-size: small;
+  }
+}
+
+@media (max-width: 280px) {
+
+  .green-stars img {
+    max-height: 15px;
+    max-width: 15px;
+    margin-right: 0px;
+  }
+
+  .price-coins img {
+    max-height: 15px;
+    max-width: 15px;
+    margin-right: 0px;
+  }
+
+  .trust-shield img {
+    max-height: 15px;
+    max-width: 15px;
+    margin-right: 0px;
+  }
+
+  .auOwned {
+    align-self: start;
+    justify-content: start;
+    grid-area: 4 / 1 / 4 / 1;
+  }
+
+  .auOwned img {
+    max-height: 25px;
+    max-width: 25px;
+    margin: 10px 3px 0 5px;
+    align-self: start;
+  }
+}
 
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script>
       $(document).ready(function() {    
         $('#accordion .hide').hide();
@@ -2133,7 +2852,17 @@
                 return false;
         });
       });
+
+      $(document).ready(function () {
+      $('select').selectize({
+          sortField: 'text'
+      });
+    });
+
+
     </script>
+    <script type="text/javascript" src="modal.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
   </body>
 </html>

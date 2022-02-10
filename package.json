@@ -1,0 +1,22 @@
+{
+  "name": "solvingzero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubberDucky73/solvingzero.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubberDucky73/solvingzero/issues"
+  },
+  "homepage": "https://github.com/RubberDucky73/solvingzero#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

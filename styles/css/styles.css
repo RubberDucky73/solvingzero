@@ -4,14 +4,14 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-button {
+/* button {
   background: white;
   color: black;
   border: 0;
   padding-right: 15px;
   padding-top: 5px;
   margin-bottom: 15px;
-}
+} */
 
 .main-container {
   display: grid;
@@ -32,7 +32,7 @@ button {
 }
 
 .logo {
-  background:white url(images/solvingzero-logo.jpeg);
+  background:white url(../../images/solvingzero-logo.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   padding: 10px;
@@ -148,6 +148,7 @@ footer {
     justify-self: flex-end;
     max-width: 200px;
     margin: 0px;
+    background: white;
   }
 
   [aria-expanded="true"] ~ ul {
