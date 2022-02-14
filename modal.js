@@ -40,7 +40,7 @@ button.addEventListener ("click", function() {
       }
   }, false);
 
-// This needs to be declared before the onclick 
+// All the companies need to be declared before the onclick 
 var companies = document.getElementsByName("company");
 
 button.onclick = () => {
@@ -143,42 +143,9 @@ button.onclick = () => {
     });
 
     if (array1.includes('')) {
-        document.getElementById('list1.1').style.display = ''; 
+        document.getElementById('list1a').style.display = ''; 
     } else {
-        document.getElementById('list1.1').style.display = 'none'; 
+        document.getElementById('list1a').style.display = 'none'; 
     };
-
-
-
-
-    // setTimeout (check5, 100)
-    // setTimeout (check3, 100)
-    // setTimeout (check1, 100)
-
-    // function check5() {
-    //     return document.getElementById('list5').style.display;
-    // }
-
-    // if (check5() == "none") {
-    //     console.log("check5 is working")
-    //     document.getElementById('list5.1').style.display = ""; 
-    // }
-
-    // function check3() {
-    //     return document.getElementById('list3').style.display;
-    // }
-    // if (check3() == "none") {
-    //     console.log("check3 is working")
-    //     document.getElementById('list3.1').style.display = ""; 
-    // }
-
-    // function check1() {
-    //     return document.getElementById('list1').style.display;
-    // }
-    // if (check1() == "none") {
-    //     console.log("check1 is working")
-    //     document.getElementById('list1.1').style.display = ""; 
-    // }
-
 }
 

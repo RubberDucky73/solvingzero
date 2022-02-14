@@ -15,6 +15,7 @@
     <meta name="twitter:image:alt" content="Solving Zero Logo">
     <link rel="stylesheet" type="text/css" href="styles/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="styles/css/style.css" />
+    <link rel="icon" href="images/SZ_favicon.png">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S37YM3H52P"></script>
     <script src="https://kit.fontawesome.com/ae5f17d194.js" crossorigin="anonymous"></script>
     <script>
@@ -61,13 +62,13 @@
           <div class="banner-text">
             <h1 style = "text-shadow: 1px 1px 2px rgb(175, 175, 175);">Save money and the planet</h1>
             <p>Switching energy providers can save the average Melbournian at least <strong>$100</strong> on their energy bill&#42; and a massive amount of green house gas</p>
-            <button class="trigger">Get Started!</button>
+            <button class="trigger">Start saving now</button>
             </div>
           </div>
           <div class="modal">
             <div class ="modal-content">
                 <span class="close-button">x</span>
-                <h3 class = "modal-title">Choose your current provider and preferences below</h3>
+                <h3 class = "modal-title">Choose your current provider and preferences to filter the retailers</h3>
                   <label class="provider" for="provider-list">1. Who is your current provider?</label>
                   <select id="select-provider" placeholder="Choose your provider...">
                     <option value="">Select a company...</option>
@@ -226,12 +227,11 @@
                         <div class = "hide">
                           <p>A synthesis of all green programs and offers that the retailer provides while also considering their policy towards fossil fuels. A few key criteria considered are:</p>
                           <ul>
-                            <li>Offers GreenPower to customers
-                            <li>The retailer is carbon neutral or provides a carbon-neutral option
-                            <li>Invests in renewable energy
-                            <li>Does not support fossil fuels (including parent or sister companies)
+                            <li>Offers GreenPower to customers</li>
+                            <li>The retailer is carbon neutral or provides a carbon-neutral option</li>
+                            <li>Invests in renewable energy</li>
+                            <li>Does not support fossil fuels (including parent or sister companies)</li>
                             <li>Offers incentives or programs to promote electric vehicles, solar, demand response or community energy</li>
-                          </li>
                           </ul>
                         </div>
                       </div>
@@ -270,7 +270,9 @@
               </div>
 
             </div>
-            <h2 class="listHeaders" id="list1.1" style= "display: none">The best options that you should consider based on your criteria</h2>
+            <h2 class="listHeaders" id="list1a" style= "display: none">The best options that you should consider based on your criteria
+              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+            </h2>
             <div class = "retailer" id="diamond" name="company" data-rank="4" data-green="5" data-price="3.5" data-trust="4.5">
               <h3 class ="company">Diamond Energy</h3>
               <div class = "green-stars">
@@ -525,7 +527,7 @@
               </div>
               <div class = "price-coins">
                 <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
+                <img src= "images/coin.png">
                 <img src= "images/empty-coin.png">
                 <img src= "images/empty-coin.png">
                 <img src= "images/empty-coin.png">
@@ -546,16 +548,16 @@
             <div class="hide">
               <p>
                 A tech-focused retailer that provides customers updates every 30 minutes through their app about energy prices. The ESC ranks Amber Electric as one of the most expensive retailers in Victoria when looking at median pricing. 
-                </p>
-                <h4>Green Rating 4/5</h4>             
-                <ul>              
-                  <li>Vehemently opposed to fossil fuel investments and encourages political action for renewable energy              
-                  <li>All plans are carbon neutral by default               
-                  <li>Has a program for battery tariffs and is rolling out an EV charging program
-                  <li> Through their app you can easily identify demand response time periods</li>
-                  </li>
-                </ul>
-                <h4>Affordability: 1.5/5</h4>                         
+              </p>
+              <h4>Green Rating 4/5</h4>             
+              <ul>              
+                <li>Vehemently opposed to fossil fuel investments and encourages political action for renewable energy              
+                <li>All plans are carbon neutral by default               
+                <li>Has a program for battery tariffs and is rolling out an EV charging program
+                <li> Through their app you can easily identify demand response time periods</li>
+                </li>
+              </ul>
+                <h4>Affordability: 2/5</h4>                         
                 <ul>               
                   <li>Has a monthly subscription cost regardless of energy usage                
                   <li>As rated by the ESC, it has one of the most expensive plans in Victoria by median pricing                
@@ -565,7 +567,7 @@
                 <h4>Trustworthiness: 4/5</h4>                              
                 <ul>         
                   <li>Has good customer reviews, around an average of 4.2 stars                
-                  <li>It’s difficult to calculate some of their pricing, in particular, their solar and battery tariffs
+                  <li>It's difficult to calculate some of their pricing, in particular, their solar and battery tariffs
                 </ul>
                 <br>
                 <a href ="https://bit.ly/3mx7z2v">
@@ -977,6 +979,60 @@
             <h2 class="listHeaders" id="list4">Not carbon neutral but offer a variation of green programs or incentives
               <span class="myBtn" onclick="myFunction(this)">Learn more</span>
             </h2>
+            <div class = "retailer" id="momentum" name="company" data-rank="2" data-green="3.5" data-price="3" data-trust="2">
+              <h3 class= "company">Momentum Energy</h3>
+              <div class = "green-stars">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/star.png">
+                <img src= "images/empty-star.png">
+              </div>
+              <div class = "price-coins">
+                <img src= "images/coin.png">
+                <img src= "images/coin.png">
+                <img src= "images/coin.png">
+                <img src= "images/empty-coin.png">
+                <img src= "images/empty-coin.png">
+              </div>
+              <div class = "trust-shield">
+                <img src= "images/shield.png">
+                <img src= "images/shield.png">
+                <img src= "images/empty-shield.png">
+                <img src= "images/empty-shield.png">
+                <img src= "images/empty-shield.png">
+              </div>
+            </div>
+            <div class="hide">
+              <p>
+                Owned by parent company Tassie Hydro this retailer has some green programs and offers for customers. Their main advantage is you know your money is going to a parent company that invest heavily into the green electricity grid of Tasmania. 
+                </p>
+                <h4>Green Rating 4/5</h4>
+                <ul>
+                  <li>Parent company invests heavily and manages renewable energy facilities across Tasmania</li>
+                  <li>Does own and operate two gas powered fossil fuel stations</li>
+                  <li>Does not offer community energy sharing, battery tariffs or EV charging incentives</li>
+                  <li>Will charge more for basic grid energy if you are on their solar plan</li>
+                  <li>Is not carbon neutral certified for any of their plans</li>
+                </ul>
+                <h4>Affordability: 3/5</h4>
+                <ul>
+                  <li>Slightly more expensive than most when examining all levels of energy consumption (single, couples and families)
+                  <li>The ESC has ranked them slightly more expensive when looking at median pricing
+                  <li>Their GreenPower pricing is more expensive than most of the competition  
+                  </li>
+                </ul>
+                <h4>Trustworthiness: 2/5</h4>
+                <ul>
+                  <li>Their customer reviews have an average of 2.1 stars
+                  <li>The amount of complaints filed about this retailer is quite high
+                  <li>Was part of a $52,000 repayment compliance action for not offering the best pricing messaging to some customers
+                  </li>
+                </ul>
+                <div class ="auLogo">
+                  <img src= "images/auOwned.png">
+                </div>
+            </div>
             <div class = "retailer" id="covaU" name="company" data-rank="2" data-green="3" data-price="3" data-trust="4.5">
               <h3 class= "company">CovaU Energy</h3>
               <div class = "green-stars">
@@ -1023,60 +1079,6 @@
                 <ul>
                   <li>On average customers have given CovaU a rating of 4.3 stars
                   <li>Complaint from customers are few and far between
-                </ul>
-                <div class ="auLogo">
-                  <img src= "images/auOwned.png">
-                </div>
-            </div>
-            <div class = "retailer" id="momentum" name="company" data-rank="2" data-green="3.5" data-price="3" data-trust="2">
-              <h3 class= "company">Momentum Energy</h3>
-              <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-              </div>
-              <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
-              </div>
-              <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-              </div>
-            </div>
-            <div class="hide">
-              <p>
-                Owned by parent company Tassie Hydro this retailer has some green programs and offers for customers. Their main advantage is you know your money is going to a parent company that invest heavily into the green electricity grid of Tasmania. 
-                </p>
-                <h4>Green Rating 3.5/5</h4>
-                <ul>
-                  <li>Parent company invests heavily and manages renewable energy facilities across Tasmania
-                  <li>Does not offer community energy sharing, battery tariffs or EV charging incentives
-                  <li>Will charge more for basic grid energy if you are on their solar plan
-                  <li>Is not carbon neutral
-                </li>
-                </ul>
-                <h4>Affordability: 3/5</h4>
-                <ul>
-                  <li>Slightly more expensive than most when examining all levels of energy consumption (single, couples and families)
-                  <li>The ESC has ranked them slightly more expensive when looking at median pricing
-                  <li>Their GreenPower pricing is more expensive than most of the competition  
-                  </li>
-                </ul>
-                <h4>Trustworthiness: 2/5</h4>
-                <ul>
-                  <li>Their customer reviews have an average of 2.1 stars
-                  <li>The amount of complaints filed about this retailer is quite high
-                  <li>Was part of a $52,000 repayment compliance action for not offering the best pricing messaging to some customers
-                  </li>
                 </ul>
                 <div class ="auLogo">
                   <img src= "images/auOwned.png">
@@ -1835,7 +1837,7 @@
     .trigger {
       background-color: white;
       color: black;
-      width: 200px;
+      width: 220px;
       height: 60px;
       font-weight: bolder;
       font-size: 18px;
@@ -2006,9 +2008,10 @@
 
     .cards {
       display : grid;
+      /* justify-items: center; */
       grid-template-columns: 1fr;
-      max-width: 100%;
-      margin-bottom: 30px;
+      max-width: 90%;
+      margin: 0 30px 30px 30px;
     }
     
     .card{
@@ -2182,6 +2185,10 @@
 
     .listHeaders {
       margin: 40px 5px 10px 0px;
+    }
+
+    #list1a {
+      margin-top: 0px;
     }
 
     .retailer {
@@ -2561,6 +2568,7 @@
 
   .cards {
     display : grid;
+    max-width: 100%;
     grid-template-columns: 1fr;
     margin: 0 0 20px 0;
   }
@@ -2696,7 +2704,7 @@
 @media (max-width: 600px) {
 
   .trigger {
-    width: 150px;
+    width: 190px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
