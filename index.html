@@ -60,8 +60,8 @@
       <main class = "hero-container"> 
         <div class = "background">
           <div class="banner-text">
-            <h1 style = "text-shadow: 1px 1px 2px rgb(175, 175, 175);">Save money and the planet</h1>
-            <p>Switching energy providers can save the average Melbournian at least <strong>$100</strong> on their energy bill&#42; and a massive amount of green house gas</p>
+            <h1 style = "text-shadow: 1px 1px 2px rgb(175, 175, 175);">Save hundreds of dollars and the planet by switching to a <u>high quality</u> energy provider</h1>
+            <!-- <p>Switching energy providers can save the average Melbournian at least <strong>$100</strong> on their energy bill&#42; and a massive amount of green house gas</p> -->
             <button class="trigger">Start saving now</button>
             </div>
           </div>
@@ -1825,8 +1825,8 @@
     }
 
     .banner-text h1 {
-      display: grid;
-      margin-top: 100px;
+      /* display: grid; */
+      margin-top: 120px;
       margin-bottom: 10px;
       min-width: 75%;
       font-size: 340%;
@@ -2555,16 +2555,16 @@
     font-size: 20px;
     color: white;
   }
-    /* Add Animation */
-    @-webkit-keyframes animatetop {
-      from {top:-300px; opacity:0} 
-      to {top:2%; opacity:1}
-    }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:2%; opacity:1}
+  }
 
-    @keyframes animatetop {
-      from {top:-300px; opacity:0}
-      to {top:2%; opacity:1}
-    }
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:2%; opacity:1}
+  }
 
   .cards {
     display : grid;
@@ -2763,6 +2763,12 @@
 }
 
 @media (max-width: 414px) {
+
+  .banner-text h1 {
+    margin-top: 100px;
+    font-size: 1.75rem;
+  }
+
   .auOwned {
     align-self: end;
   }
@@ -2796,6 +2802,10 @@
 }
 
 @media (max-width: 380px) {
+
+  .banner-text h1 {
+    font-size: 1.5rem;
+  }
 
   .logo {
     margin-top: 20px;
