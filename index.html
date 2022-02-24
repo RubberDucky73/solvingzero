@@ -22,22 +22,24 @@
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-W8J82L3');</script>
-      <!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager -->
+    <!-- Gtag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S37YM3H52P"></script>
-    <script src="https://kit.fontawesome.com/ae5f17d194.js" crossorigin="anonymous"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-S37YM3H52P');
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
-</head>
+    </script>
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/ae5f17d194.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+  </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8J82L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -70,157 +72,158 @@
       <main class = "hero-container"> 
         <div class = "background">
           <div class="banner-text">
-            <h1 style = "text-shadow: 1px 1px 2px rgb(175, 175, 175);">Save hundreds of dollars and the planet by switching to a <u>high quality</u> energy provider</h1>
-            <!-- <p>Switching energy providers can save the average Melbournian at least <strong>$100</strong> on their energy bill&#42; and a massive amount of green house gas</p> -->
+            <h1 class="neonText">Save <u>hundreds</u> of dollars and the planet by switching to a <u>high quality</u> energy provider</h1>            
             <button class="trigger">Start saving now</button>
-            </div>
           </div>
-          <div class="modal">
-            <div class ="modal-content">
-                <span class="close-button">x</span>
-                <h3 class = "modal-title">Choose your current provider and preferences to filter the retailers</h3>
-                  <label class="provider" for="provider-list">1. Who is your current provider?</label>
-                  <select id="select-provider" placeholder="Choose your provider...">
-                    <option value="">Select a company...</option>
-                    <!-- <option value="NA">I don't have one</option> -->
-                    <option value="1stEnergy">1st Energy</option>
-                    <option value="agl">AGL</option>
-                    <option value="alinta">Alinta Energy</option>
-                    <option value="amber">Amber Electric</option>
-                    <option value="covaU">CovaU Energy</option>
-                    <option value="diamond">Diamond Energy</option>
-                    <option value="discover">Discover Energy</option>
-                    <option value="dodo">Dodo</option>
-                    <option value="box">Electricty in a Box</option>
-                    <option value="elysian">Elysian Energy</option>
-                    <option value="energyAus">Energy Australia</option>
-                    <option value="energyLocal">Energy Locals</option>
-                    <option value="gloBird">GloBird Energy</option>
-                    <option value="kogan">Kogan Energy</option>
-                    <option value="lumo">Lumo Energy</option>
-                    <option value="momentum">Momentum Energy</option>
-                    <option value="origin">Origin Energy</option>
-                    <option value="ovo">Ovo Energy</option>
-                    <option value="people">People Energy</option>
-                    <option value="powerClub">Powerclub</option>
-                    <option value="powerDirect">Power Direct</option>
-                    <option value="powerShop">Powershop</option>
-                    <option value="qEnergy">QEnergy</option>
-                    <option value="reAmped">ReAmped</option>
-                    <option value="red">Red Energy</option>
-                    <option value="simply">Simply Energy</option>
-                    <option value="sumo">Sumo</option>
-                    <option value="tango">Tango Energy</option>
-                  </select>
-                  <div id="green-form-wrapper">
-                    <form class="green-form" action="/p/quote.php" method="GET">
-                      <h4 id="form-title">2. How Green do you want your energy? 
-                        <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the greener the energy</span>
-                        </div>
-                      </h4>
-                      <div id="green-rating-slider">
-                        <input class="green-input" type="radio" name="green-amount" id="1" value="1" required>
-                        <label class="green-label" for="1" data-green-amount="No preference"></label>
-                        <input class="green-input" type="radio" name="green-amount" id="2" value="3" required>
-                        <label class="green-label" for="2" data-green-amount="3+"></label>
-                        <input class="green-input" type="radio" name="green-amount" id="3" value="3.5" required>
-                        <label class="green-label" for="3" data-green-amount="3.5+"></label>
-                        <input class="green-input" type="radio" name="green-amount" id="4" value="4" required>
-                        <label class="green-label" for="4" data-green-amount="4+"></label>
-                        <input class="green-input" type="radio" name="green-amount" id="5" value="4.5" required>
-                        <label class="green-label" for="5" data-green-amount="4.5+"></label>
-                        <div class="green-rating-pos"></div>
-                      </div> 
-                      <div id="green-rating-slider-700">
-                        <input class="green-input" type="radio" name="green-amount" id="6" value="1" required>
-                        <label class="green-label" for="6" data-green-amount="Show all"></label>
-                        <input class="green-input" type="radio" name="green-amount" id="7" value="2" required>
-                        <label class="green-label" for="7" data-green-amount="3+"></label>
-                        <input class="green-input" type="radio" name="green-amount" id="8" value="3" required>
-                        <label class="green-label" for="8" data-green-amount="3.5+"></label>
-                        <input class="green-input" type="radio" name="green-amount" id="9" value="4" required>
-                        <label class="green-label" for="9" data-green-amount="4+"></label>
-                        <input class="green-input" type="radio" name="green-amount" id="10" value="5" required>
-                        <label class="green-label" for="10" data-green-amount="4.5+"></label>
-                        <div class="green-rating-pos"></div>
-                      </div>
-                    </form>
+          <div class ="hero-graphic">
+            <img src= "images/hero-graphic.png">
+          </div>
+        </div>
+        <div class="modal">
+          <div class ="modal-content">
+            <span class="close-button">x</span>
+            <h3 class = "modal-title">Choose your current provider and preferences to filter the retailers</h3>
+              <label class="provider" for="provider-list">1. Who is your current provider?</label>
+              <select id="select-provider" placeholder="Choose your provider...">
+                <option value="">Select a company...</option>
+                <option value="1stEnergy">1st Energy</option>
+                <option value="agl">AGL</option>
+                <option value="alinta">Alinta Energy</option>
+                <option value="amber">Amber Electric</option>
+                <option value="covaU">CovaU Energy</option>
+                <option value="diamond">Diamond Energy</option>
+                <option value="discover">Discover Energy</option>
+                <option value="dodo">Dodo</option>
+                <option value="box">Electricty in a Box</option>
+                <option value="elysian">Elysian Energy</option>
+                <option value="energyAus">Energy Australia</option>
+                <option value="energyLocal">Energy Locals</option>
+                <option value="gloBird">GloBird Energy</option>
+                <option value="kogan">Kogan Energy</option>
+                <option value="lumo">Lumo Energy</option>
+                <option value="momentum">Momentum Energy</option>
+                <option value="origin">Origin Energy</option>
+                <option value="ovo">Ovo Energy</option>
+                <option value="people">People Energy</option>
+                <option value="powerClub">Powerclub</option>
+                <option value="powerDirect">Power Direct</option>
+                <option value="powerShop">Powershop</option>
+                <option value="qEnergy">QEnergy</option>
+                <option value="reAmped">ReAmped</option>
+                <option value="red">Red Energy</option>
+                <option value="simply">Simply Energy</option>
+                <option value="sumo">Sumo</option>
+                <option value="tango">Tango Energy</option>
+              </select>
+              <div id="green-form-wrapper">
+                <form class="green-form" action="/p/quote.php" method="GET">
+                  <h4 id="form-title">2. How Green do you want your energy? 
+                    <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the greener the energy</span>
+                    </div>
+                  </h4>
+                  <div id="green-rating-slider">
+                    <input class="green-input" type="radio" name="green-amount" id="1" value="1" required>
+                    <label class="green-label" for="1" data-green-amount="No preference"></label>
+                    <input class="green-input" type="radio" name="green-amount" id="2" value="3" required>
+                    <label class="green-label" for="2" data-green-amount="3+"></label>
+                    <input class="green-input" type="radio" name="green-amount" id="3" value="3.5" required>
+                    <label class="green-label" for="3" data-green-amount="3.5+"></label>
+                    <input class="green-input" type="radio" name="green-amount" id="4" value="4" required>
+                    <label class="green-label" for="4" data-green-amount="4+"></label>
+                    <input class="green-input" type="radio" name="green-amount" id="5" value="4.5" required>
+                    <label class="green-label" for="5" data-green-amount="4.5+"></label>
+                    <div class="green-rating-pos"></div>
+                  </div> 
+                  <div id="green-rating-slider-700">
+                    <input class="green-input" type="radio" name="green-amount" id="6" value="1" required>
+                    <label class="green-label" for="6" data-green-amount="Show all"></label>
+                    <input class="green-input" type="radio" name="green-amount" id="7" value="2" required>
+                    <label class="green-label" for="7" data-green-amount="3+"></label>
+                    <input class="green-input" type="radio" name="green-amount" id="8" value="3" required>
+                    <label class="green-label" for="8" data-green-amount="3.5+"></label>
+                    <input class="green-input" type="radio" name="green-amount" id="9" value="4" required>
+                    <label class="green-label" for="9" data-green-amount="4+"></label>
+                    <input class="green-input" type="radio" name="green-amount" id="10" value="5" required>
+                    <label class="green-label" for="10" data-green-amount="4.5+"></label>
+                    <div class="green-rating-pos"></div>
                   </div>
-                  <div id="price-form-wrapper">
-                    <form class="price-form" action="/p/quote.php" method="GET">
-                      <h4 id="form-title">3. How affordable do you want your energy?
-                        <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the more affordable the energy</span>
-                        </div>
-                      </h4>
-                      <div id="price-rating-slider">
-                        <input class="price-input" type="radio" name="price-amount" id="11" value="1" required>
-                        <label class="price-label" for="11" data-price-amount="No preference"></label>
-                        <input class="price-input" type="radio" name="price-amount" id="12" value="3" required>
-                        <label class="price-label" for="12" data-price-amount="3+"></label>
-                        <input class="price-input" type="radio" name="price-amount" id="13" value="3.5" required>
-                        <label class="price-label" for="13" data-price-amount="3.5+"></label>
-                        <input class="price-input" type="radio" name="price-amount" id="14" value="4" required>
-                        <label class="price-label" for="14" data-price-amount="4+"></label>
-                        <input class="price-input" type="radio" name="price-amount" id="15" value="4.5" required>
-                        <label class="price-label" for="15" data-price-amount="4.5+"></label>
-                        <div id="price-rating-pos"></div>
+                </form>
+              </div>
+                <div id="price-form-wrapper">
+                  <form class="price-form" action="/p/quote.php" method="GET">
+                    <h4 id="form-title">3. How affordable do you want your energy?
+                      <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the more affordable the energy</span>
                       </div>
-                      <div id="price-rating-slider-700">
-                        <input class="price-input" type="radio" name="price-amount" id="16" value="1" required>
-                        <label class="price-label" for="16" data-price-amount="Show all"></label>
-                        <input class="price-input" type="radio" name="price-amount" id="17" value="2" required>
-                        <label class="price-label" for="17" data-price-amount="3+"></label>
-                        <input class="price-input" type="radio" name="price-amount" id="18" value="3" required>
-                        <label class="price-label" for="18" data-price-amount="3.5+"></label>
-                        <input class="price-input" type="radio" name="price-amount" id="19" value="4" required>
-                        <label class="price-label" for="19" data-price-amount="4+"></label>
-                        <input class="price-input" type="radio" name="price-amount" id="20" value="5" required>
-                        <label class="price-label" for="20" data-price-amount="4.5+"></label>
-                        <div id="price-rating-pos"></div>
-                      </div>
-                    </form>
-                  </div>
-                  <div id="trust-form-wrapper">
-                    <form class="trust-form" action="/p/quote.php" method="GET">
-                      <h4 id="form-title">4. How trustworthy do you expect a provider to be?
-                        <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the more trustworthy the company</span>
-                        </div>
-                      </h4>
-                      <div id="trust-rating-slider">
-                        <input class="trust-input" type="radio" name="trust-amount" id="21" value="1" required>
-                        <label class="trust-label" for="21" data-trust-amount="No preference"></label>
-                        <input class="trust-input" type="radio" name="trust-amount" id="22" value="3" required>
-                        <label class="trust-label" for="22" data-trust-amount="3+"></label>
-                        <input class="trust-input" type="radio" name="trust-amount" id="23" value="3.5" required>
-                        <label class="trust-label" for="23" data-trust-amount="3.5+"></label>
-                        <input class="trust-input" type="radio" name="trust-amount" id="24" value="4" required>
-                        <label class="trust-label" for="24" data-trust-amount="4+"></label>
-                        <input class="trust-input" type="radio" name="trust-amount" id="25" value="4.5" required>
-                        <label class="trust-label" for="25" data-trust-amount="4.5+"></label>
-                        <div id="trust-rating-pos"></div>
-                      </div>
-                      <div id="trust-rating-slider-700">
-                        <input class="trust-input" type="radio" name="trust-amount" id="26" value="1" required>
-                        <label class="trust-label" for="26" data-trust-amount="Show all"></label>
-                        <input class="trust-input" type="radio" name="trust-amount" id="27" value="2" required>
-                        <label class="trust-label" for="27" data-trust-amount="3+"></label>
-                        <input class="trust-input" type="radio" name="trust-amount" id="28" value="3" required>
-                        <label class="trust-label" for="28" data-trust-amount="3.5+"></label>
-                        <input class="trust-input" type="radio" name="trust-amount" id="29" value="4" required>
-                        <label class="trust-label" for="29" data-trust-amount="4+"></label>
-                        <input class="trust-input" type="radio" name="trust-amount" id="30" value="5" required>
-                        <label class="trust-label" for="30" data-trust-amount="4.5+"></label>
-                        <div id="trust-rating-pos"></div>
-                      </div>
-                    </form>
-                  </div>
-                  <button class="submit-modal" id="submit">Submit</button>
+                    </h4>
+                    <div id="price-rating-slider">
+                      <input class="price-input" type="radio" name="price-amount" id="11" value="1" required>
+                      <label class="price-label" for="11" data-price-amount="No preference"></label>
+                      <input class="price-input" type="radio" name="price-amount" id="12" value="3" required>
+                      <label class="price-label" for="12" data-price-amount="3+"></label>
+                      <input class="price-input" type="radio" name="price-amount" id="13" value="3.5" required>
+                      <label class="price-label" for="13" data-price-amount="3.5+"></label>
+                      <input class="price-input" type="radio" name="price-amount" id="14" value="4" required>
+                      <label class="price-label" for="14" data-price-amount="4+"></label>
+                      <input class="price-input" type="radio" name="price-amount" id="15" value="4.5" required>
+                      <label class="price-label" for="15" data-price-amount="4.5+"></label>
+                      <div id="price-rating-pos"></div>
+                    </div>
+                    <div id="price-rating-slider-700">
+                      <input class="price-input" type="radio" name="price-amount" id="16" value="1" required>
+                      <label class="price-label" for="16" data-price-amount="Show all"></label>
+                      <input class="price-input" type="radio" name="price-amount" id="17" value="2" required>
+                      <label class="price-label" for="17" data-price-amount="3+"></label>
+                      <input class="price-input" type="radio" name="price-amount" id="18" value="3" required>
+                      <label class="price-label" for="18" data-price-amount="3.5+"></label>
+                      <input class="price-input" type="radio" name="price-amount" id="19" value="4" required>
+                      <label class="price-label" for="19" data-price-amount="4+"></label>
+                      <input class="price-input" type="radio" name="price-amount" id="20" value="5" required>
+                      <label class="price-label" for="20" data-price-amount="4.5+"></label>
+                      <div id="price-rating-pos"></div>
+                    </div>
+                  </form>
                 </div>
+                <div id="trust-form-wrapper">
+                  <form class="trust-form" action="/p/quote.php" method="GET">
+                    <h4 id="form-title">4. How trustworthy do you expect a provider to be?
+                      <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the more trustworthy the company</span>
+                      </div>
+                    </h4>
+                    <div id="trust-rating-slider">
+                      <input class="trust-input" type="radio" name="trust-amount" id="21" value="1" required>
+                      <label class="trust-label" for="21" data-trust-amount="No preference"></label>
+                      <input class="trust-input" type="radio" name="trust-amount" id="22" value="3" required>
+                      <label class="trust-label" for="22" data-trust-amount="3+"></label>
+                      <input class="trust-input" type="radio" name="trust-amount" id="23" value="3.5" required>
+                      <label class="trust-label" for="23" data-trust-amount="3.5+"></label>
+                      <input class="trust-input" type="radio" name="trust-amount" id="24" value="4" required>
+                      <label class="trust-label" for="24" data-trust-amount="4+"></label>
+                      <input class="trust-input" type="radio" name="trust-amount" id="25" value="4.5" required>
+                      <label class="trust-label" for="25" data-trust-amount="4.5+"></label>
+                      <div id="trust-rating-pos"></div>
+                    </div>
+                    <div id="trust-rating-slider-700">
+                      <input class="trust-input" type="radio" name="trust-amount" id="26" value="1" required>
+                      <label class="trust-label" for="26" data-trust-amount="Show all"></label>
+                      <input class="trust-input" type="radio" name="trust-amount" id="27" value="2" required>
+                      <label class="trust-label" for="27" data-trust-amount="3+"></label>
+                      <input class="trust-input" type="radio" name="trust-amount" id="28" value="3" required>
+                      <label class="trust-label" for="28" data-trust-amount="3.5+"></label>
+                      <input class="trust-input" type="radio" name="trust-amount" id="29" value="4" required>
+                      <label class="trust-label" for="29" data-trust-amount="4+"></label>
+                      <input class="trust-input" type="radio" name="trust-amount" id="30" value="5" required>
+                      <label class="trust-label" for="30" data-trust-amount="4.5+"></label>
+                      <div id="trust-rating-pos"></div>
+                    </div>
+                  </form>
+                </div>
+                <button class="submit-modal" id="submit">Submit</button>
+              </div>
             </div>
         <div class = "main-list">
           <div id="accordion">
             <h2 class="listHeaders" id="list1">Top three greenest and affordable energy retailers in Melbourne
-              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+              <span class="myBtn" onclick="myFunction(this)">Learn more about the ratings</span>
             </h2>
             <div id="myModal" class="popUp">
               <div class="popUp-content">
@@ -281,7 +284,7 @@
 
             </div>
             <h2 class="listHeaders" id="list1a" style= "display: none">The best options that you should consider based on your criteria
-              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+              <span class="myBtn" onclick="myFunction(this)">Learn more about the ratings</span>
             </h2>
             <div class = "retailer" id="diamond" name="company" data-rank="4" data-green="5" data-price="3.5" data-trust="4.5">
               <h3 class ="company">Diamond Energy</h3>
@@ -466,7 +469,7 @@
                 <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
             <h2 class="listHeaders" id="list2">Three runner-up retailers that are still great choices
-              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+              <span class="myBtn" onclick="myFunction(this)">Learn more about the ratings</span>
             </h2>
             <div class = "retailer" id="reAmped" name="company" data-rank="4" data-green="3.5" data-price="4.5" data-trust="3.5">
               <h3 class= "company">ReAmped</h3>
@@ -643,7 +646,7 @@
                 <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
             <h2 class="listHeaders" id="list3">Six retailers that have carbon neutral plans but are associated with massive amounts of green house gas emissions
-              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+              <span class="myBtn" onclick="myFunction(this)">Learn more about the ratings</span>
             </h2>             
             <h2 class="listHeaders" id="list3.1" style= "display: none">Other options you could consider based on your criteria</h2>
             <div class = "retailer" id="powerShop" name="company" data-rank="3" data-green="3" data-price="4" data-trust="3">
@@ -987,7 +990,7 @@
               <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
             <h2 class="listHeaders" id="list4">Not carbon neutral but offer a variation of green programs or incentives
-              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+              <span class="myBtn" onclick="myFunction(this)">Learn more about the ratings</span>
             </h2>
             <div class = "retailer" id="momentum" name="company" data-rank="2" data-green="4" data-price="3" data-trust="2">
               <h3 class= "company">Momentum Energy</h3>
@@ -1302,7 +1305,7 @@
               </ul>
             </div>
             <h2 class="listHeaders" id="list5">Retailers we currently would not recommend using
-              <span class="myBtn" onclick="myFunction(this)">Learn more</span>
+              <span class="myBtn" onclick="myFunction(this)">Learn more about the ratings</span>
             </h2>
             <h2 class="listHeaders" id="list5.1" style= "display: none">Retailers we currently would not recommend using but fit your criteria</h2>
             <div class = "retailer" id="powerClub" name="company" data-rank="1" data-tag="low" data-green="2" data-price="3.5" data-trust="3.5">
@@ -1813,10 +1816,10 @@
 
     .background {
       display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       grid-template-rows: 1fr 1fr 1fr;
       background-image: url("images/background.png");
       height: 30em;
-      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
@@ -1825,43 +1828,61 @@
     }
 
     .banner-text {
+      grid-row: 1;
+      grid-column: 1 / span 2;
       text-align: center;
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       color: white;
-      min-width: 75%;
+      min-width: 90%;
     }
 
     .banner-text h1 {
-      /* display: grid; */
-      margin-top: 120px;
-      margin-bottom: 10px;
+      grid-row: 1;
+      grid-column: 1 / span 2;
       min-width: 75%;
       font-size: 340%;
+      margin-left: 30px;
+    }
+
+    .neonText {
+      color: #fff;
+      text-shadow:
+        0 0 2px #fff,
+        0 0 12px #fff;
+    }
+
+    .hero-graphic {
+      grid-row: 1;
+      grid-column: 3;
+      place-self: stretch;
+    }
+
+    .hero-graphic img {
+      max-height: 400px;
+      max-width: 400px;
     }
 
     /* MODAL */
 
     .trigger {
-      background-color: white;
-      color: black;
+      background-color: black;
+      color: white;
       width: 220px;
       height: 60px;
       font-weight: bolder;
       font-size: 18px;
+      text-shadow: 1px 1px 15px white;
       padding: 12px 28px;
       border-radius: 8px;
-      margin: 50px 0 0 0;
+      margin: 25px 0 0 0;
       border: 0px solid black;
       letter-spacing: 0.6px;
-      box-shadow: 2px 3px 3px #888888;
+      box-shadow: 2.5px 3.5px 5px #888888;
+      cursor: pointer;
     }
 
     .trigger:hover {
-      background-color: black; /* Green */
-      color: white;
+      background-color: white;
+      color: black;
     }
 
     .trigger:active {
@@ -1946,7 +1967,7 @@
     }
 
     .submit-modal:hover {
-      background-color: white; /* Green */
+      background-color: white;
       color: black;
     }
 
@@ -2063,23 +2084,6 @@
       padding : 5px;
       margin-bottom: 2px;
     }
-/* 
-    .auLogo {
-      display: grid;
-      margin: 10px;
-      place-self: center start;
-    }
-
-    .auLogo img {
-      grid-area: 1 / 1 / 1 / 1;
-      place-self: center;
-    }
-
-    .auLogo p {
-      place-self: center;
-      grid-area: 1 / 2 / 1 / 2;
-      margin: 0 0 0 4px;
-    } */
 
     /* Retailers List */
 
@@ -2089,19 +2093,17 @@
       margin-top: 20px;
     }
 
-    /* PopUp modal */
+ /* PopUp modal */
 
-/* The Modal (background) */
     .popUp {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      padding-top: 100px; /* Location of the box */
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
       left: 0;
       top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
- /* Enable scroll if needed */
+      width: 100%;
+      height: 100%;
       background-color: rgb(0,0,0); 
       background-color: rgba(0,0,0,0.4);
     }
@@ -2123,6 +2125,12 @@
       max-height: 80%;
       overflow: auto;
       top: 10%;
+    }
+
+    .popTitle {
+      color: #fff;
+      text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+      letter-spacing: 2px;
     }
 
     /* Add Animation */
@@ -2154,7 +2162,7 @@
     .modal-header {
       padding: 2px 16px;
       margin: 0px 0 10px 0;
-      background-color: #5cb85c;
+      background-color: lightseagreen;
       color: white;
       border-start-start-radius: 0.5rem;
     }
@@ -2183,15 +2191,11 @@
       grid-column: 1 / span 2;
     }
 
-    /* Accordion company list */
+/* Accordion company list */
 
     #accordion {
       width: 90%;
     }
-
-    /* #accordion div {
-        width:100%;   
-    } */
 
     .listHeaders {
       margin: 40px 5px 10px 0px;
@@ -2206,7 +2210,7 @@
       border-radius: 5px;
       border-style: groove;
       border: 2px rgba(221, 221, 221, 0.342);
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
     }
 
     .retailer p {
@@ -2225,7 +2229,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         padding: 2px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         cursor: pointer;
         font-weight: bold;
     }
@@ -2263,6 +2267,7 @@
     .company {
       grid-row: 1 / span 1;
       place-self: center;
+      font-size: 2.5vh;
     }
 
     .company, .green, .price, .trust {
@@ -2283,8 +2288,8 @@
     .green-stars img {
       display: flex;
       justify-content: flex-end;
-      max-height: 35px;
-      max-width: 35px;
+      max-height: 45px;
+      max-width: 45px;
       margin-right: 2px;
     }
 
@@ -2298,8 +2303,8 @@
     .price-coins img {
       display: flex;
       justify-content: flex-end;
-      max-height: 35px;
-      max-width: 35px;
+      max-height: 45px;
+      max-width: 45px;
       margin-right: 2px;
     }
 
@@ -2313,8 +2318,8 @@
     .trust-shield img {
       display: flex;
       justify-content: flex-end;
-      max-height: 35px;
-      max-width: 35px;
+      max-height: 45px;
+      max-width: 45px;
       margin-right: 2px;
     }
 
@@ -2326,17 +2331,14 @@
     .auOwned {
       display: flex;
       justify-content: end;
-      /* place-self: center start; */
       grid-area: 2 / 4 / 2 / 4;
       position: relative;
     }
 
     .auOwned img {
-      max-height: 30px;
-      max-width: 30px;
+      max-height: 45px;
+      max-width: 45px;
       margin: 10px 30px 0 20px;
-      /* grid-row: 1; */
-      /* grid-column: 1; */
       display: flex;
       align-self: center;
       z-index: -1;
@@ -2345,7 +2347,6 @@
     .auOwned p {
       display: flex;
       align-self: center;
-      /* grid-column: 2; */
     }
 
     .auLogo {
@@ -2362,39 +2363,10 @@
     }
 
     .auLogo img {
-      margin: 0 10px 10px 10px;
-      max-height: 30px;
-      max-width: 30px;
+      margin: 0 5px 5px 5px;
+      max-height: 40px;
+      max-width: 40px;
     }
-
-    /* .auToolTip {
-      visibility: hidden;
-      width: 120px;
-      background-color: black;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px 0;
-      position: absolute;
-      z-index: 1;
-      top: 10px;
-      right: 38%;
-    }
-
-    .auToolTip::after {
-      content: " ";
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      margin-top: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: transparent transparent transparent black;
-    }
-
-    .auOwned:hover .auToolTip {
-      visibility: visible;
-    } */
 
     .hide button {
       appearance: button;
@@ -2517,14 +2489,49 @@
       font-size: 13px;
     }
 
-    @media (max-width: 1100px) {
-    .blog {
-      grid-template-areas:
-        "hero hero"
-        "side-hero1 side-hero2"
-      }
+@media (max-width: 1100px) {
 
-    }
+  .banner-text {
+    grid-column: 1 / span 3;
+  }
+
+  .banner-text h1 {
+    margin: 20px;
+  }
+
+  .hero-graphic {
+    grid-row: 1 / span 2;
+    place-self: center start;
+    max-height: 0pc;
+  }
+
+  .hero-graphic img {
+    max-height: 30vh;
+    max-width: 30vw;
+  }
+
+  .trust-shield img {
+    max-height: 35px;
+    max-width: 35px;
+  }
+
+  .price-coins img {
+    max-height: 35px;
+    max-width: 35px;
+  }
+
+  .green-stars img {
+    max-height: 35px;
+    max-width: 35px;
+  }
+
+.blog {
+  grid-template-areas:
+    "hero hero"
+    "side-hero1 side-hero2"
+  }
+
+}
 
 @media (max-width: 860px) {
 
@@ -2544,7 +2551,7 @@
   }
 
   .banner-text h1 {
-    margin-top: 150px;
+    margin-top: 60px;
     min-width: 75%;
     font-size: xx-large;
   }
@@ -2625,7 +2632,7 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       padding: 2px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       cursor: pointer;
       font-weight: bold;
   }
@@ -2713,6 +2720,10 @@
 
 @media (max-width: 600px) {
 
+  .hero-graphic {
+    display: none;
+  }
+
   .trigger {
     width: 190px;
     height: 40px;
@@ -2775,7 +2786,7 @@
 @media (max-width: 414px) {
 
   .banner-text h1 {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 1.75rem;
   }
 
