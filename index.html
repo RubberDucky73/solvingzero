@@ -33,6 +33,12 @@
     </script>
     <!-- icons -->
     <script src="https://kit.fontawesome.com/ae5f17d194.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -115,7 +121,7 @@
                     <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the greener the energy</span>
                     </div>
                   </h4>
-                  <div id="green-rating-slider">
+                  <div class="green-radio-buttons" id="green-rating-slider">
                     <input class="green-input" type="radio" name="green-amount" id="1" value="1" required>
                     <label class="green-label" for="1" data-green-amount="No preference"></label>
                     <input class="green-input" type="radio" name="green-amount" id="2" value="3" required>
@@ -128,16 +134,16 @@
                     <label class="green-label" for="5" data-green-amount="4.5+"></label>
                     <div class="green-rating-pos"></div>
                   </div> 
-                  <div id="green-rating-slider-700">
+                  <div class="green-radio-buttons" id="green-rating-slider-700">
                     <input class="green-input" type="radio" name="green-amount" id="6" value="1" required>
                     <label class="green-label" for="6" data-green-amount="Show all"></label>
-                    <input class="green-input" type="radio" name="green-amount" id="7" value="2" required>
+                    <input class="green-input" type="radio" name="green-amount" id="7" value="3" required>
                     <label class="green-label" for="7" data-green-amount="3+"></label>
-                    <input class="green-input" type="radio" name="green-amount" id="8" value="3" required>
+                    <input class="green-input" type="radio" name="green-amount" id="8" value="3.5" required>
                     <label class="green-label" for="8" data-green-amount="3.5+"></label>
                     <input class="green-input" type="radio" name="green-amount" id="9" value="4" required>
                     <label class="green-label" for="9" data-green-amount="4+"></label>
-                    <input class="green-input" type="radio" name="green-amount" id="10" value="5" required>
+                    <input class="green-input" type="radio" name="green-amount" id="10" value="4.5" required>
                     <label class="green-label" for="10" data-green-amount="4.5+"></label>
                     <div class="green-rating-pos"></div>
                   </div>
@@ -2241,6 +2247,7 @@
         display: none;
         padding : 5px;
         margin-bottom: 2px;
+        /* background: grey */
     }
 
     .retailer.first:hover {
@@ -2864,13 +2871,8 @@
     align-self: start;
   }
 }
+
     </style>
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
     <script type="text/javascript" src="script.js"></script>
     <script>
       $(document).ready(function() {    
