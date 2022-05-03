@@ -81,8 +81,24 @@
         </div>
         <div class="modal">
           <div class ="modal-content">
+            <form name="fileForm" enctype="multipart/form-data" data-netlify="true">
+              <p>
+                <label>
+                  <span>Name:</span>
+                  <input name="name" type="text"/>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <span>Add file:</span>
+                  <input name="file" type="file"/>
+                </label>
+              </p>
+              <button>Submit</button>
+            </form>
+            <p class="result"></p>            
             <span class="close-button">x</span>
-            <h3 class = "modal-title">Choose your current provider and preferences to filter the retailers</h3>
+            <!-- <h3 class = "modal-title">Choose your current provider and preferences to filter the retailers</h3>
               <label class="provider" for="provider-list">1. Who is your current provider?</label>
               <select id="select-provider" placeholder="Choose your provider...">
                 <option value="">Select a company...</option>
@@ -121,7 +137,7 @@
                     <div class="tooltip"><i class="fa-solid fa-circle-info"></i><span class="tooltiptext">The higher the rating the greener the energy</span>
                     </div>
                   </h4>
-                  <div class="green-radio-buttons" id="green-rating-slider">
+                  <div id="green-rating-slider">
                     <input class="green-input" type="radio" name="green-amount" id="1" value="1" required>
                     <label class="green-label" for="1" data-green-amount="No preference"></label>
                     <input class="green-input" type="radio" name="green-amount" id="2" value="3" required>
@@ -134,7 +150,7 @@
                     <label class="green-label" for="5" data-green-amount="4.5+"></label>
                     <div class="green-rating-pos"></div>
                   </div> 
-                  <div class="green-radio-buttons" id="green-rating-slider-700">
+                  <div id="green-rating-slider-700">
                     <input class="green-input" type="radio" name="green-amount" id="6" value="1" required>
                     <label class="green-label" for="6" data-green-amount="Show all"></label>
                     <input class="green-input" type="radio" name="green-amount" id="7" value="3" required>
@@ -217,7 +233,7 @@
                     </div>
                   </form>
                 </div>
-                <button class="submit-modal" id="submit">Submit</button>
+                <button class="submit-modal" id="submit">Submit</button> -->
               </div>
             </div>
         <div class = "main-list">
