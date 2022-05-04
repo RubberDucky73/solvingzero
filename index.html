@@ -82,7 +82,7 @@
         <div class="modal">
           <div class ="modal-content">
             <form id="formFile" name="fileForm" enctype="multipart/form-data" data-netlify="true">
-              <h2 class="modal-title">Upload your previous bills to find affordable and green options</h2>
+              <h2 class="modal-title">Upload your previous energy bills to find affordable and green options</h2>
               <p class="nameBox">
                 <label>
                   <span>Name:</span>
@@ -95,18 +95,22 @@
                   <input  name="email" type="email"/>
                 </label>
               </p>
-              <p>
+              <p class="file1">
                 <label>
                   <span>Add file 1:</span>
-                  <input name="file" type="file"/>
+                  <input name="file1" type="file"/>
                 </label>
+              </p>
+              <p class="file2">
                 <label>
                   <span>Add file 2:</span>
-                  <input name="file" type="file"/>
+                  <input name="file2" type="file"/>
                 </label>
+              </p>
+              <p class="file3" >
                 <label>
                   <span>Add file 3:</span>
-                  <input name="file" type="file"/>
+                  <input name="file3" type="file"/>
                 </label>
               </p>
               <button class="fileButton">Submit</button>
@@ -1980,7 +1984,7 @@
       grid-row: 5;
     }
 
-    #file3 {
+    .file3 {
       grid-row: 6;
     }
 
