@@ -86,7 +86,7 @@
               <p class="nameBox">
                 <label>
                   <span>Name:</span>
-                  <input  name="name" type="text"/>
+                  <input  name="name" type="text" height="50"/>
                 </label>
               </p>
               <p class="email">
@@ -112,6 +112,24 @@
                   <span>Add file 3:</span>
                   <input name="file3" type="file"/>
                 </label>
+              </p>
+              <h3 class="modalDes1">How affordable do you want your energy?</h3>
+              <p id="moneyChoice">
+                  <input type="radio" id="cheapest" name="moneyPref" value="Cheapest">
+                  <label for="cheapest">Cheapest</label><br>
+                  <input type="radio" id="cheap" name="moneyPref" value="Cheap">
+                  <label for="cheap">Reasonable</label><br>
+                  <input type="radio" id="greenCare" name="moneyPref" value="greenCare">
+                  <label for="greenCare">Optimise for green impact</label>
+              </p>
+              <h3 class="modalDes2">How green do you want your energy?</h3>
+              <p id="greenChoice">
+                  <input type="radio" id="greenest" name="greenPref" value="Greenest">
+                  <label for="greenest">Greenest</label><br>
+                  <input type="radio" id="green" name="greenPref" value="Green">
+                  <label for="green">Green</label><br>
+                  <input type="radio" id="noCare" name="greenPref" value="noCare">
+                  <label for="noCare">Don't Care</label>
               </p>
               <button class="fileButton">Submit</button>
               <span class="close-button">x</span>
@@ -1937,9 +1955,9 @@
     }
 
     .close-button {
-      grid-area: 1 / 4 / 1 / 4;
-      justify-self: end;
-      align-items: center;
+      grid-area: 1 / 2 / 1 / 2;
+      justify-self: stretch;
+      /* align-items: center; */
       float: right;
       width: 2rem;
       line-height: 1.75rem;
@@ -1948,6 +1966,7 @@
       border-radius: 0.25rem;
       background-color: lightgray;
       max-height: 70%;
+      margin-left: .4rem;
     }
 
     .close-button:hover {
@@ -1965,32 +1984,66 @@
 
     .modal-title {
       grid-row: 1;
-      grid-column: span 3;
+      /* grid-column: span 3; */
     }
 
     .nameBox {
       grid-row: 2;
+      margin: 10px;
+      /* grid-column: span 2; */
     }
 
     .email {
       grid-row: 3;
+      margin: 10px;
+      /* grid-column: span 2; */
     }
 
     .file1 {
       grid-row: 4;
+      margin: 20px 0 10px 10px;
+      /* grid-column: span 2; */
     }
 
     .file2 {
       grid-row: 5;
+      margin: 10px;
+      /* grid-column: span 2; */
     }
 
     .file3 {
       grid-row: 6;
+      margin: 10px
+      /* grid-column: span 2; */
+    }
+
+    .modalDes1 {
+      grid-row: 7;
+    }
+
+    #moneyChoice {
+      grid-row: 8;
+    }
+
+    .modalDes2 {
+      grid-row: 9;
+    }
+
+    #greenChoice {
+      grid-row: 10;
     }
 
     .fileButton {
-      grid-row: 7;
-      max-width: 50%
+      grid-row: 11;
+      max-width: 50%;
+      display: flex;
+      justify-self: center;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      margin: 30px 0 0 0;
     }
 
     /* Everything below is the old modal */
