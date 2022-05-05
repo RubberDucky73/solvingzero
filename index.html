@@ -93,8 +93,10 @@
                 <label>
                   <span>Email:</span>
                   <input  name="email" type="email"/>
+                  <p id="emailWords">Email is to send you the results, trust me, I'd sooner die than send another person spam or marketing emails</p>
                 </label>
               </p>
+              <h3 class="uploadHeader">Please upload at least one electricity bill</h3>
               <p class="file1">
                 <label>
                   <span>Add file 1:</span>
@@ -1943,6 +1945,7 @@
       opacity: 0;
       visibility: hidden;
       transform: scale(1.1);
+
       transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     }
 
@@ -1999,42 +2002,56 @@
       /* grid-column: span 2; */
     }
 
-    .file1 {
+    #emailWords {
       grid-row: 4;
+      font-size: smaller;
+      margin: 10px;
+    }
+
+    .uploadHeader {
+      grid-row: 5;
+    }
+
+    .file1 {
+      grid-row: 6;
       margin: 20px 0 10px 10px;
       /* grid-column: span 2; */
     }
 
     .file2 {
-      grid-row: 5;
+      grid-row: 7;
       margin: 10px;
       /* grid-column: span 2; */
     }
 
     .file3 {
-      grid-row: 6;
+      grid-row: 8;
       margin: 10px
       /* grid-column: span 2; */
     }
 
     .modalDes1 {
-      grid-row: 7;
-    }
-
-    #moneyChoice {
-      grid-row: 8;
-    }
-
-    .modalDes2 {
       grid-row: 9;
     }
 
-    #greenChoice {
+    #moneyChoice {
       grid-row: 10;
     }
 
-    .fileButton {
+    p label {
+      font-size: large;
+    }
+
+    .modalDes2 {
       grid-row: 11;
+    }
+
+    #greenChoice {
+      grid-row: 12;
+    }
+
+    .fileButton {
+      grid-row: 13;
       max-width: 50%;
       display: flex;
       justify-self: center;

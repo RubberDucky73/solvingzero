@@ -12,7 +12,9 @@
   padding: 1rem 1.5rem;
   /* This width below is the size of the modal itself */
   width: 80%;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  overflow-y: scroll;
+  height: 80%; }
 
 .provider {
   margin: 20px 0 10px 0;
