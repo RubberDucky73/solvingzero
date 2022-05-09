@@ -582,13 +582,6 @@ border: 2px rgba(221, 221, 221, 0.342);
 box-shadow: 2px 2px 10px #E5FCF9;
 }
 
-/* .dirtyRetailer p {
-grid-row: 2;
-grid-column: 1 / span 3;
-place-self: end;
-font-size: medium;
-margin-top: 15px;
-} */
 
 .dirtyRetailer:hover {
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
@@ -1072,7 +1065,7 @@ background: lavender;
   margin-bottom: 25px;
   cursor: pointer;
   font-weight: bold;
-  width: 90%;
+  width: 95%;
   justify-self: center;
   }
 
@@ -1131,22 +1124,39 @@ background: lavender;
   }
 
   .hide button {
-  width: 80%;
+    width: 80%;
   }
 
   .hide p {
-  width: 90%;
-  justify-self: center;
-  margin: 0;
+    width: 90%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #accordion .dirtyRetailer {
+    width: 95%;
+    justify-self: center;
+  }
+
+  .dirtyPara {
+    justify-content: center;
+  }
+
+  .moreInfo p {
+    font-size: 1em;
+  }
+
+  .dirtyListHeaders {
+    font-size: 1.2em;
   }
 
   /* Blog and Articles */
 
   .top {
-  grid-template-areas:
-  "hero"
-  "side-hero1"
-  "side-hero2"
+    grid-template-areas:
+    "hero"
+    "side-hero1"
+    "side-hero2"
   }
 
   .hero-h2 {
@@ -1161,7 +1171,7 @@ background: lavender;
 @media (max-width: 600px) {
 
   .hero-graphic {
-  display: none;
+    display: none;
   }
 
   .trigger {
