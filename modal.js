@@ -2,7 +2,7 @@
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");
-const submit = document.querySelector(".submit-modal");
+const submit = document.querySelector(".fileButton");
 
 function toggleModal() {
     modal.classList.toggle("show-modal");

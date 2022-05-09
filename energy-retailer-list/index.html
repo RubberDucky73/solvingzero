@@ -60,9 +60,9 @@
             <li>
               <a href="../index.html">Home</a>
             </li>
-            <!-- <li>
-              <a href="../energy-retailer-list/index.html">Complete List</a>
-            </li> -->
+            <li>
+                <a href="../data/index.html">Our Data</a>
+            </li>
             <li>
               <a href="../contact/index.html">Contact</a>
             </li>
@@ -72,14 +72,11 @@
       <main class = "hero-container"> 
         <div class = "background">
           <div class="banner-text">
-            <h1 class="neonText">Save <u>hundreds</u> of dollars and the planet by switching to a <u>high quality</u> energy provider</h1>            
-            <button class="trigger">Start saving now</button>
-          </div>
-          <div class ="hero-graphic">
-            <img src= "../images/hero-graphic.png">
+            <h1 class="neonText">Filter every energy retailer in Australia down to your exact criteria</h1>            
+            <button class="trigger">Filter the providers</button>
           </div>
         </div>
-        <div class="modal">
+        <div class="modal" style="display: none">
           <div class ="modal-content">
             <h3 class = "modal-title">Choose your current provider and preferences to filter the retailers</h3>
               <label class="provider" for="provider-list">1. Who is your current provider?</label>
@@ -217,11 +214,12 @@
                   </form>
                 </div>
                 <button class="submit-modal" id="submit">Submit</button>
+                <span class="close-button">x</span>
               </div>
             </div>
         <div class = "main-list">
           <div id="accordion">
-            <h2 class="listHeaders" id="list1">Top five greenest and most affordable energy retailers in Australia
+            <h2 class="listHeaders" id="list1">Top three greenest and most affordable energy retailers in Australia
               <span class="myBtn" onclick="myFunction(this)">Learn more about the ratings</span>
             </h2>
             <div id="myModal" class="popUp">
@@ -288,29 +286,29 @@
             <div class = "retailer" id="diamond" name="company" data-rank="4" data-green="5" data-price="3.5" data-trust="4.5">
               <h3 class ="company">Diamond Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/half-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/half-shield.png">
               </div>
               <p>Best for: Supporting green energy in Australia</p>
               <div class ="auOwned">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
                 <!-- <span class="auToolTip">Aussie Owned</span> -->
               </div>
             </div>
@@ -467,35 +465,35 @@
                 </a>
                 <p style = "font-size: 12;">Solving Zero is not affiliated with, partnered with, or owned by any energy retailer. We make no money from you changing retailer. These ratings and opinions are 100% independently sourced.</p>
             </div>
-            <!-- <h2 class="listHeaders" id="list2">Three runner-up retailers that are still great choices
+            <h2 class="listHeaders" id="list2">Three runner-up retailers that are still great choices
               <span class="myBtn" onclick="myFunction(this)">Learn more about the ratings</span>
-            </h2> -->
+            </h2>
             <div class = "retailer" id="reAmped" name="company" data-rank="4" data-green="3.5" data-price="4.5" data-trust="3.5">
               <h3 class= "company">ReAmped</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/half-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/half-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
               <p>Best for: On a budget but want to be green</p>
               <div class ="auOwned">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
                 <!-- <span class="auToolTip">Aussie Owned</span> -->
               </div>
             </div>
@@ -531,29 +529,29 @@
             <div class = "retailer" id="amber" name="company" data-rank="4" data-green="4" data-price="1.5" data-trust="4">
               <h3 class= "company">Amber Electric</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
               <p>Best for: Want a tech approach to your energy</p>
               <div class ="auOwned">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
                 <!-- <span class="auToolTip">Aussie Owned</span> -->
               </div>
             </div>
@@ -590,18 +588,18 @@
             <div class = "retailer" id="ovo" name="company" data-rank="4" data-green="4" data-price="4" data-trust="">
               <h3 class= "company">Ovo Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
                 <p style ="font-size: 12;">Not able to review</p>
@@ -646,25 +644,25 @@
             <div class = "retailer" id="powerShop" name="company" data-rank="3" data-green="3" data-price="4" data-trust="3">
               <h3 class= "company">Powershop</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -700,25 +698,25 @@
             <div class = "retailer" id="simply" name="company" data-rank="3" data-green="2.5" data-price="3.5" data-trust="1">
               <h3 class= "company">Simply Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -753,25 +751,25 @@
             <div class = "retailer" id="origin" name="company" data-rank="3" data-green="2.5" data-price="2.5" data-trust="2">
               <h3 class= "company">Origin Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -802,7 +800,7 @@
               </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
               <a href ="https://bit.ly/324500w">
                 <button>Sign Up with Origin!</button>
@@ -812,25 +810,25 @@
             <div class = "retailer" id="energyAus" name="company" data-rank="3"  data-green="2.5" data-price="3.5" data-trust="1.5">
               <h3 class= "company">Energy Australia</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/half-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/half-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -867,25 +865,25 @@
             <div class = "retailer" id="agl" name="company" data-rank="3" data-green="2" data-price="3.5" data-trust="1">
               <h3 class= "company">AGL Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -918,7 +916,7 @@
               </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
               <a href ="https://bit.ly/3e36nyY">
                 <button>Sign Up with AGL!</button>
@@ -928,25 +926,25 @@
             <div class = "retailer" id="powerDirect" name="company" data-rank="3" data-green="1.5" data-price="2.5" data-trust="1">
               <h3 class= "company">PowerDirect</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -976,7 +974,7 @@
               </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
               <a href ="https://bit.ly/3E5k6zY">
                 <button>Sign Up with PowerDirect!</button>
@@ -989,25 +987,25 @@
             <div class = "retailer" id="momentum" name="company" data-rank="2" data-green="4" data-price="3" data-trust="2">
               <h3 class= "company">Momentum Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1037,31 +1035,31 @@
                   </li>
                 </ul>
                 <div class ="auLogo">
-                  <img src= "images/auOwned.png">
+                  <img src= "../images/auOwned.png">
                 </div>
             </div>
             <div class = "retailer" id="covaU" name="company" data-rank="2" data-green="3" data-price="3" data-trust="4.5">
               <h3 class= "company">CovaU Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/half-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/half-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1088,31 +1086,31 @@
                   <li>Complaint from customers are few and far between
                 </ul>
                 <div class ="auLogo">
-                  <img src= "images/auOwned.png">
+                  <img src= "../images/auOwned.png">
                 </div>
             </div>
             <div class = "retailer" id="red" name="company" data-rank="2" data-green="3" data-price="2" data-trust="2">
               <h3 class= "company">Red Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1140,31 +1138,31 @@
                   </li>
                 </ul>
                 <div class ="auLogo">
-                  <img src= "images/auOwned.png">
+                  <img src= "../images/auOwned.png">
                 </div>
             </div>
             <div class = "retailer" id="dodo" name="company" data-rank="2" data-green="3" data-price="2.5" data-trust="3">
               <h3 class= "company">Dodo</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1192,31 +1190,31 @@
                 </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
             </div>
             <div class = "retailer" id="lumo" name="company" data-rank="2" data-green="2.5" data-price="4" data-trust="1">
               <h3 class= "company">Lumo Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1243,31 +1241,31 @@
                 </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
             </div>
             <div class = "retailer" id="tango" name="company" data-rank="2" data-green="1.5" data-price="2" data-trust="3.5">
               <h3 class= "company">Tango Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/half-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/half-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1305,25 +1303,25 @@
             <div class = "retailer" id="powerClub" name="company" data-rank="1" data-tag="low" data-green="2" data-price="3.5" data-trust="3.5">
               <h3 class= "company">Powerclub</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/half-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/half-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1350,31 +1348,31 @@
                 </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
             </div>
             <div class = "retailer" id="gloBird" name="company" data-rank="1" data-green="1.5" data-price="5" data-trust="4">
               <h3 class= "company">GloBird Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1404,31 +1402,31 @@
                 </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
             </div>
             <div class = "retailer" id="1stEnergy" name="company" data-rank="1" data-green="1.5" data-price="3.5" data-trust="3">
               <h3 class= "company">1st Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1455,31 +1453,31 @@
                 </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
             </div>
             <div class = "retailer" id="elysian" name="company" data-rank="1" data-green="2" data-price="2" data-trust="2">
               <h3 class= "company">Elysian Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1506,31 +1504,31 @@
                   </li>
                 </ul>
                 <div class ="auLogo">
-                  <img src= "images/auOwned.png">
+                  <img src= "../images/auOwned.png">
                 </div>
             </div>
             <div class = "retailer" id="sumo" name="company" data-rank="1" data-green="1.5" data-price="3.5" data-trust="1">
               <h3 class= "company">Sumo</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1561,24 +1559,24 @@
                 </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
             </div>
             <div class = "retailer" id="kogan" name="company" data-rank="1" data-green="1.5" data-price="3.5" data-trust="">
               <h3 class= "company">Kogan Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/half-coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/half-coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
                 <p style ="font-size: 12;">Not able to review</p>
@@ -1608,31 +1606,31 @@
               </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
             </div>
             <div class = "retailer" id="qEnergy" name="company" data-rank="1" data-green="1.5" data-price="4" data-trust="3">
               <h3 class= "company">QEnergy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/half-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/half-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1660,31 +1658,31 @@
                 </li>
               </ul>
               <div class ="auLogo">
-                <img src= "images/auOwned.png">
+                <img src= "../images/auOwned.png">
               </div>
             </div>
             <div class = "retailer" id="alinta" name="company" data-rank="1" data-green="2" data-price="4" data-trust="1">
               <h3 class= "company">Alinta Energy</h3>
               <div class = "green-stars">
-                <img src= "images/star.png">
-                <img src= "images/star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
-                <img src= "images/empty-star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
+                <img src= "../images/empty-star.png">
               </div>
               <div class = "price-coins">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/coin.png">
-                <img src= "images/empty-coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/coin.png">
+                <img src= "../images/empty-coin.png">
               </div>
               <div class = "trust-shield">
-                <img src= "images/shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
-                <img src= "images/empty-shield.png">
+                <img src= "../images/shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
+                <img src= "../images/empty-shield.png">
               </div>
             </div>
             <div class="hide">
@@ -1806,13 +1804,13 @@
     .background {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      grid-template-rows: 1fr 1fr 1fr;
-      background-image: url("images/background.png");
-      height: 30em;
+      grid-template-rows: 1fr;
+      background-image: url("../images/background-blue.png");
+      height: 25em;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
-      padding-bottom: 40px;
+      padding-bottom: 30px;
       max-width: 100%;
     }
 
@@ -1858,7 +1856,7 @@
       width: 220px;
       height: 60px;
       font-weight: bolder;
-      font-size: 18px;
+      font-size: 16px;
       text-shadow: 1px 1px 15px white;
       padding: 12px 28px;
       border-radius: 8px;
@@ -1901,7 +1899,7 @@
     }
 
     .close-button {
-      grid-area: 1 / 2 / 1 / 2;
+      grid-area: 1 / 4 / 1 / 4;
       justify-self: stretch;
       /* align-items: center; */
       float: right;
@@ -1917,93 +1915,6 @@
 
     .close-button:hover {
       background-color: darkgray;
-    }
-
-    #formFile {
-      display: grid;
-    }
-
-    .result {
-      margin: 0px;
-      display: none;
-    }
-
-    .modal-title {
-      grid-row: 1;
-      /* grid-column: span 3; */
-    }
-
-    .nameBox {
-      grid-row: 2;
-      margin: 10px;
-      /* grid-column: span 2; */
-    }
-
-    .email {
-      grid-row: 3;
-      margin: 10px;
-      /* grid-column: span 2; */
-    }
-
-    #emailWords {
-      grid-row: 4;
-      font-size: smaller;
-      margin: 10px;
-    }
-
-    .uploadHeader {
-      grid-row: 5;
-    }
-
-    .file1 {
-      grid-row: 6;
-      margin: 20px 0 10px 10px;
-      /* grid-column: span 2; */
-    }
-
-    .file2 {
-      grid-row: 7;
-      margin: 10px;
-      /* grid-column: span 2; */
-    }
-
-    .file3 {
-      grid-row: 8;
-      margin: 10px
-      /* grid-column: span 2; */
-    }
-
-    .modalDes1 {
-      grid-row: 9;
-    }
-
-    #moneyChoice {
-      grid-row: 10;
-    }
-
-    p label {
-      font-size: large;
-    }
-
-    .modalDes2 {
-      grid-row: 11;
-    }
-
-    #greenChoice {
-      grid-row: 12;
-    }
-
-    .fileButton {
-      grid-row: 13;
-      max-width: 50%;
-      display: flex;
-      justify-self: center;
-      cursor: pointer;
-      background-color: black;
-      color: white;
-      padding: 12px 28px;
-      border-radius: 8px;
-      margin: 30px 0 0 0;
     }
 
     /* Everything below is the old modal */
@@ -2131,7 +2042,6 @@
       justify-items: center;
       margin: 10px 15px 10px 15px;
       background: rgba(221, 221, 221, 0.342);
-      /* padding: 5px; */
       border-radius: 20px;
       cursor: pointer;
       font-weight: bold;
@@ -2328,7 +2238,6 @@
         display: none;
         padding : 5px;
         margin-bottom: 2px;
-        /* background: grey */
     }
 
     .retailer.first:hover {
@@ -2807,10 +2716,10 @@
   }
 
   .trigger {
-    width: 190px;
+    width: 200px;
     height: 40px;
     font-size: 14px;
-    margin-top: 20px;
+    /* margin-top: 10px; */
     }
 
   #list1 {
@@ -2956,6 +2865,12 @@
     </style>
     <script type="text/javascript" src="../script.js"></script>
     <script>
+        $(document).ready(function() {
+            $('.trigger').click(function() {
+            $('.modal').show();
+             });
+        });
+    
       $(document).ready(function() {    
         $('#accordion .hide').hide();
         $('#accordion .retailer').click(function(){
