@@ -26,7 +26,7 @@ headerTemplate.innerHTML = `
   }
   
   .logo {
-    background:white url(../images/solvingzero-logo.jpeg);
+    background:white url(../images/solvingzero-logo.webp);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 10px;

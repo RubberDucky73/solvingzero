@@ -671,7 +671,7 @@ margin: 0 15px 0 15px;
 .company {
 grid-row: 1 / span 1;
 place-self: center;
-font-size: 1.5vh;
+font-size: 1.1em;
 }
 
 .company, .green, .price, .trust {
@@ -1359,7 +1359,7 @@ body {
 }
 
 .logo {
-  background:white url(../../images/solvingzero-logo.jpeg);
+  background:white url(../../images/solvingzero-logo.webp);
   background-size: contain;
   background-repeat: no-repeat;
   padding: 10px;
