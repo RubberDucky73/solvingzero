@@ -112,6 +112,7 @@ justify-items: center;
 
 .funFact {
 font-size: medium;
+margin: 0px;
 }
 
 .fact1 {
@@ -123,7 +124,7 @@ background-color: #ffffff;
 border-radius: 30px;
 padding: 10px 15px 10px 15px;
 width: 80%;
-min-height: 7vh;
+min-height: 6vh;
 }
 
 .co2-image {
@@ -150,7 +151,7 @@ background-color: #ffffff;
 border-radius: 30px;
 padding: 10px 15px 10px 15px;
 width: 80%;
-min-height: 7vh;
+min-height: 6vh;
 }
 
 .money-image {
@@ -177,7 +178,7 @@ background-color: #ffffff;
 border-radius: 30px;
 padding: 10px 15px 10px 15px;
 width: 80%;
-min-height: 7vh;
+min-height: 6vh;
 }
 
 .plant-image {
