@@ -70,7 +70,7 @@
         <div class = "background">
           <div class="banner-text">
             <h1 class="neonText" style="font-family: 'Quicksand', sans-serif;">You can save <span style="color: #d6d00b"><u>hundreds</u> of dollars</span> and the <span style="color: green">planet</span> by switching energy retailers</h1>
-            <h2>It's possible to save hundreds of dollars, and prevent the carbon emissions of one car for a whole year, every year!</h2>            
+            <h2>It's possible to save hundreds of dollars while preventing the carbon emissions of two cars for a whole year, every year!</h2>            
             <button class="trigger">Start saving now</button>
           </div>
           <div class ="hero-graphic">
@@ -87,71 +87,87 @@
               <div class ="money-image">
                 <img src= "images/money.webp">
               </div>
-              <p class="funFact" id="fact2">64% of Aussies are currently paying the dirty three between 8 to 10% more for their energy bill!</p>
+              <p class="funFact" id="fact2">64% of Aussies are currently paying those three between 8 to 10% more than their neighbours, for the exact same energy</p>
             </div>
             <div class="fact3">
               <div class ="plant-image">
                 <img src= "images/plant.webp">
               </div>
-              <p class="funFact" id="fact3">In 2022 using a greener energy provider is actually cheaper! Its a win win for everyone</p>
+              <p class="funFact" id="fact3">In 2022 using a greener energy provider is actually cheaper than using any of the big three!</p>
             </div>
           </div>
         </div>
         <div class="modal" style="display: none">
           <div class ="modal-content">
-            <h2 class="modal-title">Upload your previous energy bills to find affordable and green options</h2>
-            <span class="close-button">x</span>
+            <div class="modalHeader">
+              <h2 class="modal-title">To find your best plan we need to know who you are and your energy criteria</h2>
+              <span class="close-button">X</span>
+            </div>
             <form class="formUpload" name="fileUpload" enctype="multipart/form-data" data-netlify="true">
-              <p class="nameBox">
-                <label>
-                  <span>Name:</span>
-                  <input  name="name" type="text" height="50"/>
-                </label>
-              </p>
-              <p class="email">
-                <label>
-                  <span>Email:</span>
-                  <input  name="email" type="email"/>
-                  <p id="emailWords">The email is to send you the results, trust us, we'd sooner die than send a person spam or marketing emails</p>
-                </label>
-              </p>
-              <h3 class="uploadHeader">Please upload at least one electricity bill</h3>
-              <p class="file1">
-                <label>
-                  <span>Add file 1:</span>
-                  <input name="file1" type="file"/>
-                </label>
-              </p>
-              <p class="file2">
-                <label>
-                  <span>Add file 2:</span>
-                  <input name="file2" type="file"/>
-                </label>
-              </p>
-              <p class="file3" >
-                <label>
-                  <span>Add file 3:</span>
-                  <input name="file3" type="file"/>
-                </label>
-              </p>
-              <h3 class="modalDes1">How affordable do you want your energy?</h3>
-              <p id="moneyChoice">
-                  <input type="radio" id="cheapest" name="moneyPref" value="Cheapest">
-                  <label for="cheapest">Cheapest</label><br>
-                  <input type="radio" id="cheap" name="moneyPref" value="Cheap">
-                  <label for="cheap">Reasonable</label><br>
-                  <input type="radio" id="greenCare" name="moneyPref" value="greenCare">
-                  <label for="greenCare">Optimise for green impact</label>
-              </p>
-              <h3 class="modalDes2">How green do you want your energy?</h3>
-              <p id="greenChoice">
-                  <input type="radio" id="greenest" name="greenPref" value="Greenest">
-                  <label for="greenest">Greenest</label><br>
-                  <input type="radio" id="green" name="greenPref" value="Green">
-                  <label for="green">Green</label><br>
-                  <input type="radio" id="noCare" name="greenPref" value="noCare">
-                  <label for="noCare">I don't care about being green</label>
-              </p>
+              <div class="modalInfo">
+                <p class="firstNameBox">
+                  <label>
+                    <span>First Name:</span>
+                    <input  name="firstName" type="text" height="50"/>
+                  </label>
+                </p>
+                <p class="lastNameBox">
+                  <label>
+                    <span>Last Name:</span>
+                    <input  name="lastName" type="text" height="50"/>
+                  </label>
+                </p>
+                <p class="email">
+                  <label>
+                    <span>Email:</span>
+                    <input  name="email" type="email"/>
+                    <p id="emailWords">The email is to send you the results, trust us, we'd sooner die than send a person spam or marketing emails</p>
+                  </label>
+                </p>
+              </div>
+              <div class="modalUpload">
+                <h3 class="uploadHeader">Upload at least one electricity bill, we only use your past electricity usage to calculate your future savings</h3>
+                <p class="file1">
+                  <label>
+                    <span>Add file 1:</span>
+                    <input name="file1" type="file"/>
+                  </label>
+                </p>
+                <p class="file2">
+                  <label>
+                    <span>Add file 2:</span>
+                    <input name="file2" type="file"/>
+                  </label>
+                </p>
+                <p class="file3" >
+                  <label>
+                    <span>Add file 3:</span>
+                    <input name="file3" type="file"/>
+                  </label>
+                </p>
+              </div>
+              <div class="modalMoney">
+                <h3 class="modalDes1">How affordable do you want your energy?</h3>
+                <p id="moneyChoice">
+                    <input type="radio" id="cheapest" name="moneyPref" value="Cheapest">
+                    <label for="cheapest">Cheapest</label><br>
+                    <input type="radio" id="cheap" name="moneyPref" value="Cheap">
+                    <label for="cheap">Reasonable</label><br>
+                    <input type="radio" id="greenCare" name="moneyPref" value="greenCare">
+                    <label for="greenCare">Optimise for green impact</label>
+                </p>
+              </div>
+              <div class="modalGreen">
+                <h3 class="modalDes2">How green do you want your energy?</h3>
+                <p id="greenChoice">
+                    <input type="radio" id="greenest" name="greenPref" value="Greenest">
+                    <label for="greenest">Greenest</label><br>
+                    <input type="radio" id="green" name="greenPref" value="Green">
+                    <label for="green">Green</label><br>
+                    <input type="radio" id="noCare" name="greenPref" value="noCare">
+                    <label for="noCare">I don't care about being green</label>
+                </p>
+              </div>
               <button class="fileButton">Submit</button>
             </form>
             <p class="result"></p>            
@@ -419,10 +435,17 @@
           <div class= "side-hero side-hero2">Article 3</div>
         </div> -->
         <div class="boxSection">
-          <h2 class="boxHeader">Make the biggest impact by spending less, magic can happen!</h2>
-          <p class="boxPara">Upload your electricity bill and we will give you the top three ways to save money and reduce your carbon footprint - no weird marketing or shady backroom deals</p>
-          <button class="trigger" id="CTA2">Start saving now</button>
+          <h2 class="boxHeader">Make the biggest impact by saving more, it's crazy we know!</h2>
+          <button class="trigger2" id="CTA2">Start saving now</button>
         </div>
+        <div class="secureSection">
+          <div class ="lock-image">
+            <img src= "images/lock.webp">
+          </div>
+          <h2 class="secureHeader">Your security. Our priority.</h2>
+          <p class="securePara">We always have your security in mind. Rest easy knowing your data is encrypted and never sold to a third party.</p>
+        </div>
+        
       </main>
       <footer-component></footer-component>
     </div>
@@ -437,6 +460,12 @@
     <script>
         $(document).ready(function() {
           $('.trigger').click(function() {
+          $('.modal').show();
+          });
+        });
+
+        $(document).ready(function() {
+          $('.trigger2').click(function() {
           $('.modal').show();
           });
         });
@@ -475,7 +504,7 @@
     });
 
     </script>
-    <script type="text/javascript" src="modal.js"></script>
+    <script type="text/javascript" src="mainModal.js"></script>
     <script type="text/javascript" src="popup.js"></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
   </body>
