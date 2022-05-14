@@ -1,13 +1,13 @@
 /* Hero Image & Text */
 
 .header-container {
-box-shadow: 0px 4px 8px -1px #c0ebdd;
-position: relative;
-z-index: 10;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-background: white;
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 8px -1px #c0ebdd;
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -57,14 +57,14 @@ min-width: 90%;
 }
 
 .banner-text h1 {
-grid-row: 1 / 1;
-grid-column: 1 / span 2;
-min-width: 75%;
-font-size: 300%;
-margin-left: 40px;
-margin-top: 9vh;
-font-family: 'Quicksand', sans-serif;
-color: black;
+  grid-row: 1 / 1;
+  grid-column: 1 / span 2;
+  min-width: 75%;
+  font-size: 3.2vw;
+  margin-left: 40px;
+  margin-top: 9vh;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
 }
 
 .banner-text h2 {
@@ -72,10 +72,6 @@ margin: 60px 15px 10px 40px;
 font-size: 1.35em;
 font-family: 'Catamaran', sans-serif;
 }
-
-/* .neonText {
-
-} */
 
 .hero-graphic {
 grid-row: 1 / 1;
@@ -100,7 +96,7 @@ max-width: 350px;
   text-shadow: 1px 1px 15px white;
   padding: 12px 28px;
   border-radius: 8px;
-  margin: 25px 0 10px 0;
+  margin: 5vh 0 1vh 0;
   border: 0px solid black;
   letter-spacing: 0.6px;
   box-shadow: 5px 5px 5px #E5FCF9;
@@ -148,12 +144,191 @@ max-width: 350px;
   transform: translateY(4px);
 }
 
+/* The Step Cards */
+
+.steps {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-row: 3;
+  grid-column: 1 / span 3;
+  margin: 6vh 35px 5vh 3vw;
+  width: 95%;
+}
+
+.step1 {
+  display: grid;
+  border-radius: 6px;
+  height: min-content;
+}
+
+.step1-image {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: end;
+}
+
+.step1Head {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: center;
+  margin: 1vh 0 0vh 10px;
+}
+
+.step1List {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-template-columns: min-content 1fr;
+  list-style: none;
+}
+
+.checkMark {
+  grid-column: 1;
+  height: 25px;
+  width: 25px;
+  align-self: center;
+}
+
+.block p {
+  grid-column: 2;
+  margin: 1vh 5px 1vh 15px;
+  font-size: 1.1em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.step2 {
+  display: grid;
+  grid-column: 2;
+  margin-left: 2.5vw;
+}
+
+.step2-image {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: end;
+  margin: 0;
+}
+
+.step2Head {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+  align-self: center;
+  margin: 1vh 0 0vh 15px;
+}
+
+.step2Data {
+  display: grid;
+  grid-template-columns: repeat (min-content, 6);
+  justify-items: center; 
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
+.option1 {
+  justify-self: start;
+}
+
+.checkMarkData {
+  grid-row: 1;
+  grid-column: 1;
+  height: 25px;
+  width: 25px;
+  align-self: center;
+}
+
+.option1Text {
+  grid-row: 1;
+  grid-column: 2 / span 6;
+  margin: 0;
+  font-size: 1.3em;
+  font-family: 'Catamaran', sans-serif;
+  align-self: center;
+  justify-self: start;
+  margin: 1vh 5px .5vh 10px;
+}
+
+.piggy-image {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.piggy-image img {
+  height: 5vw;
+  width: 5vw;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.carPic {
+  grid-row: 2;
+  grid-column: 3;
+  justify-self: start;
+  align-self: center;
+  margin: 25px 0 0 10px;
+}
+
+.car-image img {
+  height: 3.2vw;
+  width: 7vw;
+  max-height: 60px;
+  max-width: 120px;
+}
+
+.orText {
+  grid-row: 3;
+  grid-column: 2 / span 3;
+  margin: 10px 0 0 0;
+  justify-self: start;
+}
+
+.orText p {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.piggy-image2 {
+  grid-row: 2;
+  grid-column: 5;
+}
+
+.piggy-image2 img {
+  height: 5vw;
+  width: 5vw;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.redCarPic {
+  grid-row: 2;
+  grid-column: 6;
+  justify-self: start;
+  align-self: center;
+  margin: 10px 0 0 5px;
+}
+
+.redCar-image img {
+  height: 5.2vw;
+  width: 8.5vw;
+  max-height: 80px;
+  max-width: 140px;
+}
+
+.or2Text {
+  grid-row: 3;
+  grid-column: 5 / span 3;
+  margin: 10px 0 0 10px;
+  justify-self: start;
+}
+
+.or2Text p {
+  font-size: 1.1em;
+  margin: 0;
+}
 
 /* The info cards */
 
 .facts {
   margin-top: 8vh;
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 1 / span 3;
   display: grid;
   justify-items: center;
@@ -1005,7 +1180,7 @@ background: lavender;
   }
 
   .trigger {
-    margin: 55px 0 45px 0;
+    margin: 3vh 0 3vh 0;
   }
 
   .hero-graphic {
