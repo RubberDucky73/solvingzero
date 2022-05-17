@@ -6,13 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solving Zero</title>
-    <meta property="og:title" content="Solving Zero">
-    <meta property="og:type" content="png" />
-    <meta property="og:image" content="../images/solving_zero_social.png">
-    <meta property="og:url" content="https://solvingzero.com">
-    <meta property="og:description" content="Save money and the planet by making one smart choice at a time.">
-    <meta property="og:site_name" content="Solving Zero">
-    <meta name="twitter:image:alt" content="Solving Zero Logo">
     <link rel="stylesheet" type="text/css" href="../styles/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../styles/css/style.css" />
     <link rel="icon" href="../images/SZ_favicon.webp">
@@ -35,7 +28,7 @@
     <script src="https://kit.fontawesome.com/ae5f17d194.js" crossorigin="anonymous"></script>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
@@ -1786,8 +1779,32 @@
       /* Hero Image & Text */
 
     .header-container {
-      box-shadow: 0px 13px 19px -2px rgba(0,0,0,0.22);
-      z-index: 1;
+      /* box-shadow: 0px 13px 19px -2px rgba(0,0,0,0.22);
+      z-index: 1; */
+      box-shadow: 0px 4px 8px -1px #c0ebdd;
+      position: relative;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      background: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .main-container {
+      background: none;
+    }
+
+    .logo {
+      background:white url(../images/solvingzero-logo.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 10px;
+      margin-left:19px;
+      margin-top: 10px;
+      max-width: 140px;
+      min-height: 4vh;
+      height: 3vmax;
+      max-height: 6vh;
     }
 
     .hero-container {
@@ -1827,7 +1844,9 @@
       grid-column: 1 / span 2;
       min-width: 75%;
       font-size: 340%;
-      margin-left: 30px;
+      margin: 10vh 0 5vh 30px;
+      color: white;
+      text-align: center;
     }
 
     .neonText {
@@ -2228,6 +2247,7 @@
     .hide p {
       margin-top: 0px;
       font-size: 14px;
+      margin: 1vh 0 0 0;
     }
 
     .hide li {
@@ -2238,6 +2258,7 @@
         display: none;
         padding : 5px;
         margin-bottom: 2px;
+        width: 100%;
     }
 
     .retailer.first:hover {
