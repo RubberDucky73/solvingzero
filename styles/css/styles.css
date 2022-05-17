@@ -1174,6 +1174,7 @@ background: lavender;
   .trigger {
     margin: 3vh 0 3vh 0;
     font-size: 1.2em;
+    width: 21vw;
   }
 
   .trigger:hover {
