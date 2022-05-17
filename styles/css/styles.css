@@ -474,6 +474,11 @@ grid-row: 2;
   margin: 20px 15px 5px 25px;
 }
 
+#modalPara {
+  font-size: .9em;
+  margin: 0px 15px 5px 25px;
+}
+
 .file1 {
   margin: 15px 15px 5px 45px;
 }
@@ -513,8 +518,21 @@ grid-row: 2;
   margin: 15px 15px 15px 45px;
 }
 
-.fileButton {
+.modalExtras {
   grid-row: 5;
+  /* margin: 15px 0 0 45px; */
+}
+
+.checkHeader {
+  margin-left: 25px;
+}
+
+#check1, #check2, #check3 {
+  margin: 15px 0 10px 45px;
+}
+
+.fileButton {
+  grid-row: 6;
   max-width: 50%;
   display: flex;
   justify-self: center;
@@ -1405,7 +1423,6 @@ background: lavender;
   .uploadHeader {
     font-size: 1.1em;
     margin: 15px 15px 5px 15px;
-
   }
 
   .file1 {
@@ -1453,8 +1470,12 @@ background: lavender;
     margin: 15px 15px 15px 35px;
   }
 
+  #check1, #check2, #check3 {
+    margin: 15px 5px 0 10px;
+  }
+
   .fileButton {
-    grid-row: 5;
+    /* grid-row: 5; */
     max-width: 50%;
     display: flex;
     justify-self: center;
