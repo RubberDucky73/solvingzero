@@ -1920,6 +1920,7 @@ footer {
     max-width: 200px;
     margin: 0px;
     background: white;
+    color: seagreen;
   }
 
   [aria-expanded="true"] ~ ul {
