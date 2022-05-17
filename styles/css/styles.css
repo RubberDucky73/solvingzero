@@ -1176,6 +1176,10 @@ background: lavender;
     font-size: 1.2em;
   }
 
+  .trigger:hover {
+    font-size: 1.2em;
+  }
+
   .hero-graphic {
     grid-row: 2;
     grid-column: 1 / span 3;
