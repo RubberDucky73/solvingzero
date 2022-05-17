@@ -1,6 +1,6 @@
 /* Hero Image & Text */
 
-/* .header-container {
+.header-container {
   box-shadow: 0px 4px 8px -1px #c0ebdd;
   position: relative;
   z-index: 10;
@@ -8,7 +8,7 @@
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   background: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-} */
+}
 
 .logo {
   background:white url(../../images/solvingzero-logo.webp);
@@ -23,18 +23,21 @@
   max-height: 6vh;
 }
 
-/* .main-container {
+.main-container {
   display: grid;
   grid-gap: 5px;
+  /* background-color: #faffff 99%;
+  background-color: #cdffed; */
   background-image: linear-gradient(180deg, #e1fce8 0%, 20%, #faffff 90%, #ffff 99%);
-} */
+}
 
 p {
+  /* margin: 0 5px 10px 15px; */
   font-size: x-large;
   font: bold;
 }
 
-/* .background {
+.background {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   grid-template-rows: min-content min-content min-content;
@@ -43,47 +46,49 @@ p {
   position: relative;
   padding-bottom: 10px;
   max-width: 100%;
-} */
+}
 
-/* .banner-text {
+.banner-text {
   grid-row: 1 / 1;
   grid-column: 1 / span 2;
   text-align: center;
   color: black;
   min-width: 90%;
-} */
+}
 
-/* .banner-text h1 {
+.banner-text h1 {
   grid-row: 1 / 1;
   grid-column: 1 ;
+  /* min-width: 55%; */
   text-align: start;
   font-size: 3.5vw;
   margin: 10vh 5vw 0 40px;
   font-family: 'Quicksand', sans-serif;
   color: black;
-} */
+}
 
-/* .banner-text h2 {
+.banner-text h2 {
   margin: 10vh 5vw 5vh 40px;
   font-size: 2vw;
   text-align: start;
+  /* min-block-size: 1.5em; */
   font-family: 'Catamaran', sans-serif;
-} */
+}
 
-/* .hero-graphic {
+.hero-graphic {
   grid-row: 1;
   grid-column: 3;
   align-self: center;
   flex-basis: auto;
   padding-top: 65px;
   overflow: hidden;
-} */
+}
 
-/* .hero-graphic img {
+.hero-graphic img {
   height: 600px;
   width: 1000px;
   max-height: 600px;
-} */
+}
 
 /* The CTA button */
 
