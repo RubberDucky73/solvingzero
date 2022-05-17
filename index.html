@@ -170,8 +170,13 @@
               <h2 class="modal-title">To find your best plan we need to know who you are and your energy criteria</h2>
               <span class="close-button">X</span>
             </div>
-            <form class="formUpload" name="fileUpload" enctype="multipart/form-data" data-netlify="true">
+            <form class="formUpload" name="fileUpload" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="notHuman-field">
               <div class="modalInfo">
+                <p class="hiddenForm">
+                  <label>
+                    Dont fill this out if youre human: <input name="notHuman-field" />
+                  </label>
+                </p>
                 <p class="firstNameBox">
                   <label>
                     <span>First Name:</span>
