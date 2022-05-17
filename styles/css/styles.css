@@ -1,6 +1,6 @@
 /* Hero Image & Text */
 
-.header-container {
+/* .header-container {
   box-shadow: 0px 4px 8px -1px #c0ebdd;
   position: relative;
   z-index: 10;
@@ -8,7 +8,7 @@
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   background: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .logo {
   background:white url(../../images/solvingzero-logo.webp);
@@ -23,21 +23,18 @@
   max-height: 6vh;
 }
 
-.main-container {
+/* .main-container {
   display: grid;
   grid-gap: 5px;
-  /* background-color: #faffff 99%;
-  background-color: #cdffed; */
   background-image: linear-gradient(180deg, #e1fce8 0%, 20%, #faffff 90%, #ffff 99%);
-}
+} */
 
 p {
-  /* margin: 0 5px 10px 15px; */
   font-size: x-large;
   font: bold;
 }
 
-.background {
+/* .background {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   grid-template-rows: min-content min-content min-content;
@@ -46,48 +43,47 @@ p {
   position: relative;
   padding-bottom: 10px;
   max-width: 100%;
-}
+} */
 
-.banner-text {
+/* .banner-text {
   grid-row: 1 / 1;
   grid-column: 1 / span 2;
   text-align: center;
   color: black;
   min-width: 90%;
-}
+} */
 
-.banner-text h1 {
+/* .banner-text h1 {
   grid-row: 1 / 1;
-  grid-column: 1 / span 2;
-  /* min-width: 55%; */
+  grid-column: 1 ;
   text-align: start;
   font-size: 3.5vw;
   margin: 10vh 5vw 0 40px;
   font-family: 'Quicksand', sans-serif;
   color: black;
-}
+} */
 
-.banner-text h2 {
+/* .banner-text h2 {
   margin: 10vh 5vw 5vh 40px;
   font-size: 2vw;
   text-align: start;
-  /* min-block-size: 1.5em; */
   font-family: 'Catamaran', sans-serif;
-}
+} */
 
-.hero-graphic {
-  grid-row: 1 / span 2;
+/* .hero-graphic {
+  grid-row: 1;
   grid-column: 3;
   align-self: center;
   flex-basis: auto;
   padding-top: 65px;
   overflow: hidden;
-}
+} */
 
-.hero-graphic img {
-  max-height: 100vh;
-  max-width: 140vw;
-}
+/* .hero-graphic img {
+  height: 600px;
+  width: 1000px;
+  max-height: 600px;
+} */
 
 /* The CTA button */
 
@@ -111,7 +107,7 @@ p {
 
 .trigger:hover {
   background-color: white;
-  color: black;
+  color: green;
   box-shadow: 3px 3px 2px #E5FCF9;
   border: solid .1px black;
 }
@@ -157,7 +153,7 @@ p {
   grid-template-columns: 40% 60%;
   grid-row: 3;
   grid-column: 1 / span 3;
-  margin: 7.5vh 35px 5vh 3vw;
+  margin: 7vh 35px 6vh 3vw;
   width: 95%;
 }
 
@@ -179,7 +175,6 @@ p {
   grid-column: 2;
   align-self: center;
   margin: 1vh 0 0vh 10px;
-  
 }
 
 .step1List {
@@ -240,18 +235,13 @@ p {
   align-self: center;
 }
 
-.block2 {
-  /* grid-column: 2 /span 2; */
-}
-
 .block2 p {
-  /* grid-column: 2; */
   margin: 1vh 5px 1vh 15px;
   font-size: 1.1em;
   font-family: 'Quicksand', sans-serif;
 }
 
-/* The info cards */
+/* The info fact cards */
 
 .facts {
   margin-top: 8vh;
@@ -259,6 +249,17 @@ p {
   grid-column: 1 / span 3;
   display: grid;
   justify-items: center;
+  background-color: white;
+  padding: 6vh 0 6vh 0;
+  margin: 8vh 0 6vh 0;
+}
+
+.facts h2 {
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  font-size: 1.4em;
+  justify-self: start;
+  margin: 0 0 5vh 30px;
 }
 
 .funFact {
@@ -272,7 +273,6 @@ p {
   grid-row: 2;
   grid-column: 1;
   place-items: center;
-  background-color: #ffffff;
   border-radius: 30px;
   padding: 10px 15px 10px 15px;
   width: 80%;
@@ -280,57 +280,55 @@ p {
 }
 
 .co2-image {
-grid-row: 1;
-grid-column: 1;
-place-self: center;
+  grid-row: 1;
+  grid-column: 1;
+  place-self: center;
 }
 
 .co2-image img {
-max-height: 100px;
-max-width: 100px;
+  max-height: 100px;
+  max-width: 100px;
 }
 
 #fact1 {
-grid-row: 2;
+  grid-row: 2;
 }
 
 .fact2 {
-display: grid;
-grid-row: 2;
-grid-column: 2;
-place-items: center;
-background-color: #ffffff;
-border-radius: 30px;
-padding: 10px 15px 10px 15px;
-width: 80%;
-min-height: 6vh;
+  display: grid;
+  grid-row: 2;
+  grid-column: 2;
+  place-items: center;
+  border-radius: 30px;
+  padding: 10px 15px 10px 15px;
+  width: 80%;
+  min-height: 6vh;
 }
 
 .money-image {
-grid-row: 1;
-grid-column: 1;
-place-self: center;
+  grid-row: 1;
+  grid-column: 1;
+  place-self: center;
 }
 
 .money-image img {
-max-height: 100px;
-max-width: 100px;
+  max-height: 100px;
+  max-width: 100px;
 }
 
 #fact2 {
-grid-row: 2;
+  grid-row: 2;
 }
 
 .fact3 {
-display: grid;
-grid-row: 2;
-grid-column: 3;
-place-items: center;
-background-color: #ffffff;
-border-radius: 30px;
-padding: 10px 15px 10px 15px;
-width: 80%;
-min-height: 6vh;
+  display: grid;
+  grid-row: 2;
+  grid-column: 3;
+  place-items: center;
+  border-radius: 30px;
+  padding: 10px 15px 10px 15px;
+  width: 80%;
+  min-height: 6vh;
 }
 
 .plant-image {
@@ -546,10 +544,10 @@ p label {
 }
 
 .cards {
-display : grid;
-grid-template-columns: 1fr;
-max-width: 90%;
-margin: 0 30px 30px 30px;
+  display : grid;
+  grid-template-columns: 1fr;
+  max-width: 90%;
+  margin: 0 30px 30px 30px;
 }
 
 .card{
@@ -701,7 +699,7 @@ grid-column: 1 / span 2;
 
 #accordion {
 display: grid;
-width: 90%;
+width: 95%;
 }
 
 .listHeaders {
@@ -1092,6 +1090,15 @@ background-position: bottom;
 background: lavender;
 }
 
+@media (max-height: 800px) {
+
+  .hero-graphic img {
+    height: 540px;
+    width: 900px;
+    max-height: 540px;
+  }
+}
+
 @media (max-width: 1100px) {
 
   .banner-text {
@@ -1100,27 +1107,37 @@ background: lavender;
 
   .banner-text h1 {
     margin: 80px 20px 40px 20px;
+    text-align: center;
   }
 
   .banner-text h2 {
     margin: 40px 20px 40px 20px;
+    text-align: center;
   }
 
   .trigger {
     margin: 3vh 0 3vh 0;
+    font-size: 1.2em;
   }
 
   .hero-graphic {
-  display: none;
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    overflow: unset;
+    flex-basis: none;
+    width: 95%;
+    height: 65vh;
+    place-self: center;
   }
 
   .hero-graphic img {
-  max-height: 30vh;
-  max-width: 30vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   .trust-shield img {
-  max-height: 35px;
+  max-width: 35px;
   max-width: 35px;
   }
 
@@ -1184,10 +1201,31 @@ background: lavender;
     margin-bottom: 20px;
    }
 
+   .hero-graphic {
+    height: 50vh;
+  }
+
    /* Facts  */
 
-  .facts {
-    display: none;
+  .facts h2 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .fact1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .fact2 {
+    grid-row: 3;
+    grid-column: 1;
+    margin: 3vh 0 3vh 0;
+  }
+
+  .fact3 {
+    grid-row: 4;
+    grid-column: 1;
   }
 
   /* Info Cards */
@@ -1203,44 +1241,44 @@ background: lavender;
   }
   /* Add Animation */
   @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:2%; opacity:1}
+    from {top:-300px; opacity:0} 
+    to {top:2%; opacity:1}
   }
 
   @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:2%; opacity:1}
+    from {top:-300px; opacity:0}
+    to {top:2%; opacity:1}
   }
 
   .cards {
-  display : grid;
-  max-width: 100%;
-  grid-template-columns: 1fr;
-  margin: 0 0 20px 0;
+    display : grid;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    margin: 0 0 20px 0;
   }
 
   .card{
-  margin: 5px 5px 5px 5px;
-  max-width: 100%;
-  padding: 5px 0 5px 0;
+    margin: 5px 5px 5px 5px;
+    max-width: 100%;
+    padding: 5px 0 5px 0;
   }
 
   .card:hover {
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
   }
 
   .card h3 {
-  margin: 5px;
-  font-size: 1.1rem;
+    margin: 5px;
+    font-size: 1.1rem;
   }
 
   .card img {
-  max-height: 35px;
+    max-height: 35px;
   }
 
   .card .hide {
-  grid-row: 2 / span 2;
-  font-size: small;
+    grid-row: 2 / span 2;
+    font-size: small;
   }
 
   /* Retailers List */
@@ -1250,7 +1288,7 @@ background: lavender;
   }
 
   .listHeaders {
-  margin: 65px 5px 10px 15px;
+    margin: 15vh 5px 10px 15px;
   }
 
   #accordion .retailer {
@@ -1500,146 +1538,237 @@ background: lavender;
 @media (max-width: 600px) {
 
   .hero-graphic {
-    display: none;
+    height: 200px;
   }
 
   .trigger {
-    width: 210px;
+    width: 85%;
     height: 60px;
     margin-top: 35px;
   }
 
-  .popUp-content {
-  top: .1%;
+  /* Steps section */
+
+  .steps {
+    grid-template-columns: 1fr;
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    margin: 8.5vh 35px 5vh 3vw;
+    width: 95%;
   }
+
+  .step1 {
+    grid-row: 1;
+    grid-column: 1;
+    /* height: min-content; */
+    margin: 0vh 0 7vh 0;
+    justify-self: start;
+    font-size: .9em;
+  }
+
+  .step1-image {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+  }
+
+  .step1-image img {
+    max-height: 40px;
+    max-width: 100px;
+  }
+
+  .step1Head {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    margin: 3vh 0 0vh 0px;
+  }
+
+  .step1List {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    font-size: 1em;
+    justify-self: start;
+    margin: 2vh 0 0 0;
+  }
+
+  .step2 {
+    grid-row: 2;
+    grid-column: 1;
+    font-size: .9em;
+  }
+
+  .step2-image {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+  }
+
+  .step2-image img {
+    max-height: 40px;
+    max-width: 100px;
+  }
+
+  .step2Head {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    margin: 3vh 0 0vh 0px;
+  }
+
+  .step2List {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    font-size: 1em;
+    justify-self: start;
+    margin: 2vh 0 0 0;
+  }
+
+  .checkMark, .checkMarkData {
+    height: 15px;
+    width: 15px;
+  }
+
+  .facts h2 {
+    margin-left: 10px;
+  }
+
+  /* Learn about ratings modal */
+
+  .popUp-content {
+    top: .1%;
+  }
+
   /* Add Animation */
   @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:.1%; opacity:1}
+    from {top:-300px; opacity:0} 
+    to {top:.1%; opacity:1}
   }
 
   @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:.1%; opacity:1}
+    from {top:-300px; opacity:0}
+    to {top:.1%; opacity:1}
   }
 
   .blog{
   grid-template-areas:
-  "hero"
-  "side-hero1"
-  "side-hero2"
+    "hero"
+    "side-hero1"
+    "side-hero2"
   }
 
   .hero-h2 {
-  font-size: medium;
+    font-size: medium;
   }
 
   .hero-p {
-  font-size: smaller;
+    font-size: smaller;
   }
 
   .green-stars img {
-  max-height: 21px;
-  max-width: 21px;
-  margin-right: .5px;
+    max-height: 21px;
+    max-width: 21px;
+    margin-right: .5px;
   }
 
   .price-coins img {
-  max-height: 21px;
-  max-width: 21px;
-  margin-right: .5px;
+    max-height: 21px;
+    max-width: 21px;
+    margin-right: .5px;
   }
 
   .info-image {
     display: none;
+  }
+
+  .infoPoints {
+    margin: 5vh 10px 4vh 10px;
   }
 }
 
 @media (max-width: 414px) {
 
   .banner-text h1 {
-  margin-top: 50px;
-  font-size: 1.75rem;
+    margin-top: 50px;
+    font-size: 1.75rem;
   }
 
   .auOwned {
-  align-self: end;
+    align-self: end;
   }
 
   .auOwned img {
-  max-height: 30px;
-  max-width: 30px;
-  margin: 10px 3px 0 5px;
+    max-height: 30px;
+    max-width: 30px;
+    margin: 10px 3px 0 5px;
   }
 
   .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 225px;
-  height: 38px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  top: -45px;
-  margin-left: -60px;
+    visibility: hidden;
+    width: 225px;
+    height: 38px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    top: -45px;
+    margin-left: -60px;
   }
 
   .tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 120%;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 120%;
   }
 }
 
 @media (max-width: 380px) {
 
   .banner-text h1 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .logo {
-  margin-top: 20px;
+    margin-top: 20px;
   }
 
   .banner-text p {
-  font-size: small;
+    font-size: small;
   }
 }
 
 @media (max-width: 280px) {
 
   .green-stars img {
-  max-height: 15px;
-  max-width: 15px;
-  margin-right: 0px;
+    max-height: 15px;
+    max-width: 15px;
+    margin-right: 0px;
   }
 
   .price-coins img {
-  max-height: 15px;
-  max-width: 15px;
-  margin-right: 0px;
+    max-height: 15px;
+    max-width: 15px;
+    margin-right: 0px;
   }
 
   .trust-shield img {
-  max-height: 15px;
-  max-width: 15px;
-  margin-right: 0px;
+    max-height: 15px;
+    max-width: 15px;
+    margin-right: 0px;
   }
 
   .auOwned {
-  align-self: start;
-  justify-content: start;
-  grid-area: 4 / 1 / 4 / 1;
+    align-self: start;
+    justify-content: start;
+    grid-area: 4 / 1 / 4 / 1;
   }
 
   .auOwned img {
-  max-height: 25px;
-  max-width: 25px;
-  margin: 10px 3px 0 5px;
-  align-self: start;
+    max-height: 25px;
+    max-width: 25px;
+    margin: 10px 3px 0 5px;
+    align-self: start;
   }
 }
 
