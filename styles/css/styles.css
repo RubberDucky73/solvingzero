@@ -792,8 +792,8 @@ padding: 2px;
 margin-bottom: 25px;
 cursor: pointer;
 font-weight: bold;
-/* width: 70%;
-justify-self: flex-start; */
+width: 80%;
+justify-self: flex-start;
 }
 
 .moreInfo p {
