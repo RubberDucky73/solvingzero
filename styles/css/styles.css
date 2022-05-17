@@ -360,12 +360,12 @@ grid-row: 2;
   position: absolute;
   top: 55%;
   left: 50%;
-  max-width: 800px;
+  max-width: 950px;
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 0;
   /* This width below is the size of the modal itself */
-  width: 80%;
+  width: 95%;
   border-radius: 0;
   overflow-y: scroll;
   max-height: 80%;
@@ -1409,14 +1409,17 @@ background: lavender;
   }
 
   .file1 {
-    margin: 15px 15px 5px 25px;
+    grid-row: 2;
+    margin: 15px 15px 25px 15px;
   }
 
   .file2 {
-    margin: 15px 15px 5px 25px;
+    grid-row: 3;
+    margin: 15px 15px 25px 15px;
   }
 
   .file3 {
+    grid-row: 4;
     margin: 15px 15px 15px 15px;
 
   }
