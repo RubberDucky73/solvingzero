@@ -1605,6 +1605,7 @@ background: lavender;
 
   .hero-graphic {
     height: 200px;
+    padding-top: 10px;
   }
 
   .heroList {
@@ -1613,7 +1614,7 @@ background: lavender;
 
   .blockHero p {
     grid-column: 2;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: start;
     margin: 10px 0 10px 20px;
   }
@@ -1812,13 +1813,14 @@ background: lavender;
     font-size: 1.5rem;
   }
 
+  .blockHero p {
+    font-size: 1em;
+  }
+
   .logo {
     margin-top: 20px;
   }
 
-  .banner-text p {
-    font-size: small;
-  }
 }
 
 @media (max-width: 280px) {
