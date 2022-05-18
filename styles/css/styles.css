@@ -33,7 +33,7 @@
 
 p {
   /* margin: 0 5px 10px 15px; */
-  font-size: x-large;
+  font-size: large;
   font: bold;
 }
 
@@ -92,13 +92,6 @@ p {
 
 .blockHero strong {
   font-weight: 700;
-}
-
-.banner-text h2 {
-  margin: 10vh 5vw 5vh 40px;
-  font-size: 2vw;
-  text-align: start;
-  font-family: 'Catamaran', sans-serif;
 }
 
 .hero-graphic {
@@ -298,7 +291,8 @@ p {
 .funFact {
   font-size: 1.1em;
   margin: 0px;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
 }
 
 .fact1 {
@@ -799,7 +793,8 @@ justify-self: flex-start;
 .moreInfo p {
 font-size: 1.2em;
 margin: 0px 0 0 0px;
-font-family: 'Catamaran', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-weight: 500;
 }
 
 .dirtyListHeaders {
@@ -871,8 +866,9 @@ font-size: 1.2em;
 }
 
 .infoPoints p {
-font-size: 1em;
-font-family: 'Mulish', sans-serif;
+font-size: 1.1em;
+font-family: 'Quicksand', sans-serif;
+font-weight: 600;
 }
 
 .infoPoints {
@@ -1051,9 +1047,10 @@ margin: 10px 0px 30px 0px;
 .securePara {
   grid-row: 2;
   grid-column: 5 / span 6;
-  font-size: 1.05em;
+  font-size: 1.1em;
   margin: 15px 0 5px 0;
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 /* Blog Articles */
