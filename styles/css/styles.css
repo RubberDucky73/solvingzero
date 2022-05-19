@@ -1160,7 +1160,7 @@ background: lavender;
 
   .banner-text h1 {
     margin: 80px 20px 40px 20px;
-    text-align: center;
+    text-align: start;
   }
 
   .banner-text h2 {
