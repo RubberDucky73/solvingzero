@@ -9,7 +9,7 @@ function toggleNav({ target }) {
 navButton.addEventListener('click', toggleNav);
 
 
-// Below is the modal survey form
+// Below is the modal survey form for the CTA
 
 var ifr = document.getElementById("JotFormIFrame-221385605315048");
 if (ifr) {
