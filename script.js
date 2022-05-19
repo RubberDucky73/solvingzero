@@ -35,7 +35,7 @@ window.handleIFrameMessage = function(e) {
       iframe.scrollIntoView();
       break;
     case "setHeight":
-      iframe.style.height = (args[1] - 50) + "px";
+      iframe.style.height = (args[1] - 75) + "px";
       break;
     case "collapseErrorPage":
       if (iframe.clientHeight > window.innerHeight) {
