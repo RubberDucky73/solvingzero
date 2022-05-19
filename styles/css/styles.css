@@ -359,18 +359,18 @@ p {
 }
 
 .plant-image {
-grid-row: 1;
-grid-column: 1;
-place-self: center;
+  grid-row: 1;
+  grid-column: 1;
+  place-self: center;
 }
 
 .plant-image img {
-max-height: 100px;
-max-width: 100px;
+  max-height: 100px;
+  max-width: 100px;
 }
 
 #fact3 {
-grid-row: 2;
+  grid-row: 2;
 }
 
 /* MODAL triggered by the CTA */
