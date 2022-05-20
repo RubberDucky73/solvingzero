@@ -394,7 +394,7 @@ p {
   /* This width below is the size of the modal itself */
   width: 95%;
   border-radius: 0;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   max-height: 95%;
   border-radius: 0.55rem;
 }
