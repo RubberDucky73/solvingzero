@@ -2740,6 +2740,25 @@
     /* margin-top: 10px; */
     }
 
+  .modal-content {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 50px; */
+    grid-auto-rows: min-content;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    max-width: 800px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    /* This width below is the size of the modal itself */
+    max-width: 85%;
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+    max-height: 80%;
+  }
+
   #list1 {
     margin-top: 10px;
   }
