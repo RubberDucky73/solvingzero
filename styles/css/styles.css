@@ -182,7 +182,7 @@ p {
   grid-column: 1 / span 3;
   margin: 8vh 0px 6vh 0vw;
   width: 100%;
-  padding: 14vh 0vh 12vh 0vh;
+  padding: 14vh 2vh 12vh 2vh;
   background-color: white;
   border-top: .1px solid rgba(135, 134, 134, 0.3);
   /* overflow-x: hidden; */
