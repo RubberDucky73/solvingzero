@@ -180,12 +180,12 @@ p {
   grid-template-columns: 40% 60%;
   grid-row: 3;
   grid-column: 1 / span 3;
-  margin: 8vh 0px 6vh 0vw;
+  margin: 8vh 0px 6vh 0px;
   width: 100%;
-  padding: 14vh 2vh 12vh 2vh;
+  padding: 14vh 0vh 12vh 0vh;
   background-color: white;
   border-top: .1px solid rgba(135, 134, 134, 0.3);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* justify-items: center; */
 }
 
@@ -193,7 +193,7 @@ p {
   display: grid;
   border-radius: 6px;
   height: min-content;
-  margin: 0vh 0 0 0;
+  margin: 0vh 0 0 20px;
 }
 
 .step1-image {
@@ -235,7 +235,7 @@ p {
   display: grid;
   grid-column: 2;
   height: min-content;
-  margin: 0vh 0 0 0vw;
+  margin: 0vh 20px 0 0vw;
 }
 
 .step2-image {
