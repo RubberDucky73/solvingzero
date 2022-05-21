@@ -235,7 +235,7 @@ p {
   display: grid;
   grid-column: 2;
   height: min-content;
-  margin: 0vh 20px 0 0vw;
+  margin: 0vh 20px 0 25px;
 }
 
 .step2-image {
@@ -762,7 +762,7 @@ width: 95%;
 }
 
 .listHeaders {
-margin: 40px 5px 20px 0px;
+margin: 40px 5px 1vh 0px;
 }
 
 #list1a {
@@ -802,7 +802,7 @@ justify-self: flex-start;
 
 .moreInfo p {
 font-size: 1.2em;
-margin: 0px 0 0 0px;
+margin: 0px 0 3vh 0px;
 font-family: 'Quicksand', sans-serif;
 font-weight: 500;
 }
