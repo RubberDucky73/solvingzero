@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /legal/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://www.solvingzero.com/sitemap.xml
