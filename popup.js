@@ -1,21 +1,25 @@
 // Get the modal
-var popper = document.getElementById("myModal");
+const popper = document.querySelector("#myModal");
+const learnMore =document.querySelector(".myBtn");
 
+function openModal() {
+  popper.style.display = "block"
+}
+
+function closeModal() {
+  popper.style.display = "none"
+}
+function windowOnClick(event) {
+  if (event.target === popper) {
+     closeModal();
+  }
+}
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("closer")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  popper.style.display = "none";
-}
+learnMore.addEventListener("click", openModal)
+span.addEventListener("click", closeModal)
+window.addEventListener("click", windowOnClick);
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == popper) {
-    popper.style.display = "none";
-  }
-}
 
-function myFunction() {
-    popper.style.display = "block";
-}
+
