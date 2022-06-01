@@ -105,9 +105,10 @@ p {
 }
 
 .hero-graphic img {
-  height: 600px;
-  width: 1000px;
-  max-height: 600px;
+  height: 85%;
+  width: 85%;
+  margin-left: 10px;
+  box-shadow: -5px 0px 2px -2px rgba(0,0,0,0.25)
 }
 
 /* The CTA button */
@@ -122,7 +123,6 @@ p {
   min-height: 70px;
   font-weight: bolder;
   font-size: 1.5vw;
-  text-shadow: 1px 1px 15px white;
   padding: 12px 28px;
   border-radius: 8px;
   margin: 9vh 8vw 0vh 0;
@@ -1152,15 +1152,6 @@ background-position: bottom;
 background: lavender;
 }
 
-@media (max-height: 800px) {
-
-  .hero-graphic img {
-    height: 540px;
-    width: 900px;
-    max-height: 540px;
-  }
-}
-
 @media (max-width: 1100px) {
 
   .banner-text {
@@ -1188,7 +1179,7 @@ background: lavender;
     width: 22vw;
   }
 
-  .hero-graphic {
+  /* .hero-graphic {
     grid-row: 2;
     grid-column: 1 / span 3;
     overflow: unset;
@@ -1196,12 +1187,11 @@ background: lavender;
     width: 95%;
     height: 65vh;
     place-self: center;
-  }
+  } */
 
   .hero-graphic img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+    display: none;
   }
 
   .trust-shield img {
@@ -1689,6 +1679,7 @@ background: lavender;
     grid-row: 2;
     grid-column: 1;
     font-size: .9em;
+    margin: 0vh 0 7vh 0;
   }
 
   .step2-image {
