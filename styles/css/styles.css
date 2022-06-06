@@ -182,12 +182,140 @@ p {
   transform: translateY(4px);
 }
 
+/* Persona Cards */
+
+.persona {
+  display: grid;
+  grid-row: 3;
+  grid-column: 1 / span 3;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin-top: 13vh;
+  margin-bottom: 10vh;
+}
+
+.persona h2 {
+  grid-column: 1 /span 3;
+  justify-self: start;
+  margin-left: 25px;
+}
+
+.persona img {
+  width: 280px;
+  height: 210px;
+}
+
+.moneyText {
+  color: goldenrod;
+  /* background-color: gold; */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.greenText {
+  color: green;
+  /* background-color: gold; */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.planName {
+  display: grid;
+  place-items: center;
+}
+
+.planName img {
+  width: 30px;
+  height: 30px;
+}
+
+.planLogo {
+  grid-column: 1;
+  place-self: center;
+  margin-right: 5px;
+}
+
+.personaText {
+  text-align: center;
+  padding: 7.5px;
+  margin: 5px 5px 10px 5px;
+  border-radius: 20px;
+  /* background-color: #F2FFF3; */
+  border: solid .4px #D9D8D8;
+}
+
+.planText {
+  grid-column: 2;
+  place-self: center;
+}
+
+.switchText {
+  text-align: center;
+}
+
+.persona1 {
+  display: grid;
+  grid-column: 1;
+  background: white;
+  /* border: solid grey 1px; */
+  border-radius: 20px;
+  place-items: center;
+}
+
+.personaImageCard {
+  grid-row: 1;
+}
+
+.persona2 {
+  display: grid;
+  grid-column: 2;
+  background: white;
+  /* border: solid grey 1px; */
+  border-radius: 20px;
+  place-items: center;
+}
+
+#originLogoId {
+  height: 40px;
+}
+
+.persona3 {
+  display: grid;
+  grid-column: 3;
+  background: white;
+  /* border: solid grey 1px; */
+  border-radius: 20px;
+  place-items: center;
+}
+
+#momentumLogoId {
+  height: 45px;
+  width: 60px;
+}
+
+.persona4 {
+  display: grid;
+  grid-column: 4;
+  background: white;
+  /* border: solid grey 1px; */
+  border-radius: 20px;
+  place-items: center;
+}
+
+#diamondLogoId {
+  width: 55px;
+}
+
+#diamondText {
+  margin-right: 10px;
+}
+
 /* The Step Cards */
 
 .steps {
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 1 / span 3;
   margin: 8vh 0px 6vh 0px;
   width: 100%;
@@ -286,7 +414,7 @@ p {
 
 .facts {
   margin-top: 8vh;
-  grid-row: 4;
+  grid-row: 5;
   grid-column: 1 / span 3;
   display: grid;
   justify-items: center;
@@ -768,6 +896,7 @@ grid-column: 1 / span 2;
 #accordion {
 display: grid;
 width: 95%;
+justify-items: center;
 }
 
 .listHeaders {
@@ -805,8 +934,8 @@ padding: 2px;
 margin-bottom: 25px;
 cursor: pointer;
 font-weight: bold;
-width: 70%;
-justify-self: flex-start;
+width: 80%;
+/* justify-self: flex-start; */
 }
 
 .moreInfo p {
@@ -845,105 +974,106 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 .hide p {
-margin-top: 0px;
-font-size: 1.1em;
-width: 70%;
+  margin-top: 0px;
+  font-size: 1.1em;
+  width: 70%;
 }
 
 .hide li {
-font-size: .9rem;
+  font-size: .9rem;
 }
 
 #accordion .hide {
-display: none;
-padding : 5px;
-margin-bottom: 2px;
-width: 100%;
-/* background: grey */
+  display: none;
+  padding : 5px;
+  margin-bottom: 2px;
+  width: 100%;
+  /* background: grey */
 }
 
 .dirtyPara {
-display: flex;
-padding: 4px;
-margin-bottom: 4px;
-justify-content: flex-end;
+  display: flex;
+  padding: 4px;
+  margin-bottom: 4px;
+  justify-content: flex-end;
 }
 
 /* Info Section */
 
 .infoSection {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-top: 8vh;
 }
 
 .infoPoints h2 {
-font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .infoPoints h4 {
-font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .infoPoints p {
-font-size: 1.1em;
-font-family: 'Quicksand', sans-serif;
-font-weight: 500;
+  font-size: 1.1em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 .infoPoints {
-grid-column: 1;
-margin: 50px 0 0 40px;
+  grid-column: 1;
+  margin: 50px 0 0 40px;
 }
 
 .info-image {
-grid-column: 2;
-place-self: center;
+  grid-column: 2;
+  place-self: center;
 }
 
 .info-image img {
-max-height: 350px;
-max-width: 350px;
+  max-height: 350px;
+  max-width: 350px;
 }
 
 /* Company Rating list */
 
 #greenInfoModal p {
-width: 100%;
-margin: 0 15px 0 15px;
+  width: 100%;
+  margin: 0 15px 0 15px;
 }
 
 #moneyInfoModal p {
-width: 100%;
-margin: 0 15px 0 15px;
+  width: 100%;
+  margin: 0 15px 0 15px;
 }
 
 .company {
-grid-row: 1 / span 1;
-place-self: center;
-font-size: 1.1em;
+  grid-row: 1 / span 1;
+  place-self: center;
+  font-size: 1.1em;
 }
 
 .company, .green, .price, .trust {
-margin: .25em 0 .3em .25em;
+  margin: .25em 0 .3em .25em;
 }
 
 .green-stars, .price-coins, .trust-shield {
-margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .green-stars {
-display: flex;
-justify-content: center;
-grid-area: 1 / 2 / 1 / 2;
-place-self: center;
+  display: flex;
+  justify-content: center;
+  grid-area: 1 / 2 / 1 / 2;
+  place-self: center;
 }
 
 .green-stars img {
-display: flex;
-justify-content: flex-end;
-max-height: 35px;
-max-width: 35px;
-margin-right: 2px;
+  display: flex;
+  justify-content: flex-end;
+  max-height: 35px;
+  max-width: 35px;
+  margin-right: 2px;
 }
 
 .price-coins {
@@ -1159,6 +1289,70 @@ background-position: bottom;
 
 .side-hero-upper, .side-hero-lower {
 background: lavender;
+}
+
+@media (max-width: 1200px) {
+
+  .persona {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr 1fr 1fr 1fr;
+  }
+
+  .persona h2 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .switchText {
+    grid-row: 1;
+    grid-column: 3;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .planName {
+    grid-row: 1;
+    grid-column: 4;
+    margin-right: 20px;
+  }
+
+  .personaText {
+    border: none;
+  }
+
+  .persona1 {
+    grid-row: 2;
+    grid-column: 1;
+    margin-bottom: 30px;
+  }
+
+  .coupleCard {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #persona1 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .persona2 {
+    grid-row: 3;
+    grid-column: 1;
+    margin-bottom: 30px;
+  }
+
+  .persona3 {
+    grid-row: 4;
+    grid-column: 1;
+    margin-bottom: 30px;
+  }
+
+  .persona4 {
+    grid-row: 5;
+    grid-column: 1;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1439,7 +1633,7 @@ background: lavender;
 
   .moreInfo p {
     font-size: 1em;
-    margin: 0px 0 0 15px;  
+    margin: 10px 0 20px 15px;  
   }
 
   .dirtyListHeaders {
@@ -1650,11 +1844,78 @@ background: lavender;
     margin: 1.5vh 0vw 0vh 0;
   }
 
+  /* Persona section */
+
+  .persona {
+    grid-template-rows: 1fr min-content min-content;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .persona h2 {
+    grid-column: 1 / span 3;
+    margin-right: 15px;
+    font-size: 1.2em;
+  }
+
+  .persona img {
+    width: 140px;
+    height: 105px;
+  }
+
+  .planName img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .personaImageCard {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .persona1 {
+    grid-column: 1 / span 3;
+    margin-left: 15px;
+    margin-right: 15px; 
+  }
+
+  .persona2 {
+    grid-column: 1 / span 3;
+    margin-left: 15px;
+    margin-right: 15px; 
+  }
+
+  .persona3 {
+    grid-column: 1 / span 3;
+    margin-left: 15px;
+    margin-right: 15px; 
+  }
+
+  .persona4 {
+    grid-column: 1 / span 3;
+    margin-left: 15px;
+    margin-right: 15px; 
+  }
+
+  .personaText {
+    grid-row: 1;
+    grid-column: 2 / span 2;
+  }
+
+  .switchText {
+    grid-row: 2;
+    grid-column: 1 / span 1;
+  }
+
+  .planName {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+  }
+
   /* Steps section */
 
   .steps {
     grid-template-columns: 1fr;
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1 / span 3;
     margin: 15vh 35px 5vh 3vw;
     width: 95%;
