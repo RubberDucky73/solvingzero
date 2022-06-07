@@ -190,14 +190,15 @@ p {
   grid-column: 1 / span 3;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  margin-top: 13vh;
+  margin-top: 14vh;
   margin-bottom: 10vh;
 }
 
 .persona h2 {
-  grid-column: 1 /span 3;
+  grid-column: 1 /span 4;
   justify-self: start;
   margin-left: 25px;
+  margin-bottom: 25px;
 }
 
 .persona img {
